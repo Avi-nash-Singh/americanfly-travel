@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>American Fly - Flight Enquiry</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/flight-search.css">
+        <link rel="stylesheet" href="css/flight-enquiry.css">
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+       <!-- ============================================
+         STICKY WRAPPER START (Header + Navbar)
+         ============================================ -->
+    <div class="flight-sticky-wrapper" id="flightStickyWrapper">
+        <!-- ============================================
+         HEADER SECTION START
+         ============================================ -->
+        <header class="flight-header">
+            <div class="container">
+                <div class="flight-header__top-row">
+
+                    <!-- First Div: Logo & Badges -->
+                    <div class="flight-header__logo-badges">
+                        <!-- Logo Div -->
+                        <div class="flight-header__logo">
+                            <a href="#" class="flight-header__logo-link">
+                                <img src="assets/Web-logo 2.png" alt="American Fly Logo" class="flight-header__logo-img">
+                            </a>
+                        </div>
+                        <!-- Logo Div End -->
+
+                        <!-- Badges Div -->
+                        <div class="flight-header__badges">
+                            <img src="assets/badge1.webp" alt="Badge 1" class="flight-header__badge-item">
+                            <img src="assets/badge2.webp" alt="Badge 2" class="flight-header__badge-item">
+                            <img src="assets/badge3.webp" alt="Badge 3" class="flight-header__badge-item">
+                        </div>
+                        <!-- Badges Div End -->
+                    </div>
+                    <!-- First Div End -->
+
+                    <!-- Second Div: Contact Info -->
+                    <div class="flight-header__contact-info">
+                        <img src="assets/callIcon 1.svg" alt="Call Icon" class="flight-header__call-icon">
+                        <div class="flight-header__contact-text">
+                            <span class="flight-header__contact-title">Talk to our Specialists Today for Lowest
+                                Price</span>
+                            <span class="flight-header__contact-phone">0203 137 5177</span>
+                            <span class="flight-header__contact-timing">08:00 AM - 11:30 PM / 7 Days a Week</span>
+                        </div>
+                    </div>
+                    <!-- Second Div End -->
+
+                </div>
+            </div>
+        </header><!-- ============================================
+         NAVBAR SECTION START
+         ============================================ -->
+        <nav class="navbar navbar-expand-lg navbar-light flight-navbar">
+        <div class="container">
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenuList" aria-controls="navbarMenuList" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenuList">
+                <ul class="navbar-nav ">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="AboutUs.html">About Us</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+                            
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">Destination</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="#">Australia</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="Australia-Adelaide.html">Adelaide</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="Australia-Adelaide.html">City Tour</a></li>
+                                                    <li><a class="dropdown-item" href="Australia-Adelaide-Wine.html">Wine Regions</a></li>
+                                                    <li><a class="dropdown-item" href="Australia-Adelaide-Kangaroo.html">Kangaroo Island</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Brisbane</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="Australia-Brisbane.html">City Tour</a></li>
+                                                    <li><a class="dropdown-item" href="Australia-Brisbane-GoldCoast.html">Gold Coast</a></li>
+                                                    <li><a class="dropdown-item" href="Australia-Brisbane-Sunshine.html">Sunshine Coast</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Sydney</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="Australia-Sydney.html">City Tour</a></li>
+                                                    <li><a class="dropdown-item" href="Australia-Sydney-Harbour.html">Harbour Bridge</a></li>
+                                                    <li><a class="dropdown-item" href="Australia-Sydney-Opera.html">Opera House</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Melbourne</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="Australia-Melbourne.html">City Tour</a></li>
+                                                    <li><a class="dropdown-item" href="Australia-Melbourne-GreatOcean.html">Great Ocean Road</a></li>
+                                                    <li><a class="dropdown-item" href="Australia-Melbourne-Yarra.html">Yarra Valley</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="#">Far East</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Tokyo</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="FarEast-Tokyo.html">City Tour</a></li>
+                                                    <li><a class="dropdown-item" href="FarEast-Tokyo-MtFuji.html">Mount Fuji</a></li>
+                                                    <li><a class="dropdown-item" href="FarEast-Tokyo-Traditions.html">Traditional Culture</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Singapore</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="FarEast-Singapore.html">City Tour</a></li>
+                                                    <li><a class="dropdown-item" href="FarEast-Singapore-Gardens.html">Gardens by the Bay</a></li>
+                                                    <li><a class="dropdown-item" href="FarEast-Singapore-Food.html">Food Paradise</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Hong Kong</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="FarEast-HongKong.html">City Tour</a></li>
+                                                    <li><a class="dropdown-item" href="FarEast-HongKong-Victoria.html">Victoria Peak</a></li>
+                                                    <li><a class="dropdown-item" href="FarEast-HongKong-Islands.html">Island Hopping</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Bangkok</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="FarEast-Bangkok.html">City Tour</a></li>
+                                                    <li><a class="dropdown-item" href="FarEast-Bangkok-Temples.html">Temple Tour</a></li>
+                                                    <li><a class="dropdown-item" href="FarEast-Bangkok-Floating.html">Floating Markets</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">Package</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="Dubai.html">Dubai</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Dubai City Tour</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="Dubai-CityTour.html">Half Day Tour</a></li>
+                                                    <li><a class="dropdown-item" href="Dubai-CityTour-Full.html">Full Day Tour</a></li>
+                                                    <li><a class="dropdown-item" href="Dubai-CityTour-Private.html">Private Tour</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Desert Safari</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="Dubai-DesertSafari.html">Standard Safari</a></li>
+                                                    <li><a class="dropdown-item" href="Dubai-DesertSafari-Luxury.html">Luxury Safari</a></li>
+                                                    <li><a class="dropdown-item" href="Dubai-DesertSafari-Overnight.html">Overnight Safari</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Burj Khalifa</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="Dubai-BurjKhalifa.html">At The Top</a></li>
+                                                    <li><a class="dropdown-item" href="Dubai-BurjKhalifa-Sky.html">Sky Lounge</a></li>
+                                                    <li><a class="dropdown-item" href="Dubai-BurjKhalifa-Prive.html">Prive Experience</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Palm Jumeirah</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="Dubai-PalmJumeirah.html">Monorail Tour</a></li>
+                                                    <li><a class="dropdown-item" href="Dubai-PalmJumeirah-Atlantis.html">Atlantis Tour</a></li>
+                                                    <li><a class="dropdown-item" href="Dubai-PalmJumeirah-Beach.html">Beach Experience</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="#">India</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Delhi</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="India-Delhi.html">City Tour</a></li>
+                                                    <li><a class="dropdown-item" href="India-Delhi-RedFort.html">Red Fort</a></li>
+                                                    <li><a class="dropdown-item" href="India-Delhi-TajMahal.html">Taj Mahal Day Trip</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Mumbai</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="India-Mumbai.html">City Tour</a></li>
+                                                    <li><a class="dropdown-item" href="India-Mumbai-Gateway.html">Gateway of India</a></li>
+                                                    <li><a class="dropdown-item" href="India-Mumbai-Elephanta.html">Elephanta Caves</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Goa</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="India-Goa.html">Beach Tour</a></li>
+                                                    <li><a class="dropdown-item" href="India-Goa-Churches.html">Old Churches</a></li>
+                                                    <li><a class="dropdown-item" href="India-Goa-Wildlife.html">Wildlife Sanctuaries</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Jaipur</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="India-Jaipur.html">City Tour</a></li>
+                                                    <li><a class="dropdown-item" href="India-Jaipur-Amber.html">Amber Fort</a></li>
+                                                    <li><a class="dropdown-item" href="India-Jaipur-Palaces.html">Royal Palaces</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                            <li><a class="dropdown-item" href="Camper.html">Camper</a></li>
+                            
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">Business Class</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="Australia.html">Australia</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="BusinessClass-Australia.html">Sydney</a></li>
+                                            <li><a class="dropdown-item" href="BusinessClass-Australia-Melbourne.html">Melbourne</a></li>
+                                            <li><a class="dropdown-item" href="BusinessClass-Australia-Brisbane.html">Brisbane</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="#">New Zealand</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="BusinessClass-NewZealand.html">Auckland</a></li>
+                                            <li><a class="dropdown-item" href="BusinessClass-NewZealand-Queenstown.html">Queenstown</a></li>
+                                            <li><a class="dropdown-item" href="BusinessClass-NewZealand-Christchurch.html">Christchurch</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                            <li><a class="dropdown-item" href="BeatMyQuote.html">Beat My Quote</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="PrivacyPolicy.html">Privacy Policy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="TermsAndConditions.html">Terms & Condition</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    </div><!-- STICKY WRAPPER END (Header + Navbar) -->
+
+    <!-- ============================================
+         BANNER SECTION START
+         ============================================ -->
+    <section class="flight-banner flight-enquiry-banner">
+        <!-- Banner Background Image -->
+        <img src="assets/BannerImg.jpg" alt="Flight Banner" class="flight-banner__bg-image">
+        <!-- Banner Overlay -->
+        <div class="flight-banner__overlay"></div>
+
+        <!-- Banner Content -->
+        <div class="flight-banner__content">
+            <!-- Banner Text -->
+            <h2 class="flight-banner__title">Flight Enquiry</h2>
+            
+            <!-- Banner Text End -->
+
+            <!-- Breadcrumb -->
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="Index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Flight Enquiry</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+    <!-- BANNER SECTION END -->
+
+    <!-- ============================================
+         FLIGHT ENQUIRY SECTION START
+         ============================================ -->
+    <section class="flight-enquiry">
+        <div class="container">
+            <!-- Row 1: Flight Details -->
+            <div class="flight-enquiry__row">
+                <div class="section-title">
+                    <h2 class="section-title__heading">Your Selected Flights</h2>
+                    <p class="section-title__description">Review the details of your selected flights</p>
+                </div>
+                <div class="flight-enquiry__flight-details">
+
+                    <div class="flight-enquiry-card-wrapper d-flex align-items-center gap-3 flex-column">
+                    <!-- Flight Details Card 1 -->
+                    <div class="flight-enquiry-card">
+                        <div class="flight-enquiry-card__header">
+                            <div class="flight-enquiry-card__airline">
+                                <div class="flight-airline-img">
+                                    <img src="assets/airline.webp" alt="Airline Logo">
+                                </div>
+                                <h5 class="flight-airline-name">Delta Airlines</h5>
+                            </div>
+                            <div class="flight-enquiry-card__route">
+                                <div class="flight-route">
+                                    <div class="flight-route__origin">
+                                        <span class="flight-destination">LHR</span>
+                                        <span class="flight-city">London</span>
+                                    </div>
+                                    <div class="flight-route__arrow">
+                                        <div class="flight-stop-arrow"></div>
+                                    </div>
+                                    <div class="flight-route__destination">
+                                        <span class="flight-destination">JFK</span>
+                                        <span class="flight-city">New York</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flight-enquiry-card__details">
+                            <div class="flight-detail-row">
+                                <span class="flight-detail-label">Departure:</span>
+                                <span class="flight-detail-value">10:30 AM</span>
+                            </div>
+                            <div class="flight-detail-row">
+                                <span class="flight-detail-label">Arrival:</span>
+                                <span class="flight-detail-value">1:45 PM</span>
+                            </div>
+                            <div class="flight-detail-row">
+                                <span class="flight-detail-label">Duration:</span>
+                                <span class="flight-detail-value">8h 15m</span>
+                            </div>
+                            <div class="flight-detail-row">
+                                <span class="flight-detail-label">Stops:</span>
+                                <span class="flight-detail-value">1 Stop</span>
+                            </div>
+                            <div class="flight-detail-row">
+                                <span class="flight-detail-label">Class:</span>
+                                <span class="flight-detail-value">Business</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Flight Details Card 2 (Return Flight) -->
+                    <div class="flight-enquiry-card">
+                        <div class="flight-enquiry-card__header">
+                            <div class="flight-enquiry-card__airline">
+                                <div class="flight-airline-img">
+                                    <img src="assets/airline.webp" alt="Airline Logo">
+                                </div>
+                                <h5 class="flight-airline-name">Delta Airlines</h5>
+                            </div>
+                            <div class="flight-enquiry-card__route">
+                                <div class="flight-route">
+                                    <div class="flight-route__origin">
+                                        <span class="flight-destination">JFK</span>
+                                        <span class="flight-city">New York</span>
+                                    </div>
+                                    <div class="flight-route__arrow">
+                                        <div class="flight-stop-arrow"></div>
+                                    </div>
+                                    <div class="flight-route__destination">
+                                        <span class="flight-destination">LHR</span>
+                                        <span class="flight-city">London</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flight-enquiry-card__details">
+                            <div class="flight-detail-row">
+                                <span class="flight-detail-label">Departure:</span>
+                                <span class="flight-detail-value">6:20 PM</span>
+                            </div>
+                            <div class="flight-detail-row">
+                                <span class="flight-detail-label">Arrival:</span>
+                                <span class="flight-detail-value">7:40 AM (+1)</span>
+                            </div>
+                            <div class="flight-detail-row">
+                                <span class="flight-detail-label">Duration:</span>
+                                <span class="flight-detail-value">7h 20m</span>
+                            </div>
+                            <div class="flight-detail-row">
+                                <span class="flight-detail-label">Stops:</span>
+                                <span class="flight-detail-value">1 Stop</span>
+                            </div>
+                            <div class="flight-detail-row">
+                                <span class="flight-detail-label">Class:</span>
+                                <span class="flight-detail-value">Business</span>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                      <!-- Row 2: Offer Card with Wave Animation -->
+            <div class="flight-enquiry__row">
+                <div class="flight-offer-card">
+                    <div class="flight-offer-card__header">
+                        <h3 class="flight-offer-card__title">Limited Time Offer</h3>
+                        <div class="flight-offer-card__badge">Special Deal</div>
+                    </div>
+                    <div class="flight-offer-card__content">
+                        <div class="flight-offer-card__price">
+                            <span class="flight-offer-card__currency">£</span>
+                            <span class="flight-offer-card__amount">542.00</span>
+                            <span class="flight-offer-card__per-person">per person</span>
+                        </div>
+                        <p class="flight-offer-card__description">Book with £50 Deposit</p>
+                        <p class="flight-offer-card__note">Limited Availability</p>
+                        <div class="flight-offer-card__contact">
+                            <p>Speak to our Specialist for More Details</p>
+                            <a href="tel:02031375177" class="flight-offer-card__phone">0203 137 5177</a>
+                        </div>
+                        <button class="flight-offer-card__btn">Book Now</button>
+                    </div>
+                    <div class="wave-animation">
+                        <img src="assets/wave1.svg" alt="Wave" class="wave-img wave-img--1">
+                        <img src="assets/wave2.svg" alt="Wave" class="wave-img wave-img--2">
+                        <img src="assets/wave3.svg" alt="Wave" class="wave-img wave-img--3">
+                    </div>
+                </div>
+            </div>
+
+                </div>
+            </div>
+
+          
+
+            <!-- Row 3: Enquiry Form -->
+            <div class="flight-enquiry__row">
+                <div class="flight-enquiry-form">
+                    <div class="section-title">
+                        <h2 class="section-title__heading">Submit Your Enquiry</h2>
+                        <p class="section-title__description">Fill out the form below to submit your flight enquiry</p>
+                    </div>
+                    <form class="flight-enquiry-form__fields">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" class="form-control" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" class="form-control" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Additional Information</label>
+                            <textarea id="message" class="form-control" rows="4"></textarea>
+                        </div>
+
+                        <button type="submit" class="flight-enquiry-form__submit-btn">Submit your query</button>
+                    </form>
+
+                    <p class="flight-enquiry-form__privacy">Your personal information is safe with us and will never be passed on to third parties.</p>
+                </div>
+            </div>
+
+            <!-- Row 4: Important Information Section -->
+            <div class="flight-enquiry__row">
+                <div class="flight-important-info">
+                    <h2 class="flight-important-info__title">Important Information About Fare Availability & Booking Terms</h2>
+                    <ul class="flight-important-info__list">
+                        <li>We kindly request that you contact us to confirm the availability of your selected fare and flight.</li>
+                        <li>If the selected fare or flight is unavailable for your chosen dates, we may offer an alternative option or a similar fare at a higher price due to limited seat availability.</li>
+                        <li>Advertised fares are not guaranteed to be available at the time of inquiry.</li>
+                        <li>Fare availability is dynamic and may change frequently while being advertised.</li>
+                        <li>A booking fee of 1% of the total amount applies to all bookings.</li>
+                        <li>For details regarding cancellations, date changes, and baggage allowances, please contact our team directly.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FLIGHT ENQUIRY SECTION END -->
+
+    <!-- ============================================
+         FOOTER SECTION
+         ============================================ -->
+    <footer class="footer">
+        <!-- Wave Top Border -->
+        <div class="footer__wave">
+            <img src="assets/wave2.svg" alt="" class="footer__wave-img footer__wave-img--back">
+            <img src="assets/wave2.svg" alt="" class="footer__wave-img footer__wave-img--front">
+        </div>
+
+        <!-- Footer Content -->
+        <div class="footer__content">
+            <div class="container">
+                <div class="footer__grid">
+                    <!-- Company Info -->
+                    <div class="footer__company">
+                        <div class="footer__logo">
+                            <img src="assets/Web-logo 2.png" alt="American Fly Logo" class="footer__logo-img">
+                        </div>
+                        <div class="footer__badges">
+                            <img src="assets/badge1.webp" alt="Badge 1" class="footer__badge">
+                            <img src="assets/badge2.webp" alt="Badge 2" class="footer__badge">
+                            <img src="assets/badge3.webp" alt="Badge 3" class="footer__badge">
+                        </div>
+                        <div class="footer__help">
+                            <h4 class="footer__help-title">Need any help?</h4>
+                            <div class="footer__help-items">
+                                <div class="footer__help-item">
+                                    <span class="footer__help-label">Talk to our experts</span>
+                                    <a href="tel:02031375177" class="footer__help-value">0203 137 5177</a>
+                                </div>
+                                <div class="footer__help-item">
+                                    <span class="footer__help-label">WhatsApp us</span>
+                                    <a href="https://wa.me/447446512247" class="footer__help-value">07446512247</a>
+                                </div>
+                                <div class="footer__help-item">
+                                    <span class="footer__help-label">Mail to our support team</span>
+                                    <a href="mailto:info@americanfly.co.uk"
+                                        class="footer__help-value">info@americanfly.co.uk</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Company Links -->
+                    <div class="footer__links">
+                        <h4 class="footer__links-title">Company</h4>
+                        <ul class="footer__links-list">
+                            <li><a href="Index.html">Home</a></li>
+                            <li><a href="AboutUs.html">About Us</a></li>
+                            <li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
+                            <li><a href="TermsAndConditions.html">Terms Conditions</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- City Breaks -->
+                    <div class="footer__links">
+                        <h4 class="footer__links-title">City Breaks</h4>
+                        <ul class="footer__links-list">
+                            <li><a href="#">Savannah</a></li>
+                            <li><a href="#">Charleston</a></li>
+                            <li><a href="#">New Orleans</a></li>
+                            <li><a href="#">Chicago</a></li>
+                            <li><a href="#">San Francisco</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Top Destinations -->
+                    <div class="footer__links">
+                        <h4 class="footer__links-title">Top Destinations</h4>
+                        <ul class="footer__links-list">
+                            <li><a href="#">Las Vegas</a></li>
+                            <li><a href="#">Toronto</a></li>
+                            <li><a href="#">Miami</a></li>
+                            <li><a href="#">Boston</a></li>
+                            <li><a href="#">Orlando</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Top Cities -->
+                    <div class="footer__links">
+                        <h4 class="footer__links-title">Top Cities</h4>
+                        <ul class="footer__links-list">
+                            <li><a href="#">Chicago</a></li>
+                            <li><a href="#">New York</a></li>
+                            <li><a href="#">San Francisco</a></li>
+                            <li><a href="#">Vancouver</a></li>
+                            <li><a href="#">Houston</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Summary -->
+                <div class="footer__summary">
+                    <p>At American Fly, we offer a wide range of flight ticket options, including Economy, Premium
+                        Economy, Business, and First Class. We specialize in securing the best deals for our customers
+                        traveling to the USA, South America, Canada, and Caribbean destinations. Our website features
+                        exclusive offers from leading airlines and trusted suppliers worldwide. With our user-friendly
+                        interface and powerful search tools, you can easily find affordable flights to your preferred
+                        destinations—saving you both time and money.</p>
+                    <p>American Fly operates under the trading name of FLY2WORLD UK LTD, headquartered at 22 Larch
+                        Crescent, Hayes, UB4 9DP, with Company Registration Number: 14919426. We provide a comprehensive
+                        suite of travel services, including flights, hotels, and vehicle rentals. Our mission is to
+                        deliver exceptional and memorable travel experiences to all our customers.</p>
+                    <p>Committed to quality customer service, our dedicated team works tirelessly to secure the best
+                        rates on flights, hotels, car rentals, and holiday packages—ensuring you receive the best value
+                        for your journey.</p>
+                    <p>Some of the flights and flight-inclusive holidays on this website are financially protected by
+                        the ATOL scheme. But ATOL protection does not apply to all holiday and travel services listed on
+                        this website. Please feel free to check with us to confirm the level of protection applicable to
+                        your specific booking. If you do not receive an ATOL Certificate, then the booking will not be
+                        ATOL protected. If you do receive an ATOL Certificate but all the parts of your trip are not
+                        listed on it, those parts will not be ATOL protected. Please see our booking conditions for
+                        information, or for more information about financial protection and the ATOL Certificate go to:
+                        <a href="https://www.caa.co.uk" target="_blank" rel="noopener">www.caa.co.uk</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright Bar -->
+        <div class="footer__copyright">
+            <div class="container">
+                <div class="footer__copyright-inner">
+                    <p class="footer__copyright-text">Copyright &copy; 2025 All Rights Reserved. American Fly.</p>
+                    <div class="footer__cards">
+                        <img src="assets/cards.webp" alt="Accepted Cards" class="footer__cards-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- jQuery UI for Datepicker -->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- Slick Slider  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a139f73659009e2e',t:'MTc4Mjc4ODg5OA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+
+</html>

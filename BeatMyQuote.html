@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beat My Quote - American Fly</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/beat-quote-form.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+      <!-- ============================================
+         STICKY WRAPPER START (Header + Navbar)
+         ============================================ -->
+    <div class="flight-sticky-wrapper" id="flightStickyWrapper">
+        <!-- ============================================
+         HEADER SECTION START
+         ============================================ -->
+        <header class="flight-header">
+            <div class="container">
+                <div class="flight-header__top-row">
+
+                    <!-- First Div: Logo & Badges -->
+                    <div class="flight-header__logo-badges">
+                        <!-- Logo Div -->
+                        <div class="flight-header__logo">
+                            <a href="#" class="flight-header__logo-link">
+                                <img src="assets/Web-logo 2.png" alt="American Fly Logo" class="flight-header__logo-img">
+                            </a>
+                        </div>
+                        <!-- Logo Div End -->
+
+                        <!-- Badges Div -->
+                        <div class="flight-header__badges">
+                            <img src="assets/badge1.webp" alt="Badge 1" class="flight-header__badge-item">
+                            <img src="assets/badge2.webp" alt="Badge 2" class="flight-header__badge-item">
+                            <img src="assets/badge3.webp" alt="Badge 3" class="flight-header__badge-item">
+                        </div>
+                        <!-- Badges Div End -->
+                    </div>
+                    <!-- First Div End -->
+
+                    <!-- Second Div: Contact Info -->
+                    <div class="flight-header__contact-info">
+                        <img src="assets/callIcon 1.svg" alt="Call Icon" class="flight-header__call-icon">
+                        <div class="flight-header__contact-text">
+                            <span class="flight-header__contact-title">Talk to our Specialists Today for Lowest
+                                Price</span>
+                            <span class="flight-header__contact-phone">0203 137 5177</span>
+                            <span class="flight-header__contact-timing">08:00 AM - 11:30 PM / 7 Days a Week</span>
+                        </div>
+                    </div>
+                    <!-- Second Div End -->
+
+                </div>
+            </div>
+        </header><!-- ============================================
+         NAVBAR SECTION START
+         ============================================ -->
+        <nav class="navbar navbar-expand-lg navbar-light flight-navbar">
+        <div class="container">
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenuList" aria-controls="navbarMenuList" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenuList">
+                <ul class="navbar-nav ">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Index.html">Home</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="AboutUs.html">About Us</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+                            
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">Destination</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="#">Australia</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="Australia-Adelaide.html">Adelaide</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="Australia-Adelaide.html">City Tour</a></li>
+                                                    <li><a class="dropdown-item" href="Australia-Adelaide-Wine.html">Wine Regions</a></li>
+                                                    <li><a class="dropdown-item" href="Australia-Adelaide-Kangaroo.html">Kangaroo Island</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Brisbane</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="Australia-Brisbane.html">City Tour</a></li>
+                                                    <li><a class="dropdown-item" href="Australia-Brisbane-GoldCoast.html">Gold Coast</a></li>
+                                                    <li><a class="dropdown-item" href="Australia-Brisbane-Sunshine.html">Sunshine Coast</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Sydney</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="Australia-Sydney.html">City Tour</a></li>
+                                                    <li><a class="dropdown-item" href="Australia-Sydney-Harbour.html">Harbour Bridge</a></li>
+                                                    <li><a class="dropdown-item" href="Australia-Sydney-Opera.html">Opera House</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Melbourne</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="Australia-Melbourne.html">City Tour</a></li>
+                                                    <li><a class="dropdown-item" href="Australia-Melbourne-GreatOcean.html">Great Ocean Road</a></li>
+                                                    <li><a class="dropdown-item" href="Australia-Melbourne-Yarra.html">Yarra Valley</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="#">Far East</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Tokyo</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="FarEast-Tokyo.html">City Tour</a></li>
+                                                    <li><a class="dropdown-item" href="FarEast-Tokyo-MtFuji.html">Mount Fuji</a></li>
+                                                    <li><a class="dropdown-item" href="FarEast-Tokyo-Traditions.html">Traditional Culture</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Singapore</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="FarEast-Singapore.html">City Tour</a></li>
+                                                    <li><a class="dropdown-item" href="FarEast-Singapore-Gardens.html">Gardens by the Bay</a></li>
+                                                    <li><a class="dropdown-item" href="FarEast-Singapore-Food.html">Food Paradise</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Hong Kong</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="FarEast-HongKong.html">City Tour</a></li>
+                                                    <li><a class="dropdown-item" href="FarEast-HongKong-Victoria.html">Victoria Peak</a></li>
+                                                    <li><a class="dropdown-item" href="FarEast-HongKong-Islands.html">Island Hopping</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Bangkok</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="FarEast-Bangkok.html">City Tour</a></li>
+                                                    <li><a class="dropdown-item" href="FarEast-Bangkok-Temples.html">Temple Tour</a></li>
+                                                    <li><a class="dropdown-item" href="FarEast-Bangkok-Floating.html">Floating Markets</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">Package</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="Dubai.html">Dubai</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Dubai City Tour</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="Dubai-CityTour.html">Half Day Tour</a></li>
+                                                    <li><a class="dropdown-item" href="Dubai-CityTour-Full.html">Full Day Tour</a></li>
+                                                    <li><a class="dropdown-item" href="Dubai-CityTour-Private.html">Private Tour</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Desert Safari</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="Dubai-DesertSafari.html">Standard Safari</a></li>
+                                                    <li><a class="dropdown-item" href="Dubai-DesertSafari-Luxury.html">Luxury Safari</a></li>
+                                                    <li><a class="dropdown-item" href="Dubai-DesertSafari-Overnight.html">Overnight Safari</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Burj Khalifa</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="Dubai-BurjKhalifa.html">At The Top</a></li>
+                                                    <li><a class="dropdown-item" href="Dubai-BurjKhalifa-Sky.html">Sky Lounge</a></li>
+                                                    <li><a class="dropdown-item" href="Dubai-BurjKhalifa-Prive.html">Prive Experience</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Palm Jumeirah</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="Dubai-PalmJumeirah.html">Monorail Tour</a></li>
+                                                    <li><a class="dropdown-item" href="Dubai-PalmJumeirah-Atlantis.html">Atlantis Tour</a></li>
+                                                    <li><a class="dropdown-item" href="Dubai-PalmJumeirah-Beach.html">Beach Experience</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="#">India</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Delhi</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="India-Delhi.html">City Tour</a></li>
+                                                    <li><a class="dropdown-item" href="India-Delhi-RedFort.html">Red Fort</a></li>
+                                                    <li><a class="dropdown-item" href="India-Delhi-TajMahal.html">Taj Mahal Day Trip</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Mumbai</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="India-Mumbai.html">City Tour</a></li>
+                                                    <li><a class="dropdown-item" href="India-Mumbai-Gateway.html">Gateway of India</a></li>
+                                                    <li><a class="dropdown-item" href="India-Mumbai-Elephanta.html">Elephanta Caves</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Goa</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="India-Goa.html">Beach Tour</a></li>
+                                                    <li><a class="dropdown-item" href="India-Goa-Churches.html">Old Churches</a></li>
+                                                    <li><a class="dropdown-item" href="India-Goa-Wildlife.html">Wildlife Sanctuaries</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Jaipur</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="India-Jaipur.html">City Tour</a></li>
+                                                    <li><a class="dropdown-item" href="India-Jaipur-Amber.html">Amber Fort</a></li>
+                                                    <li><a class="dropdown-item" href="India-Jaipur-Palaces.html">Royal Palaces</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                            <li><a class="dropdown-item" href="Camper.html">Camper</a></li>
+                            
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">Business Class</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="Australia.html">Australia</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="BusinessClass-Australia.html">Sydney</a></li>
+                                            <li><a class="dropdown-item" href="BusinessClass-Australia-Melbourne.html">Melbourne</a></li>
+                                            <li><a class="dropdown-item" href="BusinessClass-Australia-Brisbane.html">Brisbane</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="#">New Zealand</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="BusinessClass-NewZealand.html">Auckland</a></li>
+                                            <li><a class="dropdown-item" href="BusinessClass-NewZealand-Queenstown.html">Queenstown</a></li>
+                                            <li><a class="dropdown-item" href="BusinessClass-NewZealand-Christchurch.html">Christchurch</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                            <li><a class="dropdown-item" href="BeatMyQuote.html">Beat My Quote</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="PrivacyPolicy.html">Privacy Policy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="TermsAndConditions.html">Terms & Condition</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    </div><!-- STICKY WRAPPER END (Header + Navbar) -->
+
+    <!-- ============================================
+         BANNER SECTION WITH BREADCRUMB START
+         ============================================ -->
+    <section class="flight-banner beatQuote-banner">
+        <!-- Banner Background Image -->
+        <img src="assets/BannerImg.jpg" alt="Flight Banner" class="flight-banner__bg-image">
+        <!-- Banner Overlay -->
+        <div class="flight-banner__overlay"></div>
+
+        <!-- Banner Content -->
+        <div class="flight-banner__content">
+           
+            <!-- Banner Text -->
+            <h2 class="flight-banner__title">Beat My Quote</h2>
+             <!-- Breadcrumb -->
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Beat My Quote</li>
+                </ol>
+            </nav>
+        
+        </div>
+    </section>
+    <!-- BANNER SECTION END -->
+
+    <!-- ============================================
+         BEAT MY QUOTE CONTENT SECTION START
+         ============================================ -->
+    <div class="flight-next-section beatQuote-section-wrapper" id="nextSection">
+        <div class="container mt-5">
+            <!-- Section Header -->
+            <div class="flight-next-section__header">
+                <p class="flight-next-section__subtitle"><span class="flight-next-section__subtitle-icon"><img
+                            src="/assets/flight.svg" alt=""> BEAT MY QUOTE</span></p>
+                <h2 class="flight-next-section__title">We'll Beat Any Competitor's Price</h2>
+            </div>
+
+            <!-- Quote Form -->
+            <!-- <div class="flight-search-form">
+                <div class="flight-search-form__container">
+                    <div class="flight-search-form__content">
+                        <div class="flight-search-form__header">
+                            <h2 class="flight-search-form__title">Beat My Quote Form</h2>
+                            <p class="flight-search-form__subtitle">Fill in your details and we'll beat any competitor's price</p>
+                        </div>
+                        <form class="flight-search-form__form">
+                            <div class="flight-search-form__grid">
+                                <div class="flight-search-form__input-group">
+                                    <label class="flight-search-form__label">Full Name</label>
+                                    <input type="text" class="flight-search-form__input" placeholder="John Smith" required>
+                                </div>
+                                <div class="flight-search-form__input-group">
+                                    <label class="flight-search-form__label">Email Address</label>
+                                    <input type="email" class="flight-search-form__input" placeholder="john@example.com" required>
+                                </div>
+                                <div class="flight-search-form__input-group">
+                                    <label class="flight-search-form__label">Phone Number</label>
+                                    <input type="tel" class="flight-search-form__input" placeholder="+44 7700 900123" required>
+                                </div>
+                                <div class="flight-search-form__input-group">
+                                    <label class="flight-search-form__label">Departure Airport</label>
+                                    <input type="text" class="flight-search-form__input" placeholder="LHR" required>
+                                </div>
+                                <div class="flight-search-form__input-group">
+                                    <label class="flight-search-form__label">Destination Airport</label>
+                                    <input type="text" class="flight-search-form__input" placeholder="JFK" required>
+                                </div>
+                                <div class="flight-search-form__input-group">
+                                    <label class="flight-search-form__label">Travel Date</label>
+                                    <input type="date" class="flight-search-form__input" required>
+                                </div>
+                                <div class="flight-search-form__input-group">
+                                    <label class="flight-search-form__label">Competitor's Price (£)</label>
+                                    <input type="number" class="flight-search-form__input" placeholder="999" required>
+                                </div>
+                                <div class="flight-search-form__input-group">
+                                    <label class="flight-search-form__label">Competitor's Name</label>
+                                    <input type="text" class="flight-search-form__input" placeholder="Competitor Name" required>
+                                </div>
+                            </div>
+                            <div class="flight-search-form__textarea-group">
+                                <label class="flight-search-form__label">Additional Information</label>
+                                <textarea class="flight-search-form__textarea" rows="4" placeholder="Any additional details..."></textarea>
+                            </div>
+                            <button type="submit" class="flight-search-form__submit-btn">Submit Quote</button>
+                        </form>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- Why Choose Us -->
+            <div class="flight-services-grid">
+                <div class="flight-service-card">
+                    <div class="flight-service-card__icon">
+                        <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.696 26.4807H2.10361C1.54726 26.4805 1.0134 26.7059 0.618362 27.1078C0.422968 27.3043 0.26766 27.5387 0.161495 27.7974C0.055329 28.0561 0.00043028 28.3339 0 28.6146V50.8673C0.000663298 51.1479 0.0557302 51.4254 0.161993 51.6839C0.268257 51.9424 0.423592 52.1766 0.618951 52.3729C1.01399 52.7748 1.54785 53.0002 2.1042 53H5.69659C6.25395 53.001 6.78902 52.7755 7.18478 52.3729C7.38014 52.1766 7.53547 51.9424 7.64174 51.6839C7.748 51.4254 7.80307 51.1479 7.80373 50.8673V28.6146C7.80322 28.3338 7.74823 28.056 7.64197 27.7973C7.5357 27.5386 7.38028 27.3042 7.18478 27.1078C6.78953 26.7059 6.25547 26.4805 5.69894 26.4807H5.696ZM23.2481 14.4774C23.2251 14.4708 23.2025 14.4629 23.1803 14.4538C23.0419 14.4073 22.8971 14.3644 22.7463 14.3263C21.6783 16.9976 20.1906 19.4712 18.3424 21.6487C16.0856 24.265 13.4315 26.49 10.4827 28.2376C10.4525 28.2578 10.421 28.276 10.3885 28.2919L9.28898 28.8188V50.0185L15.29 51.6231C15.4811 51.6762 15.6752 51.7165 15.8713 51.744C16.0691 51.7681 16.2681 51.7794 16.4673 51.7778H29.7768C30.3478 51.7778 30.8958 51.5466 31.3015 51.1344C31.5024 50.9333 31.6621 50.693 31.7711 50.4276C31.8801 50.1623 31.9363 49.8772 31.9363 49.5892C31.9363 49.3013 31.8801 49.0162 31.7711 48.7509C31.6621 48.4855 31.5024 48.2452 31.3015 48.0441C30.8958 47.6319 30.3478 47.4007 29.7768 47.4007H25.3423C25.147 47.4007 24.9598 47.3211 24.8217 47.1795C24.6837 47.0379 24.6061 46.8458 24.6061 46.6455C24.6061 46.4452 24.6837 46.2531 24.8217 46.1115C24.9598 45.9699 25.147 45.8903 25.3423 45.8903H33.6059C34.1769 45.8903 34.7249 45.6591 35.1306 45.2469C35.3316 45.0458 35.4912 44.8055 35.6002 44.5401C35.7093 44.2748 35.7654 43.9897 35.7654 43.7018C35.7654 43.4138 35.7093 43.1288 35.6002 42.8634C35.4912 42.598 35.3316 42.3577 35.1306 42.1567C34.7249 41.7445 34.1769 41.5133 33.6059 41.5132H26.5289C26.3337 41.5132 26.1464 41.4337 26.0084 41.292C25.8703 41.1504 25.7928 40.9583 25.7928 40.758C25.7928 40.5577 25.8703 40.3657 26.0084 40.224C26.1464 40.0824 26.3337 40.0028 26.5289 40.0028H35.1365C35.7074 40.0029 36.2552 39.7717 36.6606 39.3594C36.8616 39.1583 37.0212 38.918 37.1302 38.6527C37.2393 38.3873 37.2954 38.1023 37.2954 37.8143C37.2954 37.5263 37.2393 37.2413 37.1302 36.9759C37.0212 36.7106 36.8616 36.4703 36.6606 36.2692C36.2556 35.8558 35.7078 35.6235 35.1365 35.6227H26.5955C26.4002 35.6227 26.213 35.5432 26.0749 35.4015C25.9369 35.2599 25.8593 35.0678 25.8593 34.8675C25.8593 34.6673 25.9369 34.4752 26.0749 34.3335C26.213 34.1919 26.4002 34.1124 26.5955 34.1124H33.6036C34.1746 34.1123 34.7225 33.8811 35.1283 33.4689C35.3292 33.2678 35.4889 33.0275 35.5979 32.7622C35.7069 32.4968 35.7631 32.2118 35.7631 31.9238C35.7631 31.6358 35.7069 31.3508 35.5979 31.0854C35.4889 30.8201 35.3292 30.5798 35.1283 30.3787C34.7225 29.9665 34.1746 29.7353 33.6036 29.7353H21.5808C21.4629 29.737 21.3463 29.7097 21.2408 29.6555C21.1354 29.6013 21.0442 29.522 20.9749 29.4241C20.9056 29.3261 20.8603 29.2126 20.8427 29.0929C20.8252 28.9733 20.836 28.8511 20.8741 28.7366C21.3875 26.7703 22.2724 24.9266 23.4783 23.3101C23.5961 23.1397 23.7139 22.973 23.827 22.808C23.8364 22.7929 23.8464 22.7784 23.857 22.7639C23.9954 22.5591 24.1261 22.3555 24.2457 22.1489C24.8834 21.101 25.3265 19.941 25.5525 18.7276C25.7016 17.9507 25.6438 17.147 25.3852 16.401C25.1272 15.7375 24.6534 15.186 24.0443 14.8399C23.7911 14.6911 23.5245 14.5679 23.2481 14.4719V14.4774ZM24.3576 13.3132C25.1341 10.9068 26.6058 8.79974 28.5772 7.27163C30.954 5.43146 33.8961 4.52832 36.8676 4.7267C39.839 4.92508 42.6422 6.21178 44.7665 8.35246C45.9073 9.50322 46.8135 10.8754 47.4323 12.389C48.0511 13.9026 48.37 15.5274 48.3707 17.1687C48.3713 18.81 48.0535 20.4351 47.4358 21.9491C46.8181 23.4632 45.9129 24.8361 44.773 25.9877C42.5549 28.2388 39.5878 29.544 36.4692 29.6404C36.1257 29.2005 35.6902 28.8455 35.1949 28.6017C34.6995 28.3578 34.1571 28.2313 33.6077 28.2315H30.3687C28.2519 27.1092 26.499 25.3795 25.3234 23.2533C25.3929 23.1427 25.4624 23.0286 25.5307 22.9107C26.2618 21.7015 26.768 20.3636 27.0236 18.965C27.2154 17.9259 27.1296 16.8528 26.7751 15.8597C26.3951 14.8762 25.6949 14.0582 24.7934 13.5446C24.6538 13.4612 24.5083 13.3832 24.3558 13.3101L24.3576 13.3132ZM35.3203 9.08893C35.3203 8.88623 35.3988 8.69184 35.5385 8.54852C35.6782 8.40519 35.8677 8.32467 36.0652 8.32467C36.2628 8.32467 36.4523 8.40519 36.592 8.54852C36.7317 8.69184 36.8102 8.88623 36.8102 9.08893V10.061C37.574 10.2119 38.277 10.5918 38.8302 11.1527C39.1934 11.5181 39.4821 11.9541 39.6794 12.4352C39.8767 12.9163 39.9786 13.4329 39.9792 13.9548C39.9792 14.1575 39.9007 14.3519 39.761 14.4952C39.6213 14.6385 39.4318 14.719 39.2342 14.719C39.0366 14.719 38.8471 14.6385 38.7074 14.4952C38.5677 14.3519 38.4892 14.1575 38.4892 13.9548C38.4886 13.6317 38.4252 13.312 38.3029 13.0143C38.1806 12.7166 38.0017 12.4469 37.7766 12.2209C37.3215 11.758 36.7065 11.4982 36.0655 11.4982C35.4246 11.4982 34.8096 11.758 34.3544 12.2209C34.1293 12.4468 33.9503 12.7165 33.828 13.0142C33.7056 13.3119 33.6424 13.6317 33.6419 13.9548C33.6419 15.8017 34.9375 16.1183 36.2372 16.4348C38.1082 16.8916 39.9792 17.3483 39.9792 20.3781C39.9786 20.9001 39.8767 21.4166 39.6794 21.8977C39.4822 22.3788 39.1935 22.8148 38.8302 23.1802C38.277 23.7413 37.574 24.1214 36.8102 24.2725V25.2476C36.8102 25.4503 36.7317 25.6447 36.592 25.788C36.4523 25.9313 36.2628 26.0119 36.0652 26.0119C35.8677 26.0119 35.6782 25.9313 35.5385 25.788C35.3988 25.6447 35.3203 25.4503 35.3203 25.2476V24.2725C34.5566 24.1215 33.8537 23.7414 33.3009 23.1802C32.9381 22.8145 32.65 22.3785 32.4532 21.8974C32.2565 21.4163 32.155 20.8998 32.1548 20.3781C32.1548 20.1754 32.2333 19.9811 32.373 19.8377C32.5127 19.6944 32.7022 19.6139 32.8998 19.6139C33.0974 19.6139 33.2869 19.6944 33.4266 19.8377C33.5663 19.9811 33.6448 20.1754 33.6448 20.3781C33.6454 20.7013 33.7087 21.0211 33.831 21.3189C33.9533 21.6167 34.1323 21.8866 34.3574 22.1127C34.8128 22.5751 35.4277 22.8345 36.0685 22.8345C36.7093 22.8345 37.3242 22.5751 37.7796 22.1127C38.0046 21.8865 38.1834 21.6166 38.3058 21.3189C38.4281 21.0211 38.4915 20.7013 38.4922 20.3781C38.4922 18.5312 37.1966 18.2147 35.8968 17.9011C34.0258 17.4444 32.1548 16.9876 32.1548 13.9578C32.1549 13.4359 32.2563 12.9192 32.453 12.4379C32.6498 11.9566 32.938 11.5204 33.3009 11.1545C33.8538 10.5936 34.5566 10.2136 35.3203 10.0628V9.08591V9.08893ZM22.7487 27.779C23.1538 26.653 23.7061 25.5886 24.3906 24.6151C24.9499 25.5144 25.6072 26.3454 26.3499 27.0921C26.7527 27.4968 27.1791 27.8761 27.6267 28.2279H23.1079C23.0408 28.1473 22.9736 28.0652 22.9065 27.9814C22.8523 27.9137 22.7999 27.8473 22.7487 27.7808V27.779ZM19.1504 18.0552C19.1359 17.7628 19.1286 17.4665 19.1286 17.1665C19.1277 14.9067 19.5657 12.6695 20.417 10.5853C21.2683 8.50117 22.5158 6.61189 24.0867 5.02781C27.2817 1.80561 31.5828 0 36.0632 0C40.5436 0 44.8446 1.80561 48.0397 5.02781C49.6056 6.60728 50.8503 8.48986 51.7018 10.5664C52.5532 12.643 52.9945 14.8723 52.9999 17.1251C53.0054 19.378 52.575 21.6095 51.7337 23.6904C50.8923 25.7713 49.6567 27.6602 48.0986 29.2477C44.98 32.4388 40.775 34.2623 36.3709 34.3335C36.7435 33.8983 37.0097 33.3782 37.1475 32.8165C37.2852 32.2547 37.2905 31.6674 37.163 31.1031C40.4283 30.8452 43.4984 29.4067 45.8265 27.0438C47.1046 25.7533 48.1195 24.2148 48.8119 22.5178C49.5044 20.8208 49.8606 18.9994 49.8598 17.1597C49.859 15.3201 49.5011 13.499 48.8071 11.8027C48.1132 10.1063 47.0969 8.56873 45.8177 7.27949C43.437 4.87947 40.2949 3.43708 36.9641 3.21528C33.6333 2.99348 30.3357 4.00704 27.6726 6.07118C25.4689 7.781 23.8223 10.1361 22.9501 12.8256C22.7832 12.7853 22.6116 12.7513 22.4354 12.7235C22.2623 12.6858 22.0819 12.7126 21.9263 12.7989C21.7707 12.8852 21.6501 13.0256 21.5861 13.1948C20.9501 14.9015 20.1333 16.5314 19.1504 18.0552Z" fill="white"/>
+</svg>
+
+
+
+                    </div>
+                    <h3 class="flight-service-card__title">Best Price Guarantee</h3>
+                    <p class="flight-service-card__description">We're committed to offering you the best prices in the market. If you find a cheaper deal, we'll beat it.</p>
+                </div>
+
+                <div class="flight-service-card">
+                    <div class="flight-service-card__icon">
+                       <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M35.8363 19.9129C33.6673 17.8369 30.743 16.5634 27.5224 16.5634C24.3041 16.5634 21.3773 17.8369 19.2109 19.9129H14.8487C14.8657 19.7681 14.8802 19.6233 14.8948 19.4785C15.1693 16.3032 17.5763 13.739 20.7022 13.2973L20.7119 13.2948C20.9621 13.2629 21.2123 13.231 21.4624 13.2016C22.9465 15.0322 25.1422 16.1855 27.5662 16.1855C29.9999 16.1855 32.2029 15.0248 33.687 13.182C33.9541 13.2114 34.2189 13.2409 34.4836 13.2752C34.4909 13.2752 34.4957 13.2777 34.5006 13.2777C37.6096 13.7169 40.0142 16.2493 40.325 19.405L40.3761 19.9129L35.8363 19.9129ZM27.5441 0C31.4352 0 34.6313 3.38875 34.6313 7.6023C34.6313 11.8159 31.4349 15.2046 27.5441 15.2046C23.6531 15.2046 20.457 11.8159 20.457 7.6023C20.457 3.38875 23.6533 0 27.5441 0ZM48.5706 42.1544C51.4027 42.7973 53.5498 45.2094 53.8413 48.1786C53.919 48.9687 53.9943 49.7368 54.0429 50.3625C54.1668 51.6606 53.426 52.8851 52.2285 53.366C52.2212 53.3685 52.2164 53.3709 52.2115 53.3734C46.5644 55.5205 39.8267 55.5647 33.9122 53.3709C33.9073 53.3709 33.9001 53.3685 33.8952 53.366C32.6881 52.8949 31.9327 51.6728 32.0419 50.3674C32.0954 49.7564 32.1585 49.0104 32.2581 48.2595C32.5132 45.2855 34.6384 42.8537 37.4632 42.1911C38.7553 43.9481 40.7689 45.0695 43.001 45.0695C45.255 45.0695 47.2785 43.931 48.5706 42.1544ZM43.0012 31.1266C46.324 31.1266 49.054 34.0124 49.054 37.607C49.054 41.2016 46.324 44.0873 43.0012 44.0873C39.681 44.0873 36.9509 41.2016 36.9509 37.607C36.9509 34.0124 39.6809 31.1266 43.0012 31.1266ZM17.4811 41.9948C20.3131 42.6377 22.4602 45.0499 22.7517 48.019C22.8295 48.8091 22.9048 49.5772 22.9533 50.2054C23.0772 51.501 22.3364 52.7255 21.139 53.2064C21.1317 53.2089 21.1268 53.2113 21.122 53.2138C15.4748 55.3634 8.73712 55.4051 2.82264 53.2138C2.81779 53.2113 2.8105 53.2089 2.80807 53.2064C1.5985 52.7353 0.843087 51.5133 0.952398 50.2103C1.00583 49.5993 1.06898 48.8509 1.16857 48.1C1.4236 45.1259 3.54885 42.6941 6.37365 42.0316C7.66579 43.7886 9.67933 44.9099 11.9114 44.9099C14.1654 44.9099 16.1889 43.7739 17.4811 41.9948ZM11.9117 30.967C15.2344 30.967 17.9669 33.8528 17.9669 37.4474C17.9669 41.042 15.2344 43.9278 11.9117 43.9278C8.59145 43.9278 5.86135 41.042 5.86135 37.4474C5.86135 33.8528 8.59139 30.967 11.9117 30.967ZM27.5 17.5446C33.6329 17.5446 38.612 22.575 38.612 28.7709C38.612 34.9644 33.6328 39.9947 27.5 39.9947C21.3671 39.9947 16.388 34.9643 16.388 28.7709C16.388 22.5749 21.3671 17.5446 27.5 17.5446ZM28.423 21.0781C28.2942 20.6733 27.9202 20.3984 27.5 20.3984C27.0798 20.3984 26.7058 20.6733 26.577 21.0781L25.1731 25.4386H20.636C20.2158 25.4386 19.8418 25.711 19.713 26.1159C19.5818 26.5208 19.7251 26.9625 20.0652 27.2127L23.7376 29.9071L22.3337 34.2676C22.205 34.6725 22.3459 35.1142 22.6883 35.3645C23.0284 35.6148 23.4875 35.6148 23.8299 35.3645L27.4999 32.6701L31.1699 35.3645C31.5123 35.6148 31.9714 35.6148 32.3114 35.3645C32.6539 35.1142 32.7948 34.6725 32.666 34.2676L31.2622 29.9071L34.9346 27.2127C35.2746 26.9625 35.4155 26.5207 35.2868 26.1159C35.158 25.711 34.784 25.4386 34.3638 25.4386H29.8266L28.423 21.0781ZM27.5 24.5577L28.1971 26.722C28.3258 27.1269 28.6999 27.4017 29.1201 27.4017H31.3741L29.55 28.7391C29.2099 28.9893 29.0666 29.4311 29.1978 29.8359L29.8949 32.0002L28.0708 30.6629C27.7307 30.4126 27.2692 30.4126 26.9292 30.6629L25.1052 32.0002L25.8022 29.8359C25.9334 29.431 25.7901 28.9893 25.4501 28.7391L23.626 27.4017H25.88C26.3002 27.4017 26.6718 27.1269 26.803 26.722L27.5 24.5577ZM39.3333 31.2466C39.496 30.4467 39.5835 29.6173 39.5835 28.7707C39.5835 25.7697 38.5099 23.0189 36.7296 20.8939H54.0303C54.4068 20.8939 54.7492 21.1147 54.9096 21.4583C55.0674 21.8043 55.0164 22.2116 54.7735 22.5036L49.7676 28.5769L54.7735 34.6478C55.0164 34.9398 55.0674 35.3471 54.9096 35.6932C54.7493 36.0367 54.4068 36.2575 54.0303 36.2575H49.9109C49.311 32.7584 46.4158 30.145 43.001 30.145C41.6651 30.145 40.4044 30.5473 39.3333 31.2466ZM4.97934 36.2574H0.971712C0.595236 36.2574 0.25031 36.0366 0.0924369 35.693C-0.0678671 35.347 -0.0168616 34.9397 0.223597 34.6477L5.23194 28.5768L0.223597 22.5035C-0.0168616 22.2115 -0.0678671 21.8042 0.0924369 21.4582C0.250316 21.1146 0.595211 20.8938 0.971712 20.8938H18.2699C16.4896 23.0188 15.416 25.7696 15.416 28.7706C15.416 29.5754 15.4938 30.3656 15.6419 31.1263C14.5562 30.4024 13.2762 29.9853 11.9112 29.9853C8.45004 29.9853 5.51843 32.6797 4.97934 36.2574Z" fill="white"/>
+</svg>
+
+
+
+                    </div>
+                    <h3 class="flight-service-card__title">Expert Team</h3>
+                    <p class="flight-service-card__description">Our experienced travel specialists have access to exclusive deals and can find options not available online.</p>
+                </div>
+
+                <div class="flight-service-card">
+                    <div class="flight-service-card__icon">
+                       <svg width="46" height="52" viewBox="0 0 46 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.7405 12.8664C16.8734 10.6484 20.4518 9.71075 22.9371 11.9992C24.0668 13.1482 28.7213 15.5411 32.4889 16.2456C32.6905 16.2966 32.8995 16.3403 33.1084 16.3719C33.1375 15.9297 33.2371 15.2811 33.2347 14.839C33.5578 9.69136 29.066 4.99806 23.8987 5.10938H22.0185C16.8489 4.99763 12.3622 9.69105 12.6757 14.839C12.6854 15.0139 12.6902 15.184 12.7145 15.3589C13.2951 14.4528 13.9364 13.639 14.7405 12.864L14.7405 12.8664Z" fill="white"/>
+<path d="M10.2912 23.8848H12.2419C12.1593 23.0346 11.4597 16.0333 11.4184 14.8405H8.8992C10.313 -3.25988 36.0128 -3.26734 37.4289 14.8405H34.504C34.3437 17.3306 33.8918 21.3705 33.6805 23.8848H34.8442V24.9222C34.849 26.0275 33.9307 26.9264 32.857 26.9166H31.997C32.512 24.4873 32.687 20.1876 32.9979 17.6441C28.9191 17.0149 23.4262 14.3329 22.0979 12.9409C18.4685 9.88244 14.3993 14.3912 12.9198 17.5494C13.1312 19.4272 13.4543 23.5473 13.6535 25.3741C14.0908 30.2035 18.138 33.8643 22.9578 33.85C26.2665 33.8451 29.2178 32.1714 30.9137 29.4384C30.3793 29.4335 29.0019 29.4408 28.4505 29.4384C27.9865 30.4489 26.92 31.117 25.8049 31.1146H23.3683C19.4887 30.9785 19.4718 25.3863 23.3683 25.2478H25.8049C27.435 25.2381 28.7444 26.6106 28.7347 28.1849H32.8548C35.2136 28.0901 36.3699 26.12 36.1076 23.8801C37.5506 23.8412 38.7094 22.6582 38.7094 21.2079V15.4723C37.8567 -5.15991 8.462 -5.15493 7.60938 15.4723V21.2079C7.60938 22.6825 8.81188 23.885 10.2865 23.885L10.2912 23.8848Z" fill="white"/>
+<path d="M29.0946 33.1786C25.3074 36.0184 19.2245 35.6589 15.809 32.3672L14.0234 35.7973C14.6697 36.3269 17.9371 38.987 18.6561 39.57C21.2652 41.6908 25.0038 41.6471 27.5567 39.468C28.2394 38.7878 31.038 36.0111 31.6647 35.3795L30.1003 32.3721C29.7844 32.6563 29.4492 32.9284 29.0945 33.1762L29.0946 33.1786Z" fill="white"/>
+<path d="M32.674 36.166C31.9039 36.9313 29.239 39.5865 28.4204 40.4003C26.8632 41.7291 24.9441 42.3947 23.0346 42.3947C21.198 42.3947 19.3688 41.7801 17.8626 40.5533C16.8593 39.7371 13.502 36.9993 12.54 36.2243C5.51439 36.9264 0 42.8712 0 50.0809C0 51.0429 0.784652 51.8276 1.74667 51.8276H13.6013C13.6086 51.0672 13.5965 45.6936 13.6013 44.802C13.6208 43.9688 14.85 43.9712 14.867 44.802V51.8276H31.1534C31.1461 51.0672 31.1582 45.6936 31.1534 44.802C31.1655 43.9712 32.4093 43.9688 32.4191 44.802V51.8276H44.1674C45.1294 51.8276 45.9141 51.0429 45.9141 50.0809C45.9141 42.6306 40.0327 36.5353 32.6719 36.1684L32.674 36.166ZM40.7687 42.9391C40.5015 43.1675 40.1079 43.1505 39.8699 42.8833C38.4657 41.3018 36.6365 40.2062 34.5837 39.73C33.7772 39.5236 34.0566 38.3259 34.8679 38.4959C37.1782 39.0328 39.2358 40.262 40.8173 42.0476C41.0505 42.3075 41.0262 42.7059 40.7663 42.9391L40.7687 42.9391Z" fill="white"/>
+<path d="M23.3665 26.5137C21.1679 26.572 21.1607 29.7908 23.3665 29.8491H25.8031C26.7214 29.8491 27.4672 29.1033 27.4672 28.185C27.4672 27.2619 26.7214 26.5137 25.8031 26.5137H23.3665Z" fill="white"/>
+</svg>
+
+
+                    </div>
+                    <h3 class="flight-service-card__title">24/7 Support</h3>
+                    <p class="flight-service-card__description">Our dedicated support team is available around the clock to assist you with any queries or changes.</p>
+                </div>
+            </div>
+         </div>
+      </div>
+    <!-- BEAT MY QUOTE CONTENT SECTION END -->
+
+    <section class="beat-quote-form-section">
+        <div class="container">
+            <div class="beat-quote-form-container">
+                <div class="beat-quote-form-header">
+                    <h2 class="beat-quote-form-title">Get Your Custom Quote</h2>
+                    <p class="beat-quote-form-subtitle">Fill in your details and we'll provide you with the best flight quote</p>
+                </div>
+                
+                <form class="beat-quote-form">
+                    <div class="beat-quote-form-grid">
+                        <div class="beat-quote-form-input-group">
+                            <label class="beat-quote-form-label">Your Name*</label>
+                            <input type="text" class="beat-quote-form-input" placeholder="John Smith" required>
+                        </div>
+                        
+                        <div class="beat-quote-form-input-group">
+                            <label class="beat-quote-form-label">Email*</label>
+                            <input type="email" class="beat-quote-form-input" placeholder="john@example.com" required>
+                        </div>
+                        
+                        <div class="beat-quote-form-input-group">
+                            <label class="beat-quote-form-label">Contact No.*</label>
+                            <input type="tel" class="beat-quote-form-input" placeholder="+44 7700 900123" required>
+                        </div>
+                        
+                        <div class="beat-quote-form-input-group">
+                            <label class="beat-quote-form-label">Destination*</label>
+                            <input type="text" class="beat-quote-form-input" placeholder="New York" required>
+                        </div>
+                        
+                        <div class="beat-quote-form-input-group">
+                            <label class="beat-quote-form-label">Depart date*</label>
+                            <input type="date" class="beat-quote-form-input" required>
+                        </div>
+                        
+                        <div class="beat-quote-form-input-group">
+                            <label class="beat-quote-form-label">Return Date</label>
+                            <input type="date" class="beat-quote-form-input">
+                        </div>
+                        
+                        <div class="beat-quote-form-input-group">
+                            <label class="beat-quote-form-label">No Of Adults*</label>
+                            <div class="beat-quote-form-select">
+                                <select class="beat-quote-form-select-input" required>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="beat-quote-form-input-group">
+                            <label class="beat-quote-form-label">Adult Quote*</label>
+                            <div class="beat-quote-form-price-input">
+                                <span class="beat-quote-form-currency">£</span>
+                                <input type="number" class="beat-quote-form-input" placeholder="0.00" required>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="beat-quote-form-submit">
+                        <button type="submit" class="beat-quote-form-submit-btn">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+   <!-- ============================================
+         FOOTER SECTION
+         ============================================ -->
+    <footer class="footer">
+        <!-- Wave Top Border -->
+        <div class="footer__wave">
+            <img src="assets/wave2.svg" alt="" class="footer__wave-img footer__wave-img--back">
+            <img src="assets/wave3.svg" alt="" class="footer__wave-img footer__wave-img--front">
+        </div>
+
+        <div class="footer__main">
+            <div class="container">
+                <div class="footer__grid">
+                    <!-- Logo & Badges & Help -->
+                    <div class="footer__brand">
+                        <div class="footer__logo">
+                            <img src="assets/Web-logo 2.png" alt="American Fly Logo" class="footer__logo-img">
+                        </div>
+                        <div class="footer__badges">
+                            <img src="assets/badge1.webp" alt="Badge 1" class="footer__badge">
+                            <img src="assets/badge2.webp" alt="Badge 2" class="footer__badge">
+                            <img src="assets/badge3.webp" alt="Badge 3" class="footer__badge">
+                        </div>
+                        <div class="footer__help">
+                            <h4 class="footer__help-title">Need any help?</h4>
+                            <div class="footer__help-items">
+                                <div class="footer__help-item">
+                                    <span class="footer__help-label">Talk to our experts</span>
+                                    <a href="tel:02031375177" class="footer__help-value">0203 137 5177</a>
+                                </div>
+                                <div class="footer__help-item">
+                                    <span class="footer__help-label">WhatsApp us</span>
+                                    <a href="https://wa.me/447446512247" class="footer__help-value">07446512247</a>
+                                </div>
+                                <div class="footer__help-item">
+                                    <span class="footer__help-label">Mail to our support team</span>
+                                    <a href="mailto:info@americanfly.co.uk"
+                                        class="footer__help-value">info@americanfly.co.uk</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Company Links -->
+                    <div class="footer__links">
+                        <h4 class="footer__links-title">Company</h4>
+                        <ul class="footer__links-list">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="AboutUs.html">About Us</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms Conditions</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- City Breaks -->
+                    <div class="footer__links">
+                        <h4 class="footer__links-title">City Breaks</h4>
+                        <ul class="footer__links-list">
+                            <li><a href="#">Savannah</a></li>
+                            <li><a href="#">Charleston</a></li>
+                            <li><a href="#">New Orleans</a></li>
+                            <li><a href="#">Chicago</a></li>
+                            <li><a href="#">San Francisco</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Top Destinations -->
+                    <div class="footer__links">
+                        <h4 class="footer__links-title">Top Destinations</h4>
+                        <ul class="footer__links-list">
+                            <li><a href="#">Las Vegas</a></li>
+                            <li><a href="#">Toronto</a></li>
+                            <li><a href="#">Miami</a></li>
+                            <li><a href="#">Boston</a></li>
+                            <li><a href="#">Orlando</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Top Cities -->
+                    <div class="footer__links">
+                        <h4 class="footer__links-title">Top Cities</h4>
+                        <ul class="footer__links-list">
+                            <li><a href="#">Chicago</a></li>
+                            <li><a href="#">New York</a></li>
+                            <li><a href="#">San Francisco</a></li>
+                            <li><a href="#">Vancouver</a></li>
+                            <li><a href="#">Houston</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Summary -->
+                <div class="footer__summary">
+                    <p>At American Fly, we offer a wide range of flight ticket options, including Economy, Premium
+                        Economy, Business, and First Class. We specialize in securing the best deals for our customers
+                        traveling to the USA, South America, Canada, and Caribbean destinations. Our website features
+                        exclusive offers from leading airlines and trusted suppliers worldwide. With our user-friendly
+                        interface and powerful search tools, you can easily find affordable flights to your preferred
+                        destinations—saving you both time and money.</p>
+                    <p>American Fly operates under the trading name of FLY2WORLD UK LTD, headquartered at 22 Larch
+                        Crescent, Hayes, UB4 9DP, with Company Registration Number: 14919426. We provide a comprehensive
+                        suite of travel services, including flights, hotels, and vehicle rentals. Our mission is to
+                        deliver exceptional and memorable travel experiences to all our customers.</p>
+                    <p>Committed to quality customer service, our dedicated team works tirelessly to secure the best
+                        rates on flights, hotels, car rentals, and holiday packages—ensuring you receive the best value
+                        for your journey.</p>
+                    <p>Some of the flights and flight-inclusive holidays on this website are financially protected by
+                        the ATOL scheme. But ATOL protection does not apply to all holiday and travel services listed on
+                        this website. Please feel free to check with us to confirm the level of protection applicable to
+                        your specific booking. If you do not receive an ATOL Certificate, then the booking will not be
+                        ATOL protected. If you do receive an ATOL Certificate but all the parts of your trip are not
+                        listed on it, those parts will not be ATOL protected. Please see our booking conditions for
+                        information, or for more information about financial protection and the ATOL Certificate go to:
+                        <a href="https://www.caa.co.uk" target="_blank" rel="noopener">www.caa.co.uk</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright Bar -->
+        <div class="footer__copyright">
+            <div class="container">
+                <div class="footer__copyright-inner">
+                    <p class="footer__copyright-text">Copyright &copy; 2025 All Rights Reserved. American Fly.</p>
+                    <div class="footer__cards">
+                        <img src="assets/cards.webp" alt="Accepted Cards" class="footer__cards-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script>
+        // Sticky Header & Navbar
+        window.addEventListener('scroll', function() {
+            const stickyWrapper = document.getElementById('flightStickyWrapper');
+            if (window.scrollY > 50) {
+                stickyWrapper.classList.add('flight-sticky-wrapper--scrolled');
+            } else {
+                stickyWrapper.classList.remove('flight-sticky-wrapper--scrolled');
+            }
+        });
+
+        // Mobile Menu Toggle
+        document.getElementById('navbarToggleBtn').addEventListener('click', function() {
+            const menuList = document.getElementById('navbarMenuList');
+            menuList.classList.toggle('flight-navbar__menu-list--active');
+        });
+    </script> -->
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a139f6de7b189e2e',t:'MTc4Mjc4ODg4NA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+
+</html>

@@ -1,0 +1,773 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - American Fly</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+
+  <body>
+    <!-- ============================================
+         STICKY WRAPPER START (Header + Navbar)
+         ============================================ -->
+    <div class="flight-sticky-wrapper" id="flightStickyWrapper">
+      <!-- ============================================
+         HEADER SECTION START
+         ============================================ -->
+      <header class="flight-header">
+        <div class="container">
+          <div class="flight-header__top-row">
+            <!-- First Div: Logo & Badges -->
+            <div class="flight-header__logo-badges">
+              <!-- Logo Div -->
+              <div class="flight-header__logo">
+                <a href="#" class="flight-header__logo-link">
+                  <img
+                    src="assets/logo.png"
+                    alt="American Fly Logo"
+                    class="flight-header__logo-img"
+                  />
+                </a>
+              </div>
+              <!-- Logo Div End -->
+
+              <!-- Badges Div -->
+              <!-- Badges Div End -->
+            </div>
+            <div class="flight-header__badges">
+              <img
+                src="assets/cert/tta.png"
+                alt="Badge 1"
+                class="flight-header__badge-item"
+              />
+              <img
+                src="assets/cert/tta-trans.png"
+                alt="Badge 2"
+                class="flight-header__badge-item"
+              />
+              <img
+                src="assets/cert/atol_logo_white.png"
+                alt="Badge 3"
+                class="flight-header__badge-item"
+              />
+            </div>
+            <!-- First Div End -->
+
+            <!-- Second Div: Contact Info -->
+            <div class="flight-header__contact-info">
+              <img
+                src="assets/icons/callIcon.svg"
+                alt="Call Icon"
+                class="flight-header__call-icon"
+              />
+              <div class="flight-header__contact-text">
+                <span class="flight-header__contact-title"
+                  >Talk to our Specialists Today for Lowest Price</span
+                >
+                <span class="flight-header__contact-phone">0203 137 5177</span>
+                <span class="flight-header__contact-timing"
+                  >08:00 AM - 11:30 PM / 7 Days a Week</span
+                >
+              </div>
+            </div>
+            <!-- Second Div End -->
+          </div>
+        </div>
+      </header>
+      <!-- ============================================
+         NAVBAR SECTION START
+         ============================================ -->
+      <nav class="flight-navbar">
+        <div class="container">
+          <div
+            class="flight-navbar__container d-flex align-items-center justify-content-between"
+          >
+            <a href="#" class="flight-header__logo-link d-block d-md-none">
+              <img
+                src="assets/logo.png"
+                alt="American Fly Logo"
+                class="flight-header__logo-img"
+              />
+            </a>
+            <!-- Mobile Toggle Button -->
+            <button
+              class="flight-navbar__toggle ms-auto"
+              type="button"
+              id="navbarToggleBtn"
+            >
+              <div class="flight-navbar__toggle-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </button>
+
+            <!-- Navbar Menu -->
+            <ul class="flight-navbar__menu-list" id="navbarMenuList">
+              <li class="flight-navbar__menu-item">
+                <a
+                  href="Index.html"
+                  class="flight-navbar__menu-link flight-navbar__menu-link--active"
+                  >Home</a
+                >
+              </li>
+              <li class="flight-navbar__menu-item">
+                <a href="about-us.html" class="flight-navbar__menu-link"
+                  >About Us</a
+                >
+              </li>
+              <!-- <li
+                class="flight-navbar__menu-item flight-navbar__menu-item--has-dropdown"
+              >
+                <a href="#" class="flight-navbar__menu-link"
+                  >Pages <span class="flight-navbar__dropdown-arrow">▼</span></a
+                >
+                <ul class="flight-navbar__dropdown">
+                  <li class="flight-navbar__dropdown-item">
+                    <a
+                      href="Destination.html"
+                      class="flight-navbar__dropdown-link"
+                      >Destination</a
+                    >
+                  </li>
+                  <li class="flight-navbar__dropdown-item">
+                    <a href="Package.html" class="flight-navbar__dropdown-link"
+                      >Package</a
+                    >
+                  </li>
+                  <li class="flight-navbar__dropdown-item">
+                    <a href="Camper.html" class="flight-navbar__dropdown-link"
+                      >Camper</a
+                    >
+                  </li>
+                  <li class="flight-navbar__dropdown-item">
+                    <a
+                      href="BusinessClass.html"
+                      class="flight-navbar__dropdown-link"
+                      >Business Class</a
+                    >
+                  </li>
+                  <li class="flight-navbar__dropdown-item">
+                    <a
+                      href="BeatMyQuote.html"
+                      class="flight-navbar__dropdown-link"
+                      >Beat My Quote</a
+                    >
+                  </li>
+                </ul>
+              </li> -->
+              <li class="flight-navbar__menu-item">
+                <a href="privacy-policy.html" class="flight-navbar__menu-link"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li class="flight-navbar__menu-item">
+                <a
+                  href="terms-and-conditions.html"
+                  class="flight-navbar__menu-link"
+                  >Terms & Condition</a
+                >
+              </li>
+              <li class="flight-navbar__menu-item">
+                <a href="contact-us.html" class="flight-navbar__menu-link"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+            <!-- Navbar Menu End -->
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- STICKY WRAPPER END (Header + Navbar) -->
+
+    <!-- ============================================
+         ABOUT US BANNER SECTION START
+         ============================================ -->
+    <section class="about-banner">
+      <!-- Banner Background Image -->
+      <img
+        src="assets/banner/about.png"
+        alt="About Us Banner"
+        class="about-banner__bg-image"
+      />
+      <!-- Banner Overlay -->
+      <div class="about-banner__overlay"></div>
+
+      <!-- Banner Content -->
+      <div class="about-banner__content">
+        <h1 class="about-banner__title">About Us</h1>
+        <nav class="about-banner__breadcrumb">
+          <a href="index.html" class="about-banner__breadcrumb-link">Home</a>
+          <span class="about-banner__breadcrumb-separator">&#8250;</span>
+          <span class="about-banner__breadcrumb-current">About Us</span>
+        </nav>
+      </div>
+    </section>
+    <!-- ============================================
+         ABOUT US BANNER SECTION END
+         ============================================ -->
+
+    <!-- ============================================
+         ABOUT US SERVICES SECTION START
+         ============================================ -->
+    <div class="flight-next-section about-us-wrapper" id="nextSection">
+      <div class="container">
+        <div class="flight-services-grid">
+          <!-- Exclusive Deals Card -->
+          <div class="flight-service-card">
+            <div class="flight-service-card__icon">
+              <svg
+                width="60"
+                height="58"
+                viewBox="0 0 60 58"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M8.04226 38.1469L7.12398 35.0248C7.08594 34.8952 6.99629 34.792 6.88218 34.7311C6.76535 34.6676 6.62679 34.6491 6.49367 34.6862L0.367193 36.3927C0.234065 36.4297 0.128111 36.517 0.065626 36.6282C0.000421827 36.7419 -0.0185933 36.8769 0.0194394 37.0092L5.85248 56.8319C5.89052 56.9616 5.98017 57.0648 6.09428 57.1256C6.21111 57.1891 6.34967 57.2077 6.48279 57.1706L12.544 55.4799C12.5685 55.472 12.5929 55.4641 12.6174 55.4561V55.4588C12.7451 55.4191 12.8456 55.3344 12.9081 55.2259C12.9651 55.1227 12.9896 55.0037 12.9651 54.8846C12.9597 54.8687 12.9543 54.8529 12.9488 54.8343H12.9516L8.04226 38.1469ZM30.2958 6.16941C30.5566 6.47897 30.5105 6.93405 30.1953 7.18804C29.8774 7.44204 29.4101 7.39706 29.1493 7.09015C28.9266 6.82557 28.6114 6.60332 28.2338 6.44457C27.8561 6.28582 27.4214 6.19851 26.9542 6.19851C26.2125 6.19851 25.5523 6.42341 25.0823 6.78324C24.6612 7.10603 24.4003 7.54259 24.4003 8.01354C24.4003 8.4845 24.6612 8.91839 25.0823 9.24385C25.5523 9.60633 26.2125 9.82857 26.9542 9.82857C28.0355 9.82857 29.0217 10.1725 29.7471 10.7308C30.5214 11.3261 30.9995 12.1622 30.9995 13.0935C30.9995 14.0275 30.5214 14.8609 29.7471 15.4563C29.1928 15.8822 28.4864 16.1838 27.7013 16.3029V17.5544C27.7013 17.9566 27.3671 18.2794 26.9569 18.2794C26.5439 18.2794 26.2125 17.9539 26.2125 17.5544L26.207 16.3029C25.7506 16.2341 25.3214 16.1045 24.9329 15.9246C24.2998 15.6309 23.7755 15.2023 23.4196 14.6811C23.1914 14.3477 23.281 13.9006 23.6233 13.6756C23.9629 13.4534 24.4248 13.5407 24.6557 13.8741C24.8622 14.173 25.1801 14.4297 25.5767 14.6122C25.9761 14.7974 26.4488 14.9033 26.9569 14.9033C27.6986 14.9033 28.3588 14.6784 28.8288 14.3185C29.2499 13.9957 29.5107 13.5592 29.5107 13.0882C29.5107 12.6173 29.2499 12.1834 28.8288 11.8579C28.3588 11.4954 27.6986 11.2732 26.9569 11.2732C25.8756 11.2732 24.8894 10.9292 24.164 10.371C23.3897 9.77567 22.9115 8.93958 22.9115 8.00825C22.9115 7.07428 23.3897 6.24082 24.164 5.64552C24.7183 5.21954 25.4246 4.91793 26.2098 4.79885V3.54735C26.2098 3.14518 26.544 2.8224 26.9542 2.8224C27.3672 2.8224 27.6986 3.14784 27.6986 3.54735V4.79885C28.0953 4.85971 28.4729 4.96554 28.8207 5.11106C29.4129 5.35712 29.9209 5.72491 30.2958 6.16941ZM12.522 14.2337C12.9187 14.1305 13.3262 14.3607 13.4349 14.747C13.5409 15.1333 13.3045 15.5301 12.9078 15.636L7.36274 17.0833C6.96608 17.1864 6.55581 16.9563 6.44988 16.57C6.34393 16.1837 6.58029 15.7868 6.97695 15.681L12.522 14.2337ZM12.5628 6.71195C12.9595 6.81513 13.1958 7.21201 13.0899 7.60095C12.9839 7.98723 12.5764 8.21743 12.177 8.11423L6.63191 6.66698C6.23525 6.5638 5.99888 6.16692 6.10484 5.77798C6.2108 5.39169 6.61832 5.1615 7.0177 5.26469L12.5628 6.71195ZM12.033 10.469C12.446 10.469 12.7774 10.7945 12.7774 11.194C12.7774 11.5962 12.4433 11.9189 12.033 11.9189H6.29234C5.87938 11.9189 5.54793 11.5935 5.54793 11.194C5.54793 10.7918 5.8821 10.469 6.29234 10.469H12.033ZM41.3426 14.3902C40.9459 14.287 40.7095 13.8901 40.8155 13.5012C40.9214 13.1149 41.329 12.8847 41.7283 12.9879L47.2734 14.4351C47.6701 14.5383 47.9065 14.9352 47.8005 15.3241C47.6946 15.7104 47.287 15.9406 46.8876 15.8374L41.3426 14.3902ZM41.3833 6.86841C40.9866 6.9716 40.5792 6.74141 40.4704 6.35512C40.3645 5.96883 40.6008 5.56928 40.9975 5.46613L46.5426 4.01887C46.9393 3.91569 47.3495 4.14587 47.4555 4.53216C47.5614 4.91845 47.3251 5.31529 46.9284 5.42116L41.3833 6.86841ZM41.8723 10.6334C41.4594 10.6334 41.1252 10.308 41.1252 9.90848C41.1252 9.50631 41.4594 9.18353 41.8723 9.18353H47.613C48.026 9.18353 48.3574 9.50897 48.3574 9.90848C48.3574 10.3106 48.0232 10.6334 47.613 10.6334H41.8723ZM26.9543 21.1029C32.9395 21.1029 37.789 16.3775 37.789 10.5515C37.789 4.72269 32.9367 0 26.9543 0C20.9691 0 16.1196 4.72547 16.1196 10.5515C16.1169 16.3776 20.9692 21.1029 26.9543 21.1029ZM53.5145 21.558L47.3907 23.2672C47.2576 23.3042 47.1516 23.3916 47.0892 23.5027C47.024 23.6165 47.0049 23.7514 47.043 23.8837L52.876 43.7065C52.9141 43.8361 53.0037 43.9393 53.1178 44.0002C53.2346 44.0637 53.3732 44.0822 53.509 44.0451L59.6328 42.336C59.7659 42.2989 59.8719 42.2116 59.9344 42.1005C59.9996 41.9867 60.0186 41.8518 59.9806 41.7195L54.1475 21.8967C54.1095 21.767 54.0198 21.6639 53.9057 21.603C53.7889 21.5422 53.6503 21.521 53.5145 21.558ZM50.6727 41.4682L50.6754 41.4814C50.852 42.1111 50.6347 42.8096 50.2299 43.3996C49.874 43.9182 49.3877 44.3415 48.9013 44.5558C46.0676 42.8281 43.1036 40.7908 40.1365 38.7482C36.3573 36.1474 32.5728 33.5465 29.0653 31.5807C26.4355 30.1096 25.0254 31.8321 23.1834 34.0863C21.6946 35.904 19.8689 38.1371 16.758 38.87L16.7472 38.8726C16.0951 39.0367 15.3426 39.0816 14.7639 38.9255C14.5112 38.8567 14.3047 38.7535 14.1906 38.608C14.0901 38.481 14.0439 38.2905 14.0846 38.0207C14.1634 37.4862 14.5356 36.7454 15.3317 35.7505C16.2119 34.6498 16.97 33.6709 17.7307 32.684C18.255 32.0041 18.7821 31.3214 19.4911 30.4245C23.6153 25.2017 28.9918 25.4292 35.0643 25.6885H35.067C38.2077 25.8234 41.5277 25.9636 45.0108 25.4054C45.076 25.3948 45.1439 25.3948 45.2091 25.4027C45.2797 25.4107 45.3476 25.4318 45.4101 25.4583C45.584 25.535 45.747 25.67 45.8883 25.8419L45.91 25.871C46.0921 26.0986 46.2279 26.3685 46.3067 26.6383L50.6727 41.4682ZM5.00266 38.534C5.14393 38.6689 5.23359 38.8568 5.23631 39.0632C5.23903 39.2695 5.1548 39.4574 5.01624 39.595C4.87769 39.7326 4.68479 39.8199 4.47288 39.8225C4.26096 39.8252 4.06807 39.7431 3.92679 39.6082C3.78552 39.4733 3.69586 39.2854 3.69314 39.079C3.69042 38.8727 3.77465 38.6848 3.91321 38.5472C4.05177 38.4096 4.24466 38.3223 4.45657 38.3197C4.66577 38.317 4.85866 38.3991 5.00266 38.534ZM4.43756 36.8724C5.06243 36.8671 5.63022 37.1053 6.04322 37.4995C6.45618 37.8911 6.71427 38.4387 6.71971 39.0473C6.72515 39.6559 6.48063 40.2088 6.07582 40.611C5.67373 41.0132 5.11136 41.2645 4.48644 41.2698C3.86156 41.2778 3.29378 41.037 2.88078 40.6428C2.46782 40.2512 2.20973 39.7035 2.20429 39.0949C2.19614 38.4864 2.44337 37.9334 2.84818 37.5312C3.25299 37.1291 3.81264 36.8777 4.43756 36.8724ZM52.0717 25.2995C52.213 25.4345 52.3027 25.6223 52.3054 25.8287C52.3081 26.0351 52.2239 26.2229 52.0853 26.3605C51.9467 26.4981 51.7539 26.5854 51.5419 26.5881C51.33 26.5907 51.1371 26.5087 50.9959 26.3737C50.8546 26.2388 50.7649 26.051 50.7622 25.8446C50.7595 25.6382 50.8437 25.4504 50.9823 25.3128C51.1208 25.1752 51.3137 25.0879 51.5256 25.0852C51.7348 25.0826 51.9277 25.1646 52.0717 25.2995ZM51.5066 23.638C52.1315 23.63 52.6993 23.8708 53.1123 24.265C53.5252 24.6566 53.7833 25.2043 53.7888 25.8129C53.7969 26.4214 53.5497 26.9744 53.1449 27.3766C52.7428 27.7787 52.1804 28.0301 51.5555 28.0354C50.9306 28.0433 50.3628 27.8025 49.9498 27.4083C49.5369 27.0167 49.2788 26.4691 49.2733 25.8605C49.2652 25.2519 49.5124 24.699 49.9172 24.2968C50.322 23.8973 50.8817 23.6459 51.5066 23.638ZM14.3622 34.6026L14.1557 34.8593C13.1858 36.0711 12.7212 37.0474 12.6098 37.82C12.5092 38.5158 12.6722 39.0688 13.0173 39.4974C13.346 39.9075 13.8214 40.1748 14.3703 40.323C15.2016 40.5479 16.234 40.4976 17.1088 40.278C20.7168 39.4287 22.7164 36.9813 24.3491 34.989C25.7401 33.2877 26.8051 31.986 28.3266 32.8405C31.7933 34.7799 35.5397 37.3596 39.2809 39.9315C42.3048 42.0138 45.3286 44.0907 48.1841 45.8291C48.3336 46.3529 48.377 46.808 48.3281 47.189C48.2792 47.5541 48.1407 47.8531 47.926 48.0886C47.7005 48.3346 47.3827 48.5225 46.9887 48.6468C46.353 48.8506 45.5324 48.8929 44.587 48.7738C44.4974 48.7632 44.405 48.7685 44.3099 48.7897C43.9133 48.8876 43.6715 49.2792 43.7693 49.6681C43.954 50.3904 43.9785 50.9778 43.8779 51.4409C43.7856 51.8668 43.5818 52.1737 43.2992 52.3722C42.9977 52.5838 42.5902 52.6844 42.1174 52.6844C41.5007 52.6817 40.7834 52.4992 40.0363 52.142V52.1446C39.8815 52.0706 39.6994 52.0494 39.5174 52.097C39.1208 52.2002 38.8871 52.5971 38.9931 52.9834C39.1805 53.6686 39.2267 54.211 39.1588 54.6238C39.099 54.9783 38.9496 55.2218 38.7295 55.3647C38.4714 55.534 38.0965 55.6054 37.6401 55.5949C36.8793 55.5737 35.9393 55.3223 34.9314 54.8858C34.8092 54.8328 34.6733 54.8117 34.532 54.8302C34.1245 54.8831 33.842 55.2482 33.8963 55.6451C33.9398 55.9679 33.9343 56.2801 33.8827 56.5711C33.8121 56.9574 33.6572 57.2987 33.4236 57.5501C33.2089 57.7803 32.9155 57.9364 32.5542 57.984C32.3558 58.0105 32.1331 58.0052 31.8831 57.9602C29.7531 57.5924 27.5661 57.0289 25.2269 56.2563C22.8768 55.4811 20.3746 54.4994 17.6249 53.2982C17.2989 53.1554 17.0164 53.0522 16.7094 52.9913C16.3861 52.9278 16.06 52.9172 15.6661 52.9675C15.1472 53.0337 14.6636 52.9834 14.2996 52.7691C13.998 52.5918 13.7562 52.2823 13.6176 51.806L13.6149 51.8007L9.47988 37.7488C9.34676 37.2963 9.4174 36.8307 9.63475 36.4444C9.85481 36.0607 10.2216 35.7591 10.6834 35.6295L14.3622 34.6026Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <h3 class="flight-service-card__title">Exclusive Deals</h3>
+            <p class="flight-service-card__description">
+              Access selected deals available with budget and full-service
+              airlines
+            </p>
+          </div>
+
+          <!-- Customer Support Card -->
+          <div class="flight-service-card">
+            <div class="flight-service-card__icon">
+              <svg
+                width="46"
+                height="52"
+                viewBox="0 0 46 52"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.7405 12.8664C16.8734 10.6484 20.4518 9.71075 22.9371 11.9992C24.0668 13.1482 28.7213 15.5411 32.4889 16.2456C32.6905 16.2966 32.8995 16.3403 33.1084 16.3719C33.1375 15.9297 33.2371 15.2811 33.2347 14.839C33.5578 9.69136 29.066 4.99806 23.8987 5.10938H22.0185C16.8489 4.99763 12.3622 9.69105 12.6757 14.839C12.6854 15.0139 12.6902 15.184 12.7145 15.3589C13.2951 14.4528 13.9364 13.639 14.7405 12.864L14.7405 12.8664Z"
+                  fill="white"
+                />
+                <path
+                  d="M10.2912 23.8848H12.2419C12.1593 23.0346 11.4597 16.0333 11.4184 14.8405H8.8992C10.313 -3.25988 36.0128 -3.26734 37.4289 14.8405H34.504C34.3437 17.3306 33.8918 21.3705 33.6805 23.8848H34.8442V24.9222C34.849 26.0275 33.9307 26.9264 32.857 26.9166H31.997C32.512 24.4873 32.687 20.1876 32.9979 17.6441C28.9191 17.0149 23.4262 14.3329 22.0979 12.9409C18.4685 9.88244 14.3993 14.3912 12.9198 17.5494C13.1312 19.4272 13.4543 23.5473 13.6535 25.3741C14.0908 30.2035 18.138 33.8643 22.9578 33.85C26.2665 33.8451 29.2178 32.1714 30.9137 29.4384C30.3793 29.4335 29.0019 29.4408 28.4505 29.4384C27.9865 30.4489 26.92 31.117 25.8049 31.1146H23.3683C19.4887 30.9785 19.4718 25.3863 23.3683 25.2478H25.8049C27.435 25.2381 28.7444 26.6106 28.7347 28.1849H32.8548C35.2136 28.0901 36.3699 26.12 36.1076 23.8801C37.5506 23.8412 38.7094 22.6582 38.7094 21.2079V15.4723C37.8567 -5.15991 8.462 -5.15493 7.60938 15.4723V21.2079C7.60938 22.6825 8.81188 23.885 10.2865 23.885L10.2912 23.8848Z"
+                  fill="white"
+                />
+                <path
+                  d="M29.0946 33.1786C25.3074 36.0184 19.2245 35.6589 15.809 32.3672L14.0234 35.7973C14.6697 36.3269 17.9371 38.987 18.6561 39.57C21.2652 41.6908 25.0038 41.6471 27.5567 39.468C28.2394 38.7878 31.038 36.0111 31.6647 35.3795L30.1003 32.3721C29.7844 32.6563 29.4492 32.9284 29.0945 33.1762L29.0946 33.1786Z"
+                  fill="white"
+                />
+                <path
+                  d="M32.674 36.166C31.9039 36.9313 29.239 39.5865 28.4204 40.4003C26.8632 41.7291 24.9441 42.3947 23.0346 42.3947C21.198 42.3947 19.3688 41.7801 17.8626 40.5533C16.8593 39.7371 13.502 36.9993 12.54 36.2243C5.51439 36.9264 0 42.8712 0 50.0809C0 51.0429 0.784652 51.8276 1.74667 51.8276H13.6013C13.6086 51.0672 13.5965 45.6936 13.6013 44.802C13.6208 43.9688 14.85 43.9712 14.867 44.802V51.8276H31.1534C31.1461 51.0672 31.1582 45.6936 31.1534 44.802C31.1655 43.9712 32.4093 43.9688 32.4191 44.802V51.8276H44.1674C45.1294 51.8276 45.9141 51.0429 45.9141 50.0809C45.9141 42.6306 40.0327 36.5353 32.6719 36.1684L32.674 36.166ZM40.7687 42.9391C40.5015 43.1675 40.1079 43.1505 39.8699 42.8833C38.4657 41.3018 36.6365 40.2062 34.5837 39.73C33.7772 39.5236 34.0566 38.3259 34.8679 38.4959C37.1782 39.0328 39.2358 40.262 40.8173 42.0476C41.0505 42.3075 41.0262 42.7059 40.7663 42.9391L40.7687 42.9391Z"
+                  fill="white"
+                />
+                <path
+                  d="M23.3665 26.5137C21.1679 26.572 21.1607 29.7908 23.3665 29.8491H25.8031C26.7214 29.8491 27.4672 29.1033 27.4672 28.185C27.4672 27.2619 26.7214 26.5137 25.8031 26.5137H23.3665Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <h3 class="flight-service-card__title">Customer Support</h3>
+            <p class="flight-service-card__description">
+              Call us for any assistance. We do not go into hibernation
+            </p>
+          </div>
+
+          <!-- Secure Booking Card -->
+          <div class="flight-service-card">
+            <div class="flight-service-card__icon">
+              <svg
+                width="54"
+                height="55"
+                viewBox="0 0 54 55"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M30.7152 11.8628V15.0345H23.2854V11.8628C23.2854 9.8162 24.9586 8.13843 27.0003 8.13843C29.0414 8.13843 30.7152 9.8162 30.7152 11.8628ZM41.2028 21.1646C41.2028 25.296 39.4456 28.7394 36.0991 31.1506L27.0003 37.708L17.9015 31.1506C14.555 28.7388 12.7978 25.2954 12.7978 21.1646V8.78089C18.1774 5.6012 22.6072 4.01074 27.0003 4.01074C31.3934 4.01074 35.8232 5.6012 41.2028 8.78089V21.1646ZM35.8042 16.906C35.8042 15.8768 34.9642 15.0345 33.9378 15.0345H33.0114V11.8628C33.0114 8.54481 30.3094 5.83543 27.0003 5.83543C23.6919 5.83543 20.9892 8.54481 20.9892 11.8628V15.0345H20.0628C19.0364 15.0345 18.1964 15.8768 18.1964 16.906V28.2267C18.1964 29.2559 19.0364 30.0981 20.0628 30.0981H33.9372C34.9636 30.0981 35.8036 29.2559 35.8036 28.2267L35.8042 16.906ZM27.0003 18.9759C25.8139 18.9759 24.8525 19.9406 24.8525 21.1296C24.8525 21.9036 25.2596 22.5823 25.8715 22.9616V25.0243C25.8715 25.647 26.3798 26.1567 27.0009 26.1567C27.622 26.1567 28.1303 25.647 28.1303 25.0243V22.9616C28.7416 22.5817 29.1493 21.9036 29.1493 21.1296C29.1481 19.9399 28.1867 18.9759 27.0003 18.9759ZM38.4302 34.4023L27.0003 42.6398L15.5698 34.4023C11.1835 31.241 8.80084 26.5809 8.80084 21.1646V6.53506C22.5962 -2.17835 31.4044 -2.17835 45.1998 6.53506V21.1646C45.1998 26.5809 42.8172 31.241 38.4302 34.4023ZM37.1329 32.5911C40.933 29.8522 42.979 25.8573 42.979 21.1646V8.27738C42.979 7.92633 42.7767 7.62263 42.4824 7.47753C36.6571 3.98368 31.8477 2.23645 27.0003 2.23645C22.1357 2.23645 17.3092 3.99598 11.4551 7.51504C11.1779 7.68103 11.0247 7.97552 11.024 8.27676L11.0216 21.164C11.0216 25.8567 13.0676 29.8522 16.8678 32.5905L26.4834 39.5204C26.8059 39.7534 27.2321 39.7368 27.5331 39.5087L37.1329 32.5911ZM17.5741 46.473L17.8905 44.0452C18.0634 42.7179 17.7402 41.5141 16.9272 40.453L9.59177 33.1555C8.43786 32.0077 6.55066 32.015 5.40595 33.1721C4.60459 33.9756 4.61685 35.3146 5.41882 36.1132L9.33732 40.0116C9.68435 40.3577 9.68558 40.9196 9.341 41.2676C8.99581 41.6156 8.43541 41.6168 8.08838 41.2713L4.16988 37.3729C2.67569 35.8864 2.66772 33.418 4.14965 31.9197C4.50404 31.5613 4.91299 31.2883 5.35138 31.0996V21.7136C5.35138 20.2381 4.1472 19.0307 2.67569 19.0313C1.20418 19.0313 0 20.2387 0 21.7136V38.249C0 39.5868 0.511349 40.7063 1.42 41.6857L5.40901 45.9886C6.37408 47.0294 6.82411 48.1164 6.91118 49.338L17.5741 46.473ZM48.1226 51.4596L35.2867 48.0112C34.9734 47.927 34.6491 48.1151 34.5651 48.4293L33.9293 50.8079C33.8453 51.1221 34.0329 51.4473 34.3462 51.5315L47.182 54.9799C47.4953 55.0641 47.8197 54.876 47.9037 54.5618L48.5395 52.1832C48.6229 51.8691 48.4352 51.5438 48.1226 51.4596ZM19.4355 48.4287C19.3515 48.1145 19.0272 47.927 18.7139 48.0106L5.87806 51.4596C5.56475 51.5438 5.37713 51.8691 5.46113 52.1832L6.09694 54.5618C6.18094 54.876 6.50529 55.0635 6.81859 54.9799L19.6544 51.5315C19.9677 51.4473 20.1553 51.1221 20.0713 50.8079L19.4355 48.4287ZM51.3249 19.0307C49.8534 19.0307 48.6492 20.2381 48.6492 21.713V31.099C49.087 31.2877 49.4966 31.5607 49.851 31.9191C51.3335 33.4174 51.3255 35.8851 49.8307 37.3723L45.9122 41.2707C45.5652 41.6168 45.0048 41.615 44.6596 41.267C44.3144 40.919 44.3163 40.3571 44.6633 40.011L48.5818 36.1126C49.3838 35.3146 49.3966 33.9756 48.5947 33.1714C47.45 32.0144 45.5627 32.007 44.4088 33.1548L37.0734 40.4524C36.2598 41.5135 35.9366 42.7179 36.1102 44.0446L36.4265 46.4724L47.0888 49.3373C47.1759 48.1158 47.6259 47.0288 48.591 45.988L52.58 41.6851C53.4887 40.7051 54 39.5862 54 38.2484V21.713C54.0006 20.2381 52.7964 19.0307 51.3249 19.0307Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <h3 class="flight-service-card__title">Secure And Easy Booking</h3>
+            <p class="flight-service-card__description">
+              Your personal and financial information stays secure with us
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-5">
+        <div class="about-welcome">
+          <!-- Subtitle -->
+          <p class="about-welcome__subtitle">
+            <span class="flight-next-section__subtitle-icon">
+              <img src="assets/icons/flight.svg" alt="" /> ABOUT US
+            </span>
+          </p>
+
+          <!-- Heading -->
+          <h2 class="about-welcome__heading">Welcome to American Fly</h2>
+
+          <!-- Content Row: Images + Text -->
+          <div class="about-welcome__row">
+            <!-- Image Section -->
+            <div class="about-welcome__images">
+              <div
+                class="about-welcome__img-wrapper about-welcome__img-wrapper--first"
+              >
+                <img
+                  src="assets/inner/aboutus1.png"
+                  alt="About Us Image 1"
+                  class="about-welcome__img"
+                />
+              </div>
+              <div
+                class="about-welcome__img-wrapper about-welcome__img-wrapper--second"
+              >
+                <img
+                  src="assets/inner/aboutus2.png"
+                  alt="About Us Image 2"
+                  class="about-welcome__img"
+                />
+              </div>
+            </div>
+
+            <!-- Content Section -->
+            <div class="about-welcome__content">
+              <h3 class="about-welcome__title">
+                Your Next Great Journey Starts Here.
+              </h3>
+              <p class="about-welcome__caption">
+                At American Fly, we don't just take you places — we take you
+                further. Further into discovery, deeper into culture, and closer
+                to the moments that truly matter. Born from a love of adventure
+                and a commitment to outstanding service, American Fly is here to
+                turn your travel dreams into reality. Whether it's watching the
+                sunset from a quiet beach, exploring the vibrant pulse of a
+                world-class city, or trekking into the heart of nature — your
+                journey is our mission.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-5">
+        <div class="flight-about-section why-travel-title">
+          <!-- Subtitle -->
+          <p class="flight-about-section__subtitle">
+            <span class="flight-next-section__subtitle-icon">
+              <img src="assets/icons/flight.svg" alt="" /> AMERICAN FLY
+            </span>
+          </p>
+
+          <!-- Heading -->
+          <h2 class="flight-about-section__title">
+            Why Travel with American Fly?
+          </h2>
+
+          <!-- Content Row: Images + Text -->
+          <div class="flight-about-section__row d-flex align-items-center mt-5">
+            <!-- Content Section -->
+            <div class="flight-about-section__content">
+              <h3 class="flight-about-section__content-title">
+                Because travel isn't just about where you go — it's about how
+                you feel when you get there.
+              </h3>
+              <p class="flight-about-section__content-text">
+                We specialize in:
+              </p>
+              <ul class="flight-about-section__list">
+                <li class="flight-about-section__list-item">
+                  Tailor-made experiences crafted around your style, pace, and
+                  passions
+                </li>
+                <li class="flight-about-section__list-item">
+                  Hassle-free planning from flights to stays, tours to transfers
+                </li>
+                <li class="flight-about-section__list-item">
+                  Expert support from a team that lives and breathes travel
+                </li>
+                <li class="flight-about-section__list-item">
+                  Unforgettable moments designed to stay with you long after you
+                  return
+                </li>
+              </ul>
+              <p class="flight-about-section__content-text">
+                From solo journeys to family adventures, romantic escapes to
+                group getaways, we make every trip feel effortless — and
+                exceptional.
+              </p>
+              <p class="flight-about-section__content-text">
+                So go ahead — dream big, pack light, and let American Fly take
+                you there.
+              </p>
+            </div>
+
+            <!-- Image Section -->
+            <div class="about-travel__images">
+              <div
+                class="about-travel__img-wrapper about-travel__img-wrapper--first"
+              >
+                <img
+                  src="assets/inner/aboutus3.png"
+                  alt="Travel Image 1"
+                  class="about-travel__img"
+                />
+              </div>
+              <div
+                class="about-travel__img-wrapper about-travel__img-wrapper--second"
+              >
+                <img
+                  src="assets/inner/aboutus4.png"
+                  alt="Travel Image 2"
+                  class="about-travel__img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="flight-about-section">
+          <!-- Subtitle -->
+          <p class="flight-about-section__subtitle">
+            <span class="flight-next-section__subtitle-icon">
+              <img src="assets/icons/flight.svg" alt="" /> WHO WE ARE
+            </span>
+          </p>
+
+          <!-- Heading -->
+          <h2 class="flight-about-section__title">About Our Company</h2>
+
+          <!-- Content Row: Images + Text -->
+          <div class="flight-about-section__row">
+            <!-- Image Section -->
+            <div class="flight-about-section__images">
+              <div
+                class="flight-about-section__img-wrapper flight-about-section__img-wrapper--first"
+              >
+                <img
+                  src="assets/inner/aboutus5.png"
+                  alt="About Us Banner"
+                  class="flight-about-section__img"
+                />
+              </div>
+            </div>
+
+            <!-- Content Section -->
+            <div class="flight-about-section__content">
+              <h3 class="flight-about-section__content-title">Who We Are</h3>
+              <p class="flight-about-section__content-text">
+                American Fly operates under the trading name FLY2WORLD UK LTD,
+                headquartered at 450 Bath Road, West Drayton, England, UB7 0EB. We are a
+                UK-based travel agency offering expert booking services for
+                destinations across the globe. While we cater to all major
+                international routes, we take pride in offering exceptional
+                deals—thanks to our trusted supplier network—particularly for
+                travel to the United States, South America, and the Caribbean.
+              </p>
+              <p class="flight-about-section__content-text">
+                In addition to flights, we also provide a wide range of travel
+                services, including:
+              </p>
+              <ul class="flight-about-section__list">
+                <li class="flight-about-section__list-item">
+                  Tailor-made holiday packages
+                </li>
+                <li class="flight-about-section__list-item">Cruises</li>
+                <li class="flight-about-section__list-item">
+                  Airport transfers
+                </li>
+                <li class="flight-about-section__list-item">Car parking</li>
+                <li class="flight-about-section__list-item">Private tours</li>
+              </ul>
+              <p class="flight-about-section__content-text">
+                Our experienced team combines deep industry knowledge with
+                strong partnerships to secure the best possible value for our
+                clients. Whether you're traveling for business or leisure, on a
+                budget or in pursuit of luxury, our mission is to make your
+                journey seamless, comfortable, and truly memorable.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================
+         OUR SERVICES SECTION START
+         ============================================ -->
+
+    <!-- ============================================
+         FOOTER SECTION
+         ============================================ -->
+    <footer class="footer">
+      <!-- Wave Top Border -->
+      <div class="footer__wave">
+        <img
+          src="assets/icons/wave2.svg"
+          alt=""
+          class="footer__wave-img footer__wave-img--back"
+        />
+        <img
+          src="assets/icons/wave3.svg"
+          alt=""
+          class="footer__wave-img footer__wave-img--front"
+        />
+      </div>
+
+      <div class="footer__main">
+        <div class="container">
+          <div class="footer__grid">
+            <!-- Logo & Badges & Help -->
+            <div class="footer__brand">
+              <div class="footer__logo">
+                <img
+                  src="assets/logo.png"
+                  alt="American Fly Logo"
+                  class="footer__logo-img"
+                />
+              </div>
+              <div class="footer__badges">
+                <img
+                  src="assets/cert/tta.png"
+                  alt="Badge 1"
+                  class="footer__badge"
+                />
+                <img
+                  src="assets/cert/tta-trans.png"
+                  alt="Badge 2"
+                  class="footer__badge"
+                />
+                <img
+                  src="assets/cert/atol_logo_white.png"
+                  alt="Badge 3"
+                  class="footer__badge"
+                />
+              </div>
+              <div class="footer__help">
+                <h4 class="footer__help-title">Need any help?</h4>
+                <div class="footer__help-items">
+                  <div class="footer__help-item">
+                    <span class="footer__help-label">Talk to our experts</span>
+                    <a href="tel:02031375177" class="footer__help-value"
+                      >0203 137 5177</a
+                    >
+                  </div>
+                  <div class="footer__help-item">
+                    <span class="footer__help-label">WhatsApp us</span>
+                    <a
+                      href="https://wa.me/447446512247"
+                      class="footer__help-value"
+                      >07446512247</a
+                    >
+                  </div>
+                  <div class="footer__help-item">
+                    <span class="footer__help-label"
+                      >Mail to our support team</span
+                    >
+                    <a
+                      href="mailto:info@americanfly.co.uk"
+                      class="footer__help-value"
+                      >info@americanfly.co.uk</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Company Links -->
+            <div class="footer__links">
+              <h4 class="footer__links-title">Company</h4>
+              <ul class="footer__links-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms Conditions</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+
+            <!-- City Breaks -->
+            <div class="footer__links">
+              <h4 class="footer__links-title">City Breaks</h4>
+              <ul class="footer__links-list">
+                <li><a href="#">Savannah</a></li>
+                <li><a href="#">Charleston</a></li>
+                <li><a href="#">New Orleans</a></li>
+                <li><a href="#">Chicago</a></li>
+                <li><a href="#">San Francisco</a></li>
+              </ul>
+            </div>
+
+            <!-- Top Destinations -->
+            <div class="footer__links">
+              <h4 class="footer__links-title">Top Destinations</h4>
+              <ul class="footer__links-list">
+                <li><a href="#">Las Vegas</a></li>
+                <li><a href="#">Toronto</a></li>
+                <li><a href="#">Miami</a></li>
+                <li><a href="#">Boston</a></li>
+                <li><a href="#">Orlando</a></li>
+              </ul>
+            </div>
+
+            <!-- Top Cities -->
+            <div class="footer__links">
+              <h4 class="footer__links-title">Top Cities</h4>
+              <ul class="footer__links-list">
+                <li><a href="#">Chicago</a></li>
+                <li><a href="#">New York</a></li>
+                <li><a href="#">San Francisco</a></li>
+                <li><a href="#">Vancouver</a></li>
+                <li><a href="#">Houston</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Summary -->
+          <div class="footer__summary">
+            <p>
+              At American Fly, we offer a wide range of flight ticket options,
+              including Economy, Premium Economy, Business, and First Class. We
+              specialize in securing the best deals for our customers traveling
+              to the USA, South America, Canada, and Caribbean destinations. Our
+              website features exclusive offers from leading airlines and
+              trusted suppliers worldwide. With our user-friendly interface and
+              powerful search tools, you can easily find affordable flights to
+              your preferred destinations—saving you both time and money.
+            </p>
+            <p>
+              American Fly operates under the trading name of FLY2WORLD UK LTD,
+              headquartered at 450 Bath Road, West Drayton, England, UB7 0EB, with Company
+              Registration Number: 14919426. We provide a comprehensive suite of
+              travel services, including flights, hotels, and vehicle rentals.
+              Our mission is to deliver exceptional and memorable travel
+              experiences to all our customers.
+            </p>
+            <p>
+              Committed to quality customer service, our dedicated team works
+              tirelessly to secure the best rates on flights, hotels, car
+              rentals, and holiday packages—ensuring you receive the best value
+              for your journey.
+            </p>
+            <p>
+              Some of the flights and flight-inclusive holidays on this website
+              are financially protected by the ATOL scheme. But ATOL protection
+              does not apply to all holiday and travel services listed on this
+              website. Please feel free to check with us to confirm the level of
+              protection applicable to your specific booking. If you do not
+              receive an ATOL Certificate, then the booking will not be ATOL
+              protected. If you do receive an ATOL Certificate but all the parts
+              of your trip are not listed on it, those parts will not be ATOL
+              protected. Please see our booking conditions for information, or
+              for more information about financial protection and the ATOL
+              Certificate go to:
+              <a href="https://www.caa.co.uk" target="_blank" rel="noopener"
+                >www.caa.co.uk</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright Bar -->
+      <div class="footer__copyright">
+        <div class="container">
+          <div class="footer__copyright-inner">
+            <p class="footer__copyright-text">
+              Copyright &copy; 2026 All Rights Reserved. American Fly.
+            </p>
+            <div class="footer__cards">
+              <img
+                src="assets/cards.webp"
+                alt="Accepted Cards"
+                class="footer__cards-img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- jQuery UI for Datepicker -->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <!-- Bootstrap 5 JS Bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Slick Slider  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+    <script>
+      (function () {
+        function c() {
+          var b = a.contentDocument || a.contentWindow.document;
+          if (b) {
+            var d = b.createElement("script");
+            d.innerHTML =
+              "window.__CF$cv$params={r:'a142b18b2dd5ce5f',t:'MTc4Mjg4MDQxNg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+            b.getElementsByTagName("head")[0].appendChild(d);
+          }
+        }
+        if (document.body) {
+          var a = document.createElement("iframe");
+          a.height = 1;
+          a.width = 1;
+          a.style.position = "absolute";
+          a.style.top = 0;
+          a.style.left = 0;
+          a.style.border = "none";
+          a.style.visibility = "hidden";
+          document.body.appendChild(a);
+          if ("loading" !== document.readyState) c();
+          else if (window.addEventListener)
+            document.addEventListener("DOMContentLoaded", c);
+          else {
+            var e = document.onreadystatechange || function () {};
+            document.onreadystatechange = function (b) {
+              e(b);
+              "loading" !== document.readyState &&
+                ((document.onreadystatechange = e), c());
+            };
+          }
+        }
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,563 @@
+/* ============================================
+   Adelaide Page Styles
+   ============================================ */
+
+/* Main content layout */
+.adelaide-imge-content-wrapper {
+  margin: var(--spacing2xl) 0;
+}
+.adelaide-content-caption h3{
+      font-family: var(--fontHeading);
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--darkColor);
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+
+}
+
+.adelaide-content-caption h3::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: var(--primaryColor);
+    border-radius: 2px;
+}
+
+
+.adelaide-content-caption h2{
+     font-family: var(--fontHeading);
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--darkColor);
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.adelaide-content-caption h2::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: var(--primaryColor);
+    border-radius: 2px;
+}
+
+.adelaide-content-caption p{
+      font-size: 16px;
+    color: var(--grayColor);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.adelaide-content-caption-tab {
+ 
+  height: 100%;
+}
+
+.adelaide-content-caption-tab .adelaide-img-tab{
+  height: 150px;
+  border: 1px solid rgb(228, 228, 228);
+  cursor: pointer;
+  border-radius: 10px;;
+  
+}
+
+
+.adelaide-content-caption-tab .adelaide-img-tab img{
+  object-fit: cover;
+  height: 100%;
+}
+
+.popular-flight-small-cards .popular-flight-small-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+background: #006b73;
+background: linear-gradient(282deg, rgba(0, 107, 115, 1) 0%, rgba(36, 189, 199, 1) 100%);
+border:1px solid  #24bdc7;
+overflow: hidden;
+border-radius: 10px;
+margin-bottom:12px;
+cursor: pointer;
+
+}
+
+.popular-flight-small-cards .popular-flight-small-card:hover{
+ box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  position: relative;
+  top: -1px;
+  transition: 1s;
+}
+
+.popular-flight-small-cards .popular-flight-small-card .popular-flight-small-card__img{
+  background-color: red;
+     border-top-right-radius: 80px;
+     width:170px;
+}
+
+.popular-flight-small-cards .popular-flight-small-card .popular-flight-small-card__content h2{
+  font-size: 18px;
+}
+
+.popular-flight-small-cards .popular-flight-small-card .popular-flight-small-card__img{
+  background-color: red;
+     border-top-right-radius: 80px;
+}
+
+
+
+
+
+
+.popular-flight-small-cards .popular-flight-small-card .popular-flight-small-card__content h2{
+  font-size: 17px;
+  margin: 0px;
+  color:#fff;
+}
+
+.popular-flight-small-cards {
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.popular-flight-small-card__content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    color:#fff;
+}
+
+.popular-flight-small-card__content .popular-flight-small-card__content--title span:first-child{
+   background-color: #a82e47;
+    padding: 5px 16px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.popular-flight-small-card__content .popular-flight-small-card__content--title span{
+  font-weight:500;
+}
+
+
+.popular-flight-small-card__content .popular-flight-small-card__content--text button{
+    all: unset;
+    background-color: #19a5ae;
+    padding: 6px 10px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+
+.popular-flight-small-cards .col-12:nth-child(2) .popular-flight-small-card{
+  background: #A2133C;
+background: linear-gradient(-90deg, rgba(162, 19, 60, 1) 0%, rgba(99, 0, 28, 1) 100%);
+border-color:#a2133c;
+}
+
+
+
+
+
+.popular-flight-small-cards .contact-form {
+ box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+ border-radius: 10px;
+}
+
+.popular-flight-small-cards .contact-form button {
+  background-color: #24bdc7;
+  color:#fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.popular-flight-small-cards .contact-form .input-group {
+    height: 50px;
+}
+
+
+#contactForm{
+  display:flex;
+  flex-direction: column;
+  gap:16px;
+}
+
+.contact-form h3{
+  color:#ffffff;
+  font-size:24px;
+}
+
+.contact-form .card-header{
+    background-color: #24bdc7;
+}
+
+.contact-form .card-header p{
+     color:#ffffff !important;
+}
+
+
+   .container {
+            padding: 20px;
+        }
+        .adelaide-imge-content-wrapper {
+            margin: 40px 0;
+        }
+        .left {
+            padding: 15px;
+        }
+        .right {
+            padding: 15px;
+        }
+        .main-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .adelaide-content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .adelaide-content__heading {
+            font-size: 24px;
+            font-weight: 700;
+            color: #333;
+        }
+        .adelaide-content__caption {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #666;
+        }
+        .adelaide-content__subheading {
+            font-size: 20px;
+            font-weight: 600;
+            color: #0066cc;
+            margin-top: 20px;
+        }
+        .adelaide-tabs__nav {
+            display: flex;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+        .adelaide-tabs__nav-item {
+            margin-right: 15px;
+        }
+        .adelaide-tabs__nav-link {
+            display: block;
+            padding: 10px 15px;
+            font-weight: 500;
+            color: #666;
+            border-bottom: 2px solid transparent;
+            text-decoration: none;
+        }
+        .adelaide-tabs__nav-item--active .adelaide-tabs__nav-link {
+            color: #24bdc7;
+            border-bottom: 2px solid #24bdc7;
+        }
+        .adelaide-tabs__panel {
+            display: none;
+        }
+        .adelaide-tabs__panel--active {
+            display: block;
+        }
+        .adelaide-tabs__carousel {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .adelaide-tabs__carousel-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .adelaide-tabs__carousel-caption {
+            /* position: absolute; */
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color:#000 ;
+            color: white;
+            padding: 8px;
+            font-size: 14px;
+            text-align: center;
+        }
+        .adelaide-tabs__carousel .slick-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            /* background-color: white; */
+            color: #24bdc7;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .adelaide-tabs__carousel .slick-arrow:hover {
+            background-color: #24bdc7;
+            color: white;
+        }
+        .adelaide-tabs__carousel .slick-prev {
+            left: 10px;
+        }
+        .adelaide-tabs__carousel .slick-next {
+            right: 10px;
+        }
+
+
+h2.popular-flight-small-cards__heading {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+.destination-adelaide-banner  {
+
+    padding: 260px 20px 80px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:root {
+    --primary-color: #24bdc7;
+    --primary-light: rgba(36, 189, 199, 0.08);
+    --primary-glow: rgba(36, 189, 199, 0.15);
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --card-bg: #ffffff;
+    --item-bg: #f8fafc;
+    --border-color: #e2e8f0;
+    --radius-card: 24px;
+    --radius-item: 16px;
+}
+
+/* Base Card Container */
+.modern-contact-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-card);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+    overflow: hidden;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em !important;
+}
+
+/* Subtle top gradient bar for brand presence */
+.modern-contact-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, var(--primary-color), #57e3ec);
+}
+
+.modern-contact-card:hover {
+    transform: translateY(-4px);
+     box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em !important;
+}
+
+/* Card Header */
+.contact-card-title {
+    color: var(--text-main);
+    font-weight: 800;
+    letter-spacing: -0.025em;
+}
+
+.contact-card-desc {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Stacked Contact Channels */
+.contact-channels-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Interactive Channel Items */
+.contact-item-link {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    background: var(--item-bg);
+    border: 1px solid transparent;
+    border-radius: var(--radius-item);
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.contact-item-link:hover {
+    background: var(--card-bg);
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 20px var(--primary-light);
+}
+
+/* Icon Wrap Box */
+.contact-icon-box {
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-light);
+    border-radius: 12px;
+    flex-shrink: 0;
+    transition: all 0.25s ease;
+}
+
+.contact-item-link:hover .contact-icon-box {
+    background: var(--primary-color);
+}
+
+.contact-icon-box svg {
+    stroke: var(--primary-color);
+    transition: stroke 0.25s ease;
+}
+
+.contact-item-link:hover .contact-icon-box svg {
+    stroke: #ffffff;
+}
+
+/* Content Text Typography */
+.contact-label {
+    display: block;
+    color: var(--text-muted);
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-uppercase: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 2px;
+}
+
+.contact-value {
+    display: block;
+    color: var(--text-main);
+    font-weight: 700;
+    font-size: 1.05rem;
+    transition: color 0.25s ease;
+}
+
+.contact-item-link:hover .contact-value {
+    color: var(--primary-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        @media (max-width: 768px) {
+            .adelaide-tabs__nav {
+                flex-wrap: wrap;
+            }
+            .adelaide-tabs__nav-item {
+                margin-bottom: 10px;
+                margin-right: 10px;
+                width: calc(50% - 10px);
+            }
+        }

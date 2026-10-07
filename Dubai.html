@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dubai</title>
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yH5Pc9iX+7n0JpZjXqKN7VqZ5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5Z5"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Font Awesome for icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/dubai.css">
+</head>
+<body>
+    
+
+    <!-- ============================================
+         STICKY WRAPPER START (Header + Navbar)
+         ============================================ -->
+    <div class="flight-sticky-wrapper" id="flightStickyWrapper">
+        <!-- ============================================
+         HEADER SECTION START
+         ============================================ -->
+        <header class="flight-header">
+            <div class="container">
+                <div class="flight-header__top-row">
+
+                    <!-- First Div: Logo & Badges -->
+                    <div class="flight-header__logo-badges">
+                        <!-- Logo Div -->
+                        <div class="flight-header__logo">
+                            <a href="#" class="flight-header__logo-link">
+                                <img src="assets/Web-logo 2.png" alt="American Fly Logo" class="flight-header__logo-img">
+                            </a>
+                        </div>
+                        <!-- Logo Div End -->
+
+                        <!-- Badges Div -->
+                        <div class="flight-header__badges">
+                            <img src="assets/badge1.webp" alt="Badge 1" class="flight-header__badge-item">
+                            <img src="assets/badge2.webp" alt="Badge 2" class="flight-header__badge-item">
+                            <img src="assets/badge3.webp" alt="Badge 3" class="flight-header__badge-item">
+                        </div>
+                        <!-- Badges Div End -->
+                    </div>
+                    <!-- First Div End -->
+
+                    <!-- Second Div: Contact Info -->
+                    <div class="flight-header__contact-info">
+                        <img src="assets/callIcon 1.svg" alt="Call Icon" class="flight-header__call-icon">
+                        <div class="flight-header__contact-text">
+                            <span class="flight-header__contact-title">Talk to our Specialists Today for Lowest
+                                Price</span>
+                            <span class="flight-header__contact-phone">0203 137 5177</span>
+                            <span class="flight-header__contact-timing">08:00 AM - 11:30 PM / 7 Days a Week</span>
+                        </div>
+                    </div>
+                    <!-- Second Div End -->
+
+                </div>
+            </div>
+        </header><!-- ============================================
+         NAVBAR SECTION START
+         ============================================ -->
+       <nav class="navbar navbar-expand-lg navbar-light flight-navbar">
+        <div class="container">
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenuList" aria-controls="navbarMenuList" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenuList">
+                <ul class="navbar-nav ">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="AboutUs.html">About Us</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+                            
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">Destination</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="#">Australia</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="Australia-Adelaide.html">Adelaide</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="Australia-Adelaide.html">City Tour</a></li>
+                                                    <li><a class="dropdown-item" href="Australia-Adelaide-Wine.html">Wine Regions</a></li>
+                                                    <li><a class="dropdown-item" href="Australia-Adelaide-Kangaroo.html">Kangaroo Island</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Brisbane</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="Australia-Brisbane.html">City Tour</a></li>
+                                                    <li><a class="dropdown-item" href="Australia-Brisbane-GoldCoast.html">Gold Coast</a></li>
+                                                    <li><a class="dropdown-item" href="Australia-Brisbane-Sunshine.html">Sunshine Coast</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Sydney</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="Australia-Sydney.html">City Tour</a></li>
+                                                    <li><a class="dropdown-item" href="Australia-Sydney-Harbour.html">Harbour Bridge</a></li>
+                                                    <li><a class="dropdown-item" href="Australia-Sydney-Opera.html">Opera House</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Melbourne</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="Australia-Melbourne.html">City Tour</a></li>
+                                                    <li><a class="dropdown-item" href="Australia-Melbourne-GreatOcean.html">Great Ocean Road</a></li>
+                                                    <li><a class="dropdown-item" href="Australia-Melbourne-Yarra.html">Yarra Valley</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="#">Far East</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Tokyo</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="FarEast-Tokyo.html">City Tour</a></li>
+                                                    <li><a class="dropdown-item" href="FarEast-Tokyo-MtFuji.html">Mount Fuji</a></li>
+                                                    <li><a class="dropdown-item" href="FarEast-Tokyo-Traditions.html">Traditional Culture</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Singapore</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="FarEast-Singapore.html">City Tour</a></li>
+                                                    <li><a class="dropdown-item" href="FarEast-Singapore-Gardens.html">Gardens by the Bay</a></li>
+                                                    <li><a class="dropdown-item" href="FarEast-Singapore-Food.html">Food Paradise</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Hong Kong</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="FarEast-HongKong.html">City Tour</a></li>
+                                                    <li><a class="dropdown-item" href="FarEast-HongKong-Victoria.html">Victoria Peak</a></li>
+                                                    <li><a class="dropdown-item" href="FarEast-HongKong-Islands.html">Island Hopping</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Bangkok</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="FarEast-Bangkok.html">City Tour</a></li>
+                                                    <li><a class="dropdown-item" href="FarEast-Bangkok-Temples.html">Temple Tour</a></li>
+                                                    <li><a class="dropdown-item" href="FarEast-Bangkok-Floating.html">Floating Markets</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">Package</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="Dubai.html">Dubai</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Dubai City Tour</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="Dubai-CityTour.html">Half Day Tour</a></li>
+                                                    <li><a class="dropdown-item" href="Dubai-CityTour-Full.html">Full Day Tour</a></li>
+                                                    <li><a class="dropdown-item" href="Dubai-CityTour-Private.html">Private Tour</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Desert Safari</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="Dubai-DesertSafari.html">Standard Safari</a></li>
+                                                    <li><a class="dropdown-item" href="Dubai-DesertSafari-Luxury.html">Luxury Safari</a></li>
+                                                    <li><a class="dropdown-item" href="Dubai-DesertSafari-Overnight.html">Overnight Safari</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Burj Khalifa</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="Dubai-BurjKhalifa.html">At The Top</a></li>
+                                                    <li><a class="dropdown-item" href="Dubai-BurjKhalifa-Sky.html">Sky Lounge</a></li>
+                                                    <li><a class="dropdown-item" href="Dubai-BurjKhalifa-Prive.html">Prive Experience</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Palm Jumeirah</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="Dubai-PalmJumeirah.html">Monorail Tour</a></li>
+                                                    <li><a class="dropdown-item" href="Dubai-PalmJumeirah-Atlantis.html">Atlantis Tour</a></li>
+                                                    <li><a class="dropdown-item" href="Dubai-PalmJumeirah-Beach.html">Beach Experience</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="#">India</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Delhi</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="India-Delhi.html">City Tour</a></li>
+                                                    <li><a class="dropdown-item" href="India-Delhi-RedFort.html">Red Fort</a></li>
+                                                    <li><a class="dropdown-item" href="India-Delhi-TajMahal.html">Taj Mahal Day Trip</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Mumbai</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="India-Mumbai.html">City Tour</a></li>
+                                                    <li><a class="dropdown-item" href="India-Mumbai-Gateway.html">Gateway of India</a></li>
+                                                    <li><a class="dropdown-item" href="India-Mumbai-Elephanta.html">Elephanta Caves</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Goa</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="India-Goa.html">Beach Tour</a></li>
+                                                    <li><a class="dropdown-item" href="India-Goa-Churches.html">Old Churches</a></li>
+                                                    <li><a class="dropdown-item" href="India-Goa-Wildlife.html">Wildlife Sanctuaries</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a class="dropdown-item dropdown-toggle" href="#">Jaipur</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="India-Jaipur.html">City Tour</a></li>
+                                                    <li><a class="dropdown-item" href="India-Jaipur-Amber.html">Amber Fort</a></li>
+                                                    <li><a class="dropdown-item" href="India-Jaipur-Palaces.html">Royal Palaces</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                            <li><a class="dropdown-item" href="Camper.html">Camper</a></li>
+                            
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">Business Class</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="Australia.html">Australia</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="BusinessClass-Australia.html">Sydney</a></li>
+                                            <li><a class="dropdown-item" href="BusinessClass-Australia-Melbourne.html">Melbourne</a></li>
+                                            <li><a class="dropdown-item" href="BusinessClass-Australia-Brisbane.html">Brisbane</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="#">New Zealand</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="BusinessClass-NewZealand.html">Auckland</a></li>
+                                            <li><a class="dropdown-item" href="BusinessClass-NewZealand-Queenstown.html">Queenstown</a></li>
+                                            <li><a class="dropdown-item" href="BusinessClass-NewZealand-Christchurch.html">Christchurch</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                            <li><a class="dropdown-item" href="BeatMyQuote.html">Beat My Quote</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="PrivacyPolicy.html">Privacy Policy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="TermsAndConditions.html">Terms & Condition</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    </div><!-- STICKY WRAPPER END (Header + Navbar) -->
+
+
+        <section class="privacy-banner">
+        <!-- Banner Background Image -->
+        <img src="assets/Adelaide3.avif" alt="Privacy Policy Banner" class="privacy-banner__bg-image">
+        <!-- Banner Overlay -->
+        <div class="privacy-banner__overlay"></div>
+
+        <!-- Banner Content -->
+        <div class="privacy-banner__content destination-adelaide-banner">
+            <h1 class="privacy-banner__title">Dubai</h1>
+            <nav class="privacy-banner__breadcrumb">
+                <a href="Index.html" class="privacy-banner__breadcrumb-link">Home</a>
+                <span class="privacy-banner__breadcrumb-separator">&#8250;</span>
+                <span class="privacy-banner__breadcrumb-current">Dubai</span>
+            </nav>
+        </div>
+    </section>
+
+    <section class="dubai-package-section py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Left Column -->
+                <div class="col-lg-8">
+                    <!-- Header Section -->
+                    <div class="dubai-header mb-5">
+                        <h2 class="dubai-title">Discover the Jewel of the Middle East</h2>
+                        <p class="dubai-caption">Experience the magic of Dubai with our exclusive Dubai Tour Package designed to give you the perfect mix of modern marvels, rich heritage, and unforgettable experiences. Whether you're looking for a family vacation, a romantic getaway, or an adventurous escape, Dubai has something for everyone. Indulge in the elegance of Dubai with our curated holiday packages, where luxury meets tradition. Discover high-end shopping, architectural masterpieces like the Burj Khalifa, and the timeless charm of Dubai Creek – all crafted into an unforgettable travel experience.</p>
+                    </div>
+
+                    <!-- Image Carousel -->
+                    <div class="dubai-carousel mb-5">
+                        <div class="dubai-slider">
+                            <div class="dubai-slide">
+                                <img src="assets/dubai1.webp" alt="Dubai Attraction 1" class="img-fluid">
+                            </div>
+                            <div class="dubai-slide">
+                                <img src="assets/dubai2.jpg" alt="Dubai Attraction 2" class="img-fluid">
+                            </div>
+                            <div class="dubai-slide">
+                                <img src="assets/dubai3.jpg" alt="Dubai Attraction 3" class="img-fluid">
+                            </div>
+                            <div class="dubai-slide">
+                                <img src="assets/dubai1.webp" alt="Dubai Attraction 4" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Top Attractions Section -->
+                    <div class="dubai-attractions mb-5">
+                        <h3 class="dubai-subtitle mb-4">Looking for the best things to do in Dubai?</h3>
+                        <p class="dubai-text">Whether you're visiting for a short vacation or planning a long stay, Dubai offers an exciting mix of adventure, luxury, culture, and relaxation. Here are the top attractions and experiences to include in your itinerary:</p>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <div class="dubai-attraction-card">
+                                    <h4>Burj Khalifa – World's Tallest Building</h4>
+                                    <p>Visit the iconic Burj Khalifa and enjoy panoramic views from the 124th or 148th floor. A must-do in Dubai!</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="dubai-attraction-card">
+                                    <h4>Dubai Mall – Shopping & Entertainment</h4>
+                                    <p>Explore one of the world's largest malls, home to 1,200+ stores, the Dubai Aquarium, and endless dining options.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="dubai-attraction-card">
+                                    <h4>Desert Safari – Dune Bashing & BBQ Dinner</h4>
+                                    <p>Go on a thrilling desert safari that includes 4x4 dune bashing, camel rides, sandboarding, live shows, and a traditional Emirati dinner.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="dubai-attraction-card">
+                                    <h4>Dhow Cruise – Dubai Marina or Creek</h4>
+                                    <p>Experience a romantic evening cruise on a traditional dhow boat with buffet dinner and city views.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="dubai-attraction-card">
+                                    <h4>Dubai Creek & Old Souks</h4>
+                                    <p>Take a traditional abra boat ride and visit the Gold Souk and Spice Souk to explore Dubai's heritage.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="dubai-attraction-card">
+                                    <h4>JBR, Kite Beach & La Mer</h4>
+                                    <p>Enjoy sun, sea, and water sports at some of Dubai's most famous public beaches.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="dubai-attraction-card">
+                                    <h4>Ski Dubai – Indoor Snow Park</h4>
+                                    <p>Ski or snowboard in the desert at this unique indoor snow resort located in the Mall of the Emirates.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="dubai-attraction-card">
+                                    <h4>Theme Parks – Family Fun</h4>
+                                    <p>Visit IMG Worlds of Adventure, Dubai Parks & Resorts, Motiongate, and LEGOLAND for unforgettable family fun.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="note-text mt-3">Note: Excursions and airport transfers are optional and can be added upon request.</p>
+                    </div>
+
+                    <!-- Luxury Resorts Section -->
+                    <div class="dubai-resorts mb-5">
+                        <h3 class="dubai-subtitle mb-4">Top Luxury Resorts & Packages</h3>
+                        <div class="accordion" id="resortsAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="resort1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseResort1" aria-expanded="true" aria-controls="collapseResort1">
+                                        Atlantis, The Palm
+                                    </button>
+                                </h2>
+                                <div id="collapseResort1" class="accordion-collapse collapse show" aria-labelledby="resort1" data-bs-parent="#resortsAccordion">
+                                    <div class="accordion-body">
+                                        <p>Family-friendly paradise with access to Aquaventure Waterpark & The Lost Chambers Aquarium. (Crowne Plaza Abu Dhabi Yas Island, an IHG Hotel or similar).</p>
+                                        <p class="price-info">Flights + 3 Nights: <strong>£869</strong> (Economy) | <strong>£1,999</strong> (Business)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="resort2">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseResort2" aria-expanded="false" aria-controls="collapseResort2">
+                                        Burj Al Arab, Jumeirah
+                                    </button>
+                                </h2>
+                                <div id="collapseResort2" class="accordion-collapse collapse" aria-labelledby="resort2" data-bs-parent="#resortsAccordion">
+                                    <div class="accordion-body">
+                                        <p>Dubai's most iconic hotel, set on a private island with personal butlers, world-class service and panoramic sea views.</p>
+                                        <p class="price-info">Flights + 3 Nights: <strong>£1,335</strong> (Economy) | <strong>£2,179</strong> (Business)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="resort3">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseResort3" aria-expanded="false" aria-controls="collapseResort3">
+                                        Anantara The Palm Dubai Resort
+                                    </button>
+                                </h2>
+                                <div id="collapseResort3" class="accordion-collapse collapse" aria-labelledby="resort3" data-bs-parent="#resortsAccordion">
+                                    <div class="accordion-body">
+                                        <p>A Thai-inspired retreat with lagoon-access villas and an island-style ambiance.</p>
+                                        <p class="price-info">Flights + 3 Nights: <strong>£565</strong> (Economy) | <strong>£1,555</strong> (Business)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="resort4">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseResort4" aria-expanded="false" aria-controls="collapseResort4">
+                                        Four Seasons Resort Dubai at Jumeirah Beach
+                                    </button>
+                                </h2>
+                                <div id="collapseResort4" class="accordion-collapse collapse" aria-labelledby="resort4" data-bs-parent="#resortsAccordion">
+                                    <div class="accordion-body">
+                                        <p>Beachfront sophistication with stunning views of both the Arabian Gulf and Downtown Dubai.</p>
+                                        <p class="price-info">Flights + 3 Nights: <strong>£750</strong> (Economy) | <strong>£1,710</strong> (Business)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="resort5">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseResort5" aria-expanded="false" aria-controls="collapseResort5">
+                                        Atlantis The Royal
+                                    </button>
+                                </h2>
+                                <div id="collapseResort5" class="accordion-collapse collapse" aria-labelledby="resort5" data-bs-parent="#resortsAccordion">
+                                    <div class="accordion-body">
+                                        <p>Opened in 2023, this bold new resort features celebrity chefs, sky-high pools, and ultra luxury amenities.</p>
+                                        <p class="price-info">Flights + 5 Nights: <strong>£999</strong> (Economy) | <strong>£2,088</strong> (Business)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="resort6">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseResort6" aria-expanded="false" aria-controls="collapseResort6">
+                                        Bulgari Resort Dubai
+                                    </button>
+                                </h2>
+                                <div id="collapseResort6" class="accordion-collapse collapse" aria-labelledby="resort6" data-bs-parent="#resortsAccordion">
+                                    <div class="accordion-body">
+                                        <p>Italian-designed elegance on Jumeirah Bay Island, featuring a private marina, Michelin starred dining, and a serene setting.</p>
+                                        <p class="price-info">Flights + 3 Nights: <strong>£1,599</strong> (Economy) | <strong>£2,759</strong> (Business)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="note-text mt-3">Note: The packages provided is for reference only and can be customized based on your preferences.</p>
+                    </div>
+
+                    <!-- Additional Information -->
+                    <div class="dubai-additional-info mb-5">
+                        <h3 class="dubai-subtitle mb-4">Additional Information</h3>
+                        <ul class="info-list">
+                            <li><strong>Resort Fees, City Taxes or Tourism Fees:</strong> Not included and need to be paid at the hotel.</li>
+                            <li><strong>Luggage:</strong> Hand luggage only. Checked-in luggage can be added at an extra cost.</li>
+                            <li><strong>Prices are based on double occupancy</strong> and may vary depending on availability and booking conditions.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Booking Notes -->
+                    <div class="dubai-booking-notes mb-5">
+                        <h3 class="dubai-subtitle mb-4">Booking Notes</h3>
+                        <div class="booking-notes-content">
+                            <p>✅ All prices are per person, based on double occupancy.</p>
+                            <p>✅ For single, triple, or family room options, please get in touch.</p>
+                            <p>✅ We offer special packages for 3, 5, or 7 nights — contact us for tailored quotes.</p>
+                            <p>✅ All bookings are subject to flight and hotel availability at time of reservation.</p>
+                        </div>
+                    </div>
+
+                    <!-- Why Choose Us -->
+                    <div class="dubai-why-us mb-5">
+                        <h3 class="dubai-subtitle mb-4">Why Choose Us?</h3>
+                        <ul class="why-us-list">
+                            <li>Exclusive hotel deals – Save up to 25%</li>
+                            <li>Flexible payment options</li>
+                            <li>Family-friendly packages – Kids stay FREE on select dates</li>
+                            <li>Tailor-made holidays – Designed around your needs</li>
+                        </ul>
+                        <p class="contact-info mt-3">Our Dubai Travel Specialists are ready to help you book the holiday of your dreams. For more information and to make a reservation, contact us at <strong>0203 745 5786</strong></p>
+                    </div>
+
+                    <!-- Things to Do Accordion -->
+                    <div class="dubai-things-to-do mb-5">
+                        <h3 class="dubai-subtitle mb-4">Things to do in Dubai</h3>
+                        <div class="accordion" id="thingsToDoAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="thing1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThing1" aria-expanded="true" aria-controls="collapseThing1">
+                                        HERE ARE SOME OF THE BEST THINGS TO DO IN Dubai
+                                    </button>
+                                </h2>
+                                <div id="collapseThing1" class="accordion-collapse collapse show" aria-labelledby="thing1" data-bs-parent="#thingsToDoAccordion">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Explore the vibrant neighborhoods of Old Dubai, including Al Fahidi Historical District and Al Seef, where you can wander through traditional wind-tower houses, shop in bustling souks, and enjoy Emirati cuisine along the creek.</li>
+                                            <li>Visit the iconic Burj Khalifa, the world's tallest building. Head up to the observation deck for breathtaking views of the city skyline, or dine at At.mosphere for a sky-high culinary experience.</li>
+                                            <li>Go on a desert safari and enjoy dune bashing, camel rides, sandboarding, and traditional Bedouin-style entertainment under the stars. Choose between morning, evening, or overnight experiences.</li>
+                                            <li>Spend a day at Dubai Marina and JBR, where you can stroll the waterfront promenade, enjoy beach activities, or dine at world-class restaurants with stunning views of the sea and skyscrapers.</li>
+                                            <li>Discover the grandeur of the Dubai Mall, one of the largest shopping and entertainment complexes in the world. Don't miss the Dubai Aquarium, indoor ice rink, and the mesmerizing Dubai Fountain show outside.</li>
+                                            <li>Take a boat ride around the Palm Jumeirah or visit Atlantis The Palm for its famous waterpark, aquarium, and luxury dining experiences. For a thrill, try skydiving over the palm for unmatched aerial views.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Accordion -->
+                    <div class="dubai-faq mb-5">
+                        <h3 class="dubai-subtitle mb-4">If You Have Any Questions</h3>
+                        <div class="accordion" id="faqAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="faq1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaq1" aria-expanded="true" aria-controls="collapseFaq1">
+                                        What is the best time to visit Dubai?
+                                    </button>
+                                </h2>
+                                <div id="collapseFaq1" class="accordion-collapse collapse show" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        <p>Dubai offers a wide range of experiences year-round, but the weather plays a major role in planning your trip. Here's a guide to help you choose the best time to visit:</p>
+                                        <p>The most pleasant weather is from November to March, when temperatures range between 20°C to 30°C—ideal for sightseeing, beach outings, and outdoor activities. However, this is also peak tourist season, so prices may be higher.</p>
+                                        <p>April and October offer warm but tolerable weather with fewer crowds, making them good shoulder-season months for a more relaxed visit.</p>
+                                        <p>If you're looking for budget travel and don't mind the heat, May to September brings scorching temperatures (often above 40°C) but great deals on hotels and attractions.</p>
+                                        <p>Ramadan, a holy month, changes each year but is worth experiencing if you want cultural insight. Just be mindful of public restrictions on eating and drinking during daylight hours.</p>
+                                        <p>Regardless of when you go, Dubai is a dazzling destination. Just plan accordingly, especially when it comes to dressing modestly and staying hydrated during warmer months.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="faq2">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaq2" aria-expanded="false" aria-controls="collapseFaq2">
+                                        Is it safe for tourists to travel to Dubai?
+                                    </button>
+                                </h2>
+                                <div id="collapseFaq2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        <p>Dubai is considered one of the safest cities in the world for tourists. With low crime rates, strict laws, and a strong security presence, visitors can enjoy a peaceful and secure environment.</p>
+                                        <p>Nevertheless, it's important to respect local laws and customs. Avoid public displays of affection, dress modestly in certain areas, and refrain from using offensive language or gestures.</p>
+                                        <p>Tourists should also be cautious of taxi scams or unlicensed tour operators. Always use registered services and agree on prices beforehand if not using a meter.</p>
+                                        <p>Dubai has excellent road safety, but always wear seatbelts and avoid jaywalking. Public transport is clean and efficient, and apps like Careem and Uber are widely used.</p>
+                                        <p>The city is well-equipped to handle emergencies, with top-tier hospitals and multilingual staff. Still, travel insurance is recommended to cover any unexpected situations.</p>
+                                        <p>Overall, Dubai is a very safe and welcoming destination, especially for solo travelers and families, as long as visitors remain respectful and informed.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="faq3">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaq3" aria-expanded="false" aria-controls="collapseFaq3">
+                                        How long is the flight from the UK to Dubai?
+                                    </button>
+                                </h2>
+                                <div id="collapseFaq3" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        <p>The flight duration from the UK to Dubai varies depending on the departure airport and whether you opt for a direct or connecting flight. On average, a direct flight from London Heathrow to Dubai International Airport (DXB) takes around 6 hours and 45 minutes.</p>
+                                        <p>Connecting flights can take anywhere from 9 to 15 hours depending on layovers. Major UK cities such as Manchester, Birmingham, and Glasgow also offer direct flights to Dubai.</p>
+                                        <p>Since Dubai is a major global hub, there are multiple flights daily from various UK airports, making it a highly accessible destination. Always compare timings and prices to find the most convenient option.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="faq4">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaq4" aria-expanded="false" aria-controls="collapseFaq4">
+                                        What airlines fly from the UK to Dubai?
+                                    </button>
+                                </h2>
+                                <div id="collapseFaq4" class="accordion-collapse collapse" aria-labelledby="faq4" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        <p>Several major airlines operate direct and connecting flights from the UK to Dubai. Emirates offers direct flights from London Heathrow, London Gatwick, Manchester, Birmingham, and Glasgow to Dubai International Airport.</p>
+                                        <p>Other airlines such as British Airways, Qatar Airways, Etihad Airways, Turkish Airlines, and Lufthansa also provide services with layovers in their respective hubs.</p>
+                                        <p>With frequent flight options, competitive pricing, and multiple classes (economy, business, and first), travelers have plenty of flexibility. It's advisable to book in advance, especially during peak seasons like December, New Year, or the Dubai Shopping Festival.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="col-lg-4 contact-col-wrapper">
+                    <!-- Contact Information -->
+                    <div class="dubai-contact-info mb-4">
+                        <div class="contact-card">
+                            <h3 class="contact-title">Need Help?</h3>
+                            <p class="contact-text">To know more about timings, date change & cancellations for the flights call our experts now.</p>
+                            <div class="contact-details">
+                                <div class="contact-item">
+                                    <img src="assets/callIcon 1.svg" alt="Phone" class="contact-icon">
+                                    <a href="tel:02037455786" class="contact-link">0203 745 5786</a>
+                                </div>
+                                <div class="contact-item">
+                                    <img src="assets/emailIcon.svg" alt="Email" class="contact-icon">
+                                    <a href="mailto:info@businessfly.co.uk" class="contact-link">info@businessfly.co.uk</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="dubai-contact-form">
+                        <div class="form-card">
+                            <h3 class="form-title">Get in Touch</h3>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="fullName" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="fullName" placeholder="Enter your full name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                                </div>
+                                <button type="submit" class="btn btn-submit w-100">Submit Details</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+  <footer class="footer">
+        <!-- Wave Top Border -->
+        <div class="footer__wave">
+            <img src="assets/wave2.svg" alt="" class="footer__wave-img footer__wave-img--back">
+            <img src="assets/wave3.svg" alt="" class="footer__wave-img footer__wave-img--front">
+        </div>
+
+        <div class="footer__main">
+            <div class="container">
+                <div class="footer__grid">
+                    <!-- Logo & Badges & Help -->
+                    <div class="footer__brand">
+                        <div class="footer__logo">
+                            <img src="assets/Web-logo 2.png" alt="American Fly Logo" class="footer__logo-img">
+                        </div>
+                        <div class="footer__badges">
+                            <img src="assets/badge1.webp" alt="Badge 1" class="footer__badge">
+                            <img src="assets/badge2.webp" alt="Badge 2" class="footer__badge">
+                            <img src="assets/badge3.webp" alt="Badge 3" class="footer__badge">
+                        </div>
+                        <div class="footer__help">
+                            <h4 class="footer__help-title">Need any help?</h4>
+                            <div class="footer__help-items">
+                                <div class="footer__help-item">
+                                    <span class="footer__help-label">Talk to our experts</span>
+                                    <a href="tel:02031375177" class="footer__help-value">0203 137 5177</a>
+                                </div>
+                                <div class="footer__help-item">
+                                    <span class="footer__help-label">WhatsApp us</span>
+                                    <a href="https://wa.me/447446512247" class="footer__help-value">07446512247</a>
+                                </div>
+                                <div class="footer__help-item">
+                                    <span class="footer__help-label">Mail to our support team</span>
+                                    <a href="mailto:info@americanfly.co.uk"
+                                        class="footer__help-value">info@americanfly.co.uk</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Company Links -->
+                    <div class="footer__links">
+                        <h4 class="footer__links-title">Company</h4>
+                        <ul class="footer__links-list">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="AboutUs.html">About Us</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms Conditions</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- City Breaks -->
+                    <div class="footer__links">
+                        <h4 class="footer__links-title">City Breaks</h4>
+                        <ul class="footer__links-list">
+                            <li><a href="#">Savannah</a></li>
+                            <li><a href="#">Charleston</a></li>
+                            <li><a href="#">New Orleans</a></li>
+                            <li><a href="#">Chicago</a></li>
+                            <li><a href="#">San Francisco</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Top Destinations -->
+                    <div class="footer__links">
+                        <h4 class="footer__links-title">Top Destinations</h4>
+                        <ul class="footer__links-list">
+                            <li><a href="#">Las Vegas</a></li>
+                            <li><a href="#">Toronto</a></li>
+                            <li><a href="#">Miami</a></li>
+                            <li><a href="#">Boston</a></li>
+                            <li><a href="#">Orlando</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Top Cities -->
+                    <div class="footer__links">
+                        <h4 class="footer__links-title">Top Cities</h4>
+                        <ul class="footer__links-list">
+                            <li><a href="#">Chicago</a></li>
+                            <li><a href="#">New York</a></li>
+                            <li><a href="#">San Francisco</a></li>
+                            <li><a href="#">Vancouver</a></li>
+                            <li><a href="#">Houston</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Summary -->
+                <div class="footer__summary">
+                    <p>At American Fly, we offer a wide range of flight ticket options, including Economy, Premium
+                        Economy, Business, and First Class. We specialize in securing the best deals for our customers
+                        traveling to the USA, South America, Canada, and Caribbean destinations. Our website features
+                        exclusive offers from leading airlines and trusted suppliers worldwide. With our user-friendly
+                        interface and powerful search tools, you can easily find affordable flights to your preferred
+                        destinations—saving you both time and money.</p>
+                    <p>American Fly operates under the trading name of FLY2WORLD UK LTD, headquartered at 22 Larch
+                        Crescent, Hayes, UB4 9DP, with Company Registration Number: 14919426. We provide a comprehensive
+                        suite of travel services, including flights, hotels, and vehicle rentals. Our mission is to
+                        deliver exceptional and memorable travel experiences to all our customers.</p>
+                    <p>Committed to quality customer service, our dedicated team works tirelessly to secure the best
+                        rates on flights, hotels, car rentals, and holiday packages—ensuring you receive the best value
+                        for your journey.</p>
+                    <p>Some of the flights and flight-inclusive holidays on this website are financially protected by
+                        the ATOL scheme. But ATOL protection does not apply to all holiday and travel services listed on
+                        this website. Please feel free to check with us to confirm the level of protection applicable to
+                        your specific booking. If you do not receive an ATOL Certificate, then the booking will not be
+                        ATOL protected. If you do receive an ATOL Certificate but all the parts of your trip are not
+                        listed on it, those parts will not be ATOL protected. Please see our booking conditions for
+                        information, or for more information about financial protection and the ATOL Certificate go to:
+                        <a href="https://www.caa.co.uk" target="_blank" rel="noopener">www.caa.co.uk</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright Bar -->
+        <div class="footer__copyright">
+            <div class="container">
+                <div class="footer__copyright-inner">
+                    <p class="footer__copyright-text">Copyright &copy; 2025 All Rights Reserved. American Fly.</p>
+                    <div class="footer__cards">
+                        <img src="assets/cards.webp" alt="Accepted Cards" class="footer__cards-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+     <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- jQuery UI for Datepicker -->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- Slick Slider  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+    
+    <!-- Dubai Page Scripts -->
+    <script>
+        $(document).ready(function(){
+            // Initialize Dubai Slider
+            $(".dubai-slider").slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                arrows: true,
+                prevArrow: '<button type="button" class="slick-prev"><i class="fa fa-chevron-left"></i></button>',
+                nextArrow: '<button type="button" class="slick-next"><i class="fa fa-chevron-right"></i></button>',
+                adaptiveHeight: true,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false,
+                            dots: true
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a139f7297fa19e2e',t:'MTc4Mjc4ODg5Ng=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
