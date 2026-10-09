@@ -202,13 +202,9 @@
   </head>
 
   <body>
-    <!-- ============================================
-         STICKY WRAPPER START (Header + Navbar)
-         ============================================ -->
+    <!-- (Header + Navbar) -->
     <div class="flight-sticky-wrapper" id="flightStickyWrapper">
-      <!-- ============================================
-         HEADER SECTION START
-         ============================================ -->
+      <!-- HEADER SECTION START -->
       <header class="flight-header">
         <div class="container">
           <div class="flight-header__top-row">
@@ -269,112 +265,9 @@
           </div>
         </div>
       </header>
-      <!-- ============================================
-         NAVBAR SECTION START
-         ============================================ -->
-      <nav class="flight-navbar">
-        <div class="container">
-          <div
-            class="flight-navbar__container d-flex align-items-center justify-content-between"
-          >
-            <a href="#" class="flight-header__logo-link d-block d-md-none">
-              <img
-                src="assets/logo.png"
-                alt="American Fly Logo"
-                class="flight-header__logo-img"
-              />
-            </a>
-            <!-- Mobile Toggle Button -->
-            <button
-              class="flight-navbar__toggle ms-auto"
-              type="button"
-              id="navbarToggleBtn"
-            >
-              <div class="flight-navbar__toggle-icon">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-            </button>
-
-            <!-- Navbar Menu -->
-            <ul class="flight-navbar__menu-list" id="navbarMenuList">
-              <li class="flight-navbar__menu-item">
-                <a
-                  href="Index.html"
-                  class="flight-navbar__menu-link flight-navbar__menu-link--active"
-                  >Home</a
-                >
-              </li>
-              <li class="flight-navbar__menu-item">
-                <a href="about-us.html" class="flight-navbar__menu-link"
-                  >About Us</a
-                >
-              </li>
-              <!-- <li
-                class="flight-navbar__menu-item flight-navbar__menu-item--has-dropdown"
-              >
-                <a href="#" class="flight-navbar__menu-link"
-                  >Pages <span class="flight-navbar__dropdown-arrow">▼</span></a
-                >
-                <ul class="flight-navbar__dropdown">
-                  <li class="flight-navbar__dropdown-item">
-                    <a
-                      href="Destination.html"
-                      class="flight-navbar__dropdown-link"
-                      >Destination</a
-                    >
-                  </li>
-                  <li class="flight-navbar__dropdown-item">
-                    <a href="Package.html" class="flight-navbar__dropdown-link"
-                      >Package</a
-                    >
-                  </li>
-                  <li class="flight-navbar__dropdown-item">
-                    <a href="Camper.html" class="flight-navbar__dropdown-link"
-                      >Camper</a
-                    >
-                  </li>
-                  <li class="flight-navbar__dropdown-item">
-                    <a
-                      href="BusinessClass.html"
-                      class="flight-navbar__dropdown-link"
-                      >Business Class</a
-                    >
-                  </li>
-                  <li class="flight-navbar__dropdown-item">
-                    <a
-                      href="BeatMyQuote.html"
-                      class="flight-navbar__dropdown-link"
-                      >Beat My Quote</a
-                    >
-                  </li>
-                </ul>
-              </li> -->
-              <li class="flight-navbar__menu-item">
-                <a href="privacy-policy.html" class="flight-navbar__menu-link"
-                  >Privacy Policy</a
-                >
-              </li>
-              <li class="flight-navbar__menu-item">
-                <a
-                  href="terms-and-conditions.html"
-                  class="flight-navbar__menu-link"
-                  >Terms & Condition</a
-                >
-              </li>
-              <li class="flight-navbar__menu-item">
-                <a href="contact-us.html" class="flight-navbar__menu-link"
-                  >Contact Us</a
-                >
-              </li>
-            </ul>
-            <!-- Navbar Menu End -->
-          </div>
-        </div>
-      </nav>
+      <!-- NAVBAR SECTION START -->
+      <?php include('_nav.php'); ?>
     </div>
-    <!-- STICKY WRAPPER END (Header + Navbar) -->
 
     <div class="home-wrapper">
       <!-- ============================================
@@ -401,10 +294,7 @@
           <div class="container px-0 my-4">
             <div class="bs-hero-search mx-auto">
               <form
-                onsubmit="
-                  event.preventDefault();
-                  window.location.href = '#';
-                "
+                action="flight-search.php" method="get"
               >
                 <!-- Top Row: Origin & Destination -->
                 <div class="row g-3 mb-3">
@@ -416,8 +306,8 @@
                       </div>
                       <div class="flex-grow-1 overflow-hidden">
                         <div class="bs-field-label">Origin</div>
-                        <select class="bs-select2-origin" name="origin">
-                          <option>Select Origin</option>
+                        <select class="bs-select2-origin" name="origin" required>
+                          <option value="">Select Origin</option>
                           <?php
                             if ($result->num_rows > 0) {
                               while($row = $result->fetch_assoc()) {
@@ -425,12 +315,6 @@
                               }
                             }
                           ?>
-                          <!-- <option value="DEL">
-                            DEL - Indira Gandhi Intl, New Delhi
-                          </option>
-                          <option value="LHR">LHR - Heathrow, London</option>
-                          <option value="DXB">DXB - Dubai International</option>
-                          <option value="HND">HND - Haneda, Tokyo</option> -->
                         </select>
                       </div>
                     </div>
@@ -449,6 +333,7 @@
                         <select
                           class="bs-select2-destination"
                           name="destination"
+                          required
                         >
                         <option value="">Select Destination</option>
                         <?php
@@ -458,17 +343,6 @@
                             }
                           }
                         ?>
-                          <!-- <option value="HNL" selected>
-                            HNL - Honolulu, Hawaii
-                          </option>
-                          <option value="CDG">
-                            CDG - Charles de Gaulle, Paris
-                          </option>
-                          <option value="SIN">SIN - Changi, Singapore</option>
-                          <option value="SYD">
-                            SYD - Sydney Kingsford Smith
-                          </option>
-                          <option value="BOM">BOM - Mumbai, India</option> -->
                         </select>
                       </div>
                     </div>
@@ -485,12 +359,20 @@
                       </div>
                       <div class="flex-grow-1">
                         <div class="bs-field-label">Start Date</div>
+                        <!-- Visible date -->
                         <input
                           type="text"
                           class="bs-field-input"
                           id="bsStartDate"
                           placeholder="Select date"
                           readonly
+                        />
+
+                        <!-- Actual submitted date -->
+                        <input
+                          type="hidden"
+                          name="startDate"
+                          id="startDate"
                         />
                       </div>
                     </div>
@@ -504,12 +386,20 @@
                       </div>
                       <div class="flex-grow-1">
                         <div class="bs-field-label">Return Date</div>
+                        <!-- Visible date -->
                         <input
                           type="text"
                           class="bs-field-input"
                           id="bsReturnDate"
                           placeholder="Select date"
                           readonly
+                        />
+
+                        <!-- Actual submitted date -->
+                        <input
+                          type="hidden"
+                          name="endDate"
+                          id="endDate"
                         />
                       </div>
                     </div>
@@ -523,12 +413,12 @@
                       </div>
                       <div class="flex-grow-1">
                         <div class="bs-field-label">Adults</div>
-                        <select class="bs-field-select" name="adults">
+                        <select class="bs-field-select" name="adult">
                           <option value="1" selected>1 Adult</option>
                           <option value="2">2 Adults</option>
                           <option value="3">3 Adults</option>
                           <option value="4">4 Adults</option>
-                          <option value="5">5+ Adults</option>
+                          <option value="5">5 Adults</option>
                         </select>
                       </div>
                     </div>
@@ -542,7 +432,7 @@
                       </div>
                       <div class="flex-grow-1">
                         <div class="bs-field-label">Class</div>
-                        <select class="bs-field-select" name="cabin_class">
+                        <select class="bs-field-select" name="class">
                           <option value="1">Economy</option>
                           <option value="4">Premium</option>
                           <option value="2" selected>Business</option>
@@ -2216,10 +2106,8 @@
         </div>
       </div>
     </div>
-    <!-- ============================================
-         FOOTER SECTION
-         ============================================ -->
-    <footer class="footer">
+    <!-- FOOTER SECTION -->
+        <footer class="footer">
       <!-- Wave Top Border -->
       <div class="footer__wave">
         <img
@@ -2409,8 +2297,8 @@
         </div>
       </div>
     </footer>
-
-    <!-- jQuery -->
+    <!-- SCRIPTS -->
+        <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <!-- jQuery UI for Datepicker -->
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
@@ -2429,101 +2317,6 @@
     ></script>
     <!-- Custom Script -->
     <script src="script.js"></script>
-
-    <!-- <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // Target all dropdown toggle links inside multi-level setups
-        const subToggleLinks = document.querySelectorAll(
-          ".dropdown-submenu > .dropdown-toggle",
-        );
-
-        subToggleLinks.forEach(function (element) {
-          element.addEventListener("click", function (e) {
-            // Stop event from bubbling up and closing the entire structural container
-            e.stopPropagation();
-
-            // Look for the closest list-item node parent
-            const subMenuParent = this.parentElement;
-
-            // If it is mobile/tablet viewpoint, prevent default anchor tracking to safely open submenus instead
-            if (window.innerWidth < 992) {
-              e.preventDefault();
-
-              // Toggle view visibility class
-              subMenuParent.classList.toggle("show-submenu");
-
-              // Clean up neighboring submenus at the same hierarchy depth level
-              const siblings = subMenuParent.parentElement.children;
-              for (let sibling of siblings) {
-                if (
-                  sibling !== subMenuParent &&
-                  sibling.classList.contains("dropdown-submenu")
-                ) {
-                  sibling.classList.remove("show-submenu");
-                }
-              }
-            }
-          });
-        });
-
-        // If the parent link has a real file location (like href="Dubai.html"), let it act normally on desktop hover environments
-        const activeLinks = document.querySelectorAll(".dropdown-submenu > a");
-        activeLinks.forEach(function (link) {
-          link.addEventListener("click", function (e) {
-            const hrefValue = this.getAttribute("href");
-            if (window.innerWidth >= 992 && hrefValue && hrefValue !== "#") {
-              window.location.href = hrefValue;
-            }
-          });
-        });
-      });
-    </script> -->
-
-    <!-- <script>
-      (function () {
-        function c() {
-          var b = a.contentDocument || a.contentWindow.document;
-          if (b) {
-            var d = b.createElement("script");
-            d.innerHTML =
-              "window.__CF$cv$params={r:'a139f746fe059e2e',t:'MTc4Mjc4ODkwMA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
-            b.getElementsByTagName("head")[0].appendChild(d);
-          }
-        }
-        if (document.body) {
-          var a = document.createElement("iframe");
-          a.height = 1;
-          a.width = 1;
-          a.style.position = "absolute";
-          a.style.top = 0;
-          a.style.left = 0;
-          a.style.border = "none";
-          a.style.visibility = "hidden";
-          document.body.appendChild(a);
-          if ("loading" !== document.readyState) c();
-          else if (window.addEventListener)
-            document.addEventListener("DOMContentLoaded", c);
-          else {
-            var e = document.onreadystatechange || function () {};
-            document.onreadystatechange = function (b) {
-              e(b);
-              "loading" !== document.readyState &&
-                ((document.onreadystatechange = e), c());
-            };
-          }
-        }
-      })();
-    </script> -->
-    <!-- jQuery -->
-    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> -->
-
-    <!-- Bootstrap 5 Bundle JS (Optional if you use BS tooltips/dropdowns elsewhere) -->
-    <!-- <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script> -->
-
     <!-- Select2 JS -->
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
@@ -2532,35 +2325,65 @@
 
     <script>
       $(document).ready(function () {
-        // 1. Initialize Select2 on Origin and Destination
+
+        // Initialize Select2
         $(".bs-select2-origin, .bs-select2-destination").select2({
           dropdownAutoWidth: true,
           width: "100%",
         });
 
-        // 2. Initialize Modern Flatpickr Datepickers
+        // Today's date
         const today = new Date();
+
+        // Return date = 7 days from today
         const returnDay = new Date();
         returnDay.setDate(today.getDate() + 7);
 
+        // Return Date Picker
         const returnDatePicker = flatpickr("#bsReturnDate", {
           dateFormat: "D, d M Y",
           defaultDate: returnDay,
           minDate: "today",
           disableMobile: true,
+
+          onChange: function (selectedDates) {
+            if (selectedDates[0]) {
+              // Submit format: YYYY-MM-DD
+              document.getElementById("endDate").value =
+                flatpickr.formatDate(selectedDates[0], "Y-m-d");
+            }
+          }
         });
 
+        // Set initial return date
+        document.getElementById("endDate").value =
+          flatpickr.formatDate(returnDay, "Y-m-d");
+
+
+        // Start Date Picker
         flatpickr("#bsStartDate", {
           dateFormat: "D, d M Y",
           defaultDate: today,
           minDate: "today",
           disableMobile: true,
+
           onChange: function (selectedDates) {
             if (selectedDates[0]) {
+
+              // Submit format: YYYY-MM-DD
+              document.getElementById("startDate").value =
+                flatpickr.formatDate(selectedDates[0], "Y-m-d");
+
+              // Return date cannot be before start date
               returnDatePicker.set("minDate", selectedDates[0]);
             }
-          },
+          }
         });
+
+        // Set initial start date
+        document.getElementById("startDate").value =
+          flatpickr.formatDate(today, "Y-m-d");
+
       });
     </script>
     <!--Start of Tawk.to Script-->
