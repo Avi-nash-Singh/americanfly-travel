@@ -519,13 +519,6 @@ $(document).ready(function () {
 // document.body.innerHTML = document.body.innerHTML.replace(/&nbsp;/g, '');
 
 
-
-
-
-
-
-
-
 // $(document).ready(function(){
 //       $('#destinationsCarousel').slick({
 //         slidesToShow: 5,
@@ -592,20 +585,6 @@ $('a[data-slide]').click(function(e) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         $(document).ready(function () {
             // Tab functionality
             $('.adelaide-tabs__nav-link').click(function (e) {
@@ -667,12 +646,6 @@ $('a[data-slide]').click(function(e) {
         });
 
 
-
-
-
-
-
-
    document.addEventListener("DOMContentLoaded", function() {
             // Target all dropdown toggle links inside multi-level setups
             const subToggleLinks = document.querySelectorAll('.dropdown-submenu > .dropdown-toggle');
@@ -714,100 +687,3 @@ $('a[data-slide]').click(function(e) {
                 });
             });
         });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

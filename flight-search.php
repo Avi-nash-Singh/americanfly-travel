@@ -200,42 +200,31 @@ function getRouteText($flight)
     <!-- =====================================================
          BOOTSTRAP 5.0.2
     ====================================================== -->
-
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
         rel="stylesheet"
     >
-
-
     <!-- =====================================================
          FONT AWESOME
     ====================================================== -->
-
     <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     >
-
-
     <!-- =====================================================
          SELECT2
     ====================================================== -->
-
     <link
         href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
         rel="stylesheet"
     >
-
-
     <!-- =====================================================
          FLATPICKR
     ====================================================== -->
-
     <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
     >
-
     <link
         rel="stylesheet"
         href="https://npmcdn.com/flatpickr/dist/themes/airbnb.css"
@@ -1099,434 +1088,434 @@ function getRouteText($flight)
         }
 
         /* =========================================================
-   FLIGHT SEARCH LOADER - MODAL
-========================================================= */
+        FLIGHT SEARCH LOADER - MODAL
+        ========================================================= */
 
-.flight-loader {
-    position: fixed;
-    inset: 0;
-    z-index: 999999;
+        .flight-loader {
+            position: fixed;
+            inset: 0;
+            z-index: 999999;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
-    padding: 20px;
+            padding: 20px;
 
-    background: rgba(3, 18, 32, 0.62);
+            background: rgba(3, 18, 32, 0.62);
 
-    backdrop-filter: blur(7px);
-    -webkit-backdrop-filter: blur(7px);
+            backdrop-filter: blur(7px);
+            -webkit-backdrop-filter: blur(7px);
 
-    opacity: 1;
-    visibility: visible;
+            opacity: 1;
+            visibility: visible;
 
-    transition:
-        opacity .45s ease,
-        visibility .45s ease;
-}
+            transition:
+                opacity .45s ease,
+                visibility .45s ease;
+        }
 
-.flight-loader.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-}
+        .flight-loader.is-hidden {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
 
 
-/* =========================================================
-   MODAL CARD
-========================================================= */
+        /* =========================================================
+        MODAL CARD
+        ========================================================= */
 
-.flight-loader-card {
-    position: relative;
+        .flight-loader-card {
+            position: relative;
 
-    width: 100%;
-    max-width: 520px;
+            width: 100%;
+            max-width: 520px;
 
-    padding: 38px 40px 35px;
+            padding: 38px 40px 35px;
 
-    border-radius: 24px;
+            border-radius: 24px;
 
-    background:
-        radial-gradient(
-            circle at 50% 0%,
-            rgba(6, 182, 212, .13),
-            transparent 42%
-        ),
-        linear-gradient(
-            145deg,
-            #071d32,
-            #092f4d 55%,
-            #063b57
-        );
+            background:
+                radial-gradient(
+                    circle at 50% 0%,
+                    rgba(6, 182, 212, .13),
+                    transparent 42%
+                ),
+                linear-gradient(
+                    145deg,
+                    #071d32,
+                    #092f4d 55%,
+                    #063b57
+                );
 
-    border: 1px solid rgba(255,255,255,.10);
+            border: 1px solid rgba(255,255,255,.10);
 
-    box-shadow:
-        0 30px 80px rgba(0,0,0,.35),
-        0 10px 30px rgba(0,0,0,.18);
+            box-shadow:
+                0 30px 80px rgba(0,0,0,.35),
+                0 10px 30px rgba(0,0,0,.18);
 
-    overflow: hidden;
+            overflow: hidden;
 
-    transform: translateY(0) scale(1);
+            transform: translateY(0) scale(1);
 
-    animation: loaderCardIn .45s cubic-bezier(.22,1,.36,1);
-}
+            animation: loaderCardIn .45s cubic-bezier(.22,1,.36,1);
+        }
 
 
-/* Decorative circles */
+        /* Decorative circles */
 
-.flight-loader-card::before {
-    content: "";
+        .flight-loader-card::before {
+            content: "";
 
-    position: absolute;
+            position: absolute;
 
-    width: 260px;
-    height: 260px;
+            width: 260px;
+            height: 260px;
 
-    border-radius: 50%;
+            border-radius: 50%;
 
-    right: -130px;
-    top: -150px;
+            right: -130px;
+            top: -150px;
 
-    background: rgba(6,182,212,.07);
-}
+            background: rgba(6,182,212,.07);
+        }
 
 
-.flight-loader-card::after {
-    content: "";
+        .flight-loader-card::after {
+            content: "";
 
-    position: absolute;
+            position: absolute;
 
-    width: 200px;
-    height: 200px;
+            width: 200px;
+            height: 200px;
 
-    border-radius: 50%;
+            border-radius: 50%;
 
-    left: -110px;
-    bottom: -120px;
+            left: -110px;
+            bottom: -120px;
 
-    background: rgba(2,132,199,.08);
-}
+            background: rgba(2,132,199,.08);
+        }
 
 
-/* =========================================================
-   CONTENT
-========================================================= */
+        /* =========================================================
+        CONTENT
+        ========================================================= */
 
-.flight-loader-content {
-    position: relative;
-    z-index: 2;
+        .flight-loader-content {
+            position: relative;
+            z-index: 2;
 
-    text-align: center;
-}
+            text-align: center;
+        }
 
 
-/* =========================================================
-   LOGO
-========================================================= */
+        /* =========================================================
+        LOGO
+        ========================================================= */
 
-.flight-loader-logo {
-    width: 145px;
-    max-width: 55%;
-    height: auto;
+        .flight-loader-logo {
+            width: 145px;
+            max-width: 55%;
+            height: auto;
 
-    margin-bottom: 30px;
+            margin-bottom: 30px;
 
-    animation:
-        loaderLogoPulse 2s ease-in-out infinite;
-}
+            animation:
+                loaderLogoPulse 2s ease-in-out infinite;
+        }
 
 
-/* =========================================================
-   ROUTE
-========================================================= */
+        /* =========================================================
+        ROUTE
+        ========================================================= */
 
-.loader-route {
-    display: flex;
-    align-items: center;
+        .loader-route {
+            display: flex;
+            align-items: center;
 
-    width: 100%;
+            width: 100%;
 
-    margin-bottom: 28px;
-}
+            margin-bottom: 28px;
+        }
 
 
-.loader-airport {
-    width: 70px;
-    flex-shrink: 0;
-}
+        .loader-airport {
+            width: 70px;
+            flex-shrink: 0;
+        }
 
 
-.loader-airport-code {
-    display: block;
+        .loader-airport-code {
+            display: block;
 
-    color: #fff;
+            color: #fff;
 
-    font-size: 24px;
-    line-height: 1;
+            font-size: 24px;
+            line-height: 1;
 
-    font-weight: 800;
+            font-weight: 800;
 
-    letter-spacing: .04em;
-}
+            letter-spacing: .04em;
+        }
 
 
-.loader-airport-label {
-    display: block;
+        .loader-airport-label {
+            display: block;
 
-    color: rgba(255,255,255,.52);
+            color: rgba(255,255,255,.52);
 
-    font-size: 9px;
+            font-size: 9px;
 
-    margin-top: 7px;
+            margin-top: 7px;
 
-    text-transform: uppercase;
+            text-transform: uppercase;
 
-    letter-spacing: .08em;
+            letter-spacing: .08em;
 
-    white-space: nowrap;
+            white-space: nowrap;
 
-    overflow: hidden;
+            overflow: hidden;
 
-    text-overflow: ellipsis;
-}
+            text-overflow: ellipsis;
+        }
 
 
-/* =========================================================
-   FLIGHT PATH
-========================================================= */
+        /* =========================================================
+        FLIGHT PATH
+        ========================================================= */
 
-.loader-flight-path {
-    position: relative;
+        .loader-flight-path {
+            position: relative;
 
-    height: 45px;
+            height: 45px;
 
-    flex: 1;
+            flex: 1;
 
-    margin: 0 10px;
-}
+            margin: 0 10px;
+        }
 
 
-/* Dashed route */
+        /* Dashed route */
 
-.loader-flight-path::before {
-    content: "";
+        .loader-flight-path::before {
+            content: "";
 
-    position: absolute;
+            position: absolute;
 
-    left: 0;
-    right: 0;
+            left: 0;
+            right: 0;
 
-    top: 50%;
+            top: 50%;
 
-    height: 1px;
+            height: 1px;
 
-    background:
-        repeating-linear-gradient(
-            to right,
-            rgba(255,255,255,.32) 0,
-            rgba(255,255,255,.32) 7px,
-            transparent 7px,
-            transparent 14px
-        );
-}
+            background:
+                repeating-linear-gradient(
+                    to right,
+                    rgba(255,255,255,.32) 0,
+                    rgba(255,255,255,.32) 7px,
+                    transparent 7px,
+                    transparent 14px
+                );
+        }
 
 
-/* =========================================================
-   ANIMATED PLANE
-========================================================= */
+        /* =========================================================
+        ANIMATED PLANE
+        ========================================================= */
 
-.loader-plane {
-    position: absolute;
+        .loader-plane {
+            position: absolute;
 
-    top: 50%;
-    left: 0;
+            top: 50%;
+            left: 0;
 
-    width: 38px;
-    height: 38px;
+            width: 38px;
+            height: 38px;
 
-    margin-top: -19px;
+            margin-top: -19px;
 
-    border-radius: 50%;
+            border-radius: 50%;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
-    background:
-        linear-gradient(
-            135deg,
-            #0284c7,
-            #06b6d4
-        );
+            background:
+                linear-gradient(
+                    135deg,
+                    #0284c7,
+                    #06b6d4
+                );
 
-    color: #fff;
+            color: #fff;
 
-    box-shadow:
-        0 0 0 6px rgba(6,182,212,.10),
-        0 8px 25px rgba(0,0,0,.25);
+            box-shadow:
+                0 0 0 6px rgba(6,182,212,.10),
+                0 8px 25px rgba(0,0,0,.25);
 
-    animation:
-        flyAcross 2.4s cubic-bezier(.45,.05,.55,.95) infinite;
-}
+            animation:
+                flyAcross 2.4s cubic-bezier(.45,.05,.55,.95) infinite;
+        }
 
 
-.loader-plane i {
-    font-size: 13px;
-}
+        .loader-plane i {
+            font-size: 13px;
+        }
 
 
-/* Plane glow */
+        /* Plane glow */
 
-.loader-plane::after {
-    content: "";
+        .loader-plane::after {
+            content: "";
 
-    position: absolute;
+            position: absolute;
 
-    width: 70px;
-    height: 70px;
+            width: 70px;
+            height: 70px;
 
-    border-radius: 50%;
+            border-radius: 50%;
 
-    background: rgba(6,182,212,.10);
+            background: rgba(6,182,212,.10);
 
-    z-index: -1;
+            z-index: -1;
 
-    animation:
-        planeGlow 1.5s ease-in-out infinite;
-}
+            animation:
+                planeGlow 1.5s ease-in-out infinite;
+        }
 
 
-/* =========================================================
-   TEXT
-========================================================= */
+        /* =========================================================
+        TEXT
+        ========================================================= */
 
-.flight-loader-title {
-    color: #fff;
+        .flight-loader-title {
+            color: #fff;
 
-    font-size: 20px;
+            font-size: 20px;
 
-    font-weight: 700;
+            font-weight: 700;
 
-    margin: 0 0 8px;
-}
+            margin: 0 0 8px;
+        }
 
 
-.flight-loader-subtitle {
-    color: rgba(255,255,255,.60);
+        .flight-loader-subtitle {
+            color: rgba(255,255,255,.60);
 
-    font-size: 12px;
+            font-size: 12px;
 
-    margin: 0 0 23px;
+            margin: 0 0 23px;
 
-    min-height: 18px;
+            min-height: 18px;
 
-    transition: opacity .25s ease;
-}
+            transition: opacity .25s ease;
+        }
 
 
-/* =========================================================
-   PROGRESS BAR
-========================================================= */
+        /* =========================================================
+        PROGRESS BAR
+        ========================================================= */
 
-.loader-progress {
-    width: 100%;
+        .loader-progress {
+            width: 100%;
 
-    height: 5px;
+            height: 5px;
 
-    background: rgba(255,255,255,.10);
+            background: rgba(255,255,255,.10);
 
-    border-radius: 20px;
+            border-radius: 20px;
 
-    overflow: hidden;
+            overflow: hidden;
 
-    margin-bottom: 11px;
-}
+            margin-bottom: 11px;
+        }
 
 
-.loader-progress-bar {
-    width: 0;
+        .loader-progress-bar {
+            width: 0;
 
-    height: 100%;
+            height: 100%;
 
-    border-radius: inherit;
+            border-radius: inherit;
 
-    background:
-        linear-gradient(
-            90deg,
-            #0284c7,
-            #06b6d4,
-            #67e8f9
-        );
+            background:
+                linear-gradient(
+                    90deg,
+                    #0284c7,
+                    #06b6d4,
+                    #67e8f9
+                );
 
-    box-shadow:
-        0 0 15px rgba(6,182,212,.45);
+            box-shadow:
+                0 0 15px rgba(6,182,212,.45);
 
-    animation:
-        loaderProgress 3s linear forwards;
-}
+            animation:
+                loaderProgress 3s linear forwards;
+        }
 
 
-.loader-status {
-    color: rgba(255,255,255,.40);
+        .loader-status {
+            color: rgba(255,255,255,.40);
 
-    font-size: 10px;
+            font-size: 10px;
 
-    letter-spacing: .02em;
-}
+            letter-spacing: .02em;
+        }
 
 
-/* =========================================================
-   ANIMATIONS
-========================================================= */
+        /* =========================================================
+        ANIMATIONS
+        ========================================================= */
 
-@keyframes loaderCardIn {
+        @keyframes loaderCardIn {
 
-    from {
-        opacity: 0;
-        transform: translateY(15px) scale(.96);
-    }
+            from {
+                opacity: 0;
+                transform: translateY(15px) scale(.96);
+            }
 
-    to {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
-}
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
 
 
-@keyframes flyAcross {
+        @keyframes flyAcross {
 
-    0% {
-        left: 0;
-        transform: translateX(0);
-    }
+            0% {
+                left: 0;
+                transform: translateX(0);
+            }
 
-    50% {
-        left: 50%;
-        transform: translateX(-50%);
-    }
+            50% {
+                left: 50%;
+                transform: translateX(-50%);
+            }
 
-    100% {
-        left: 100%;
-        transform: translateX(-100%);
-    }
-}
+            100% {
+                left: 100%;
+                transform: translateX(-100%);
+            }
+        }
 
 
-@keyframes planeGlow {
+        @keyframes planeGlow {
 
-    0%,
-    100% {
-        transform: scale(.75);
-        opacity: .4;
-    }
+            0%,
+            100% {
+                transform: scale(.75);
+                opacity: .4;
+            }
 
-    50% {
-        transform: scale(1.15);
-        opacity: .9;
-    }
-}
+            50% {
+                transform: scale(1.15);
+                opacity: .9;
+            }
+        }
 
 
         @keyframes loaderProgress {
@@ -1775,72 +1764,9 @@ function getRouteText($flight)
     </div>
 
 </div>
+
 <!-- (Header + Navbar) -->
-    <div class="flight-sticky-wrapper" id="flightStickyWrapper">
-      <!-- HEADER SECTION START -->
-      <header class="flight-header">
-        <div class="container">
-          <div class="flight-header__top-row">
-            <!-- First Div: Logo & Badges -->
-            <div class="flight-header__logo-badges">
-              <!-- Logo Div -->
-              <div class="flight-header__logo">
-                <a href="#" class="flight-header__logo-link">
-                  <img
-                    src="assets/logo.png"
-                    alt="American Fly Logo"
-                    class="flight-header__logo-img"
-                  />
-                </a>
-              </div>
-              <!-- Logo Div End -->
-
-              <!-- Badges Div -->
-              <!-- Badges Div End -->
-            </div>
-            <div class="flight-header__badges">
-              <img
-                src="assets/cert/tta.png"
-                alt="Badge 1"
-                class="flight-header__badge-item"
-              />
-              <img
-                src="assets/cert/tta-trans.png"
-                alt="Badge 2"
-                class="flight-header__badge-item"
-              />
-              <img
-                src="assets/cert/atol_logo_white.png"
-                alt="Badge 3"
-                class="flight-header__badge-item"
-              />
-            </div>
-            <!-- First Div End -->
-
-            <!-- Second Div: Contact Info -->
-            <div class="flight-header__contact-info">
-              <img
-                src="assets/icons/callIcon.svg"
-                alt="Call Icon"
-                class="flight-header__call-icon"
-              />
-              <div class="flight-header__contact-text">
-                <span class="flight-header__contact-title"
-                  >Talk to our Specialists Today for Lowest Price</span
-                >
-                <span class="flight-header__contact-phone">0203 137 5177</span>
-                <span class="flight-header__contact-timing"
-                  >08:00 AM - 11:30 PM / 7 Days a Week</span
-                >
-              </div>
-            </div>
-            <!-- Second Div End -->
-          </div>
-        </div>
-      </header>
-      <!-- NAVBAR SECTION START -->
-      <?php include('_nav.php'); ?>
-    </div>
+<?php include('_nav.php'); ?>
 
 
 <!-- =========================================================

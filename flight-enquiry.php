@@ -720,71 +720,7 @@ if ($flight && ($flight['route'] ?? '') !== 'Direct') {
 <body>
 
 <!-- (Header + Navbar) -->
-    <div class="flight-sticky-wrapper" id="flightStickyWrapper">
-      <!-- HEADER SECTION START -->
-      <header class="flight-header">
-        <div class="container">
-          <div class="flight-header__top-row">
-            <!-- First Div: Logo & Badges -->
-            <div class="flight-header__logo-badges">
-              <!-- Logo Div -->
-              <div class="flight-header__logo">
-                <a href="#" class="flight-header__logo-link">
-                  <img
-                    src="assets/logo.png"
-                    alt="American Fly Logo"
-                    class="flight-header__logo-img"
-                  />
-                </a>
-              </div>
-              <!-- Logo Div End -->
-
-              <!-- Badges Div -->
-              <!-- Badges Div End -->
-            </div>
-            <div class="flight-header__badges">
-              <img
-                src="assets/cert/tta.png"
-                alt="Badge 1"
-                class="flight-header__badge-item"
-              />
-              <img
-                src="assets/cert/tta-trans.png"
-                alt="Badge 2"
-                class="flight-header__badge-item"
-              />
-              <img
-                src="assets/cert/atol_logo_white.png"
-                alt="Badge 3"
-                class="flight-header__badge-item"
-              />
-            </div>
-            <!-- First Div End -->
-
-            <!-- Second Div: Contact Info -->
-            <div class="flight-header__contact-info">
-              <img
-                src="assets/icons/callIcon.svg"
-                alt="Call Icon"
-                class="flight-header__call-icon"
-              />
-              <div class="flight-header__contact-text">
-                <span class="flight-header__contact-title"
-                  >Talk to our Specialists Today for Lowest Price</span
-                >
-                <span class="flight-header__contact-phone">0203 137 5177</span>
-                <span class="flight-header__contact-timing"
-                  >08:00 AM - 11:30 PM / 7 Days a Week</span
-                >
-              </div>
-            </div>
-            <!-- Second Div End -->
-          </div>
-        </div>
-      </header>
-      <!-- NAVBAR SECTION START -->
-      <?php include('_nav.php'); ?>
-    </div>
+<?php include('_nav.php'); ?>
 
 <section class="enquiry-hero">
     <div class="container enquiry-hero-content">

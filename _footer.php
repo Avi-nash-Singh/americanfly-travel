@@ -1,4 +1,4 @@
-    <footer class="footer">
+  <footer class="footer">
       <!-- Wave Top Border -->
       <div class="footer__wave">
         <img
