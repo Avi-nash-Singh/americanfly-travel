@@ -70,7 +70,7 @@
          ============================================ -->
     <section class="dest-hero">
       <img
-        src="assets/cards/las-vegas.webp"
+        src="assets/destinations/las-vegas/las-vegas-banner.png"
         alt="Las Vegas Strip and Resorts"
         class="dest-hero__bg"
       />

@@ -90,70 +90,74 @@
             <ul class="flight-navbar__menu-list" id="navbarMenuList">
               <li class="flight-navbar__menu-item">
                 <a
-                  href="Index.html"
+                  href="index.php"
                   class="flight-navbar__menu-link flight-navbar__menu-link--active"
                   >Home</a
                 >
               </li>
               <li class="flight-navbar__menu-item">
-                <a href="about-us.html" class="flight-navbar__menu-link"
+                <a href="about-us.php" class="flight-navbar__menu-link"
                   >About Us</a
                 >
               </li>
-              <!-- <li
+              <li
                 class="flight-navbar__menu-item flight-navbar__menu-item--has-dropdown"
               >
                 <a href="#" class="flight-navbar__menu-link"
-                  >Pages <span class="flight-navbar__dropdown-arrow">▼</span></a
+                  >Destinations <span class="flight-navbar__dropdown-arrow">▼</span></a
                 >
                 <ul class="flight-navbar__dropdown">
                   <li class="flight-navbar__dropdown-item">
                     <a
-                      href="Destination.html"
+                      href="destination-las-vegas.php"
                       class="flight-navbar__dropdown-link"
-                      >Destination</a
-                    >
-                  </li>
-                  <li class="flight-navbar__dropdown-item">
-                    <a href="Package.html" class="flight-navbar__dropdown-link"
-                      >Package</a
-                    >
-                  </li>
-                  <li class="flight-navbar__dropdown-item">
-                    <a href="Camper.html" class="flight-navbar__dropdown-link"
-                      >Camper</a
+                      >Las Vegas</a
                     >
                   </li>
                   <li class="flight-navbar__dropdown-item">
                     <a
-                      href="BusinessClass.html"
+                      href="destination-los-angeles.php"
                       class="flight-navbar__dropdown-link"
-                      >Business Class</a
+                      >Los Angeles</a
                     >
                   </li>
                   <li class="flight-navbar__dropdown-item">
                     <a
-                      href="BeatMyQuote.html"
+                      href="destination-miami.php"
                       class="flight-navbar__dropdown-link"
-                      >Beat My Quote</a
+                      >Miami</a
+                    >
+                  </li>
+                  <li class="flight-navbar__dropdown-item">
+                    <a
+                      href="destination-new-york.php"
+                      class="flight-navbar__dropdown-link"
+                    >New York</a
+                    >
+                  </li>
+                  <li class="flight-navbar__dropdown-item">
+                    <a
+                      href="destination-orlando.php"
+                      class="flight-navbar__dropdown-link"
+                      >Orlando</a
                     >
                   </li>
                 </ul>
-              </li> -->
-              <li class="flight-navbar__menu-item">
-                <a href="privacy-policy.html" class="flight-navbar__menu-link"
-                  >Privacy Policy</a
-                >
               </li>
               <li class="flight-navbar__menu-item">
+                <a href="#" class="flight-navbar__menu-link"
+                  >Car Hire</a
+                >
+              </li>
+              <!-- <li class="flight-navbar__menu-item">
                 <a
-                  href="terms-and-conditions.html"
+                  href="terms-and-conditions.php"
                   class="flight-navbar__menu-link"
                   >Terms & Condition</a
                 >
-              </li>
+              </li> -->
               <li class="flight-navbar__menu-item">
-                <a href="contact-us.html" class="flight-navbar__menu-link"
+                <a href="contact-us.php" class="flight-navbar__menu-link"
                   >Contact Us</a
                 >
               </li>

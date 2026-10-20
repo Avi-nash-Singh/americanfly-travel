@@ -70,7 +70,7 @@
          ============================================ -->
     <section class="dest-hero">
       <img
-        src="assets/cards/orlando.webp"
+        src="assets/destinations/orlando/orlando-banner.png"
         alt="Orlando Florida"
         class="dest-hero__bg"
       />

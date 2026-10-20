@@ -70,7 +70,7 @@
          ============================================ -->
     <section class="dest-hero">
       <img
-        src="assets/cards/new-york.webp"
+        src="assets/destinations/new-york/new-york-banner.png"
         alt="New York Skyline and Manhattan Bridge"
         class="dest-hero__bg"
       />

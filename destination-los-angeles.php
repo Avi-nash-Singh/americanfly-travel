@@ -70,7 +70,7 @@
          ============================================ -->
     <section class="dest-hero">
       <img
-        src="assets/cards/los-angeles.webp"
+        src="assets/destinations/los-angeles/los-angeles-banner.png"
         alt="Los Angeles Skyline and Palm Trees"
         class="dest-hero__bg"
       />

@@ -70,7 +70,7 @@
          ============================================ -->
     <section class="dest-hero">
       <img
-        src="assets/cards/miami.webp"
+        src="assets/destinations/miami/miami-banner.png"
         alt="Miami South Beach & Skyline"
         class="dest-hero__bg"
       />

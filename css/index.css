@@ -5562,7 +5562,7 @@ button.btn.btn-lg.w-100.py-3.rounded-pill {
 
 .footer {
   position: relative;
-  background: #011d1e;
+  background: #0e0e0e;
   color: rgba(255, 255, 255, 0.8);
 }
 
@@ -5806,7 +5806,7 @@ button.btn.btn-lg.w-100.py-3.rounded-pill {
   padding: 18px 0;
   border-top: 1px solid rgba(255, 255, 255, 0.06);
   overflow: hidden;
-  background: #011d1e;
+  /* background: #011d1e; */
 }
 
 .footer__copyright::before {

@@ -77,13 +77,13 @@
             <div class="footer__links">
               <h4 class="footer__links-title">Company</h4>
               <ul class="footer__links-list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about-us.html">About Us</a></li>
-                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="about-us.php">About Us</a></li>
+                <li><a href="privacy-policy.php">Privacy Policy</a></li>
                 <li>
-                  <a href="terms-and-conditions.html">Terms Conditions</a>
+                  <a href="terms-and-conditions.php">Terms Conditions</a>
                 </li>
-                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="contact-us.php">Contact Us</a></li>
               </ul>
             </div>
 
@@ -188,3 +188,19 @@
         </div>
       </div>
     </footer>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement("script"),
+          s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = "https://embed.tawk.to/66cd98b5ea492f34bc0a8992/1i69hp1jq";
+        s1.charset = "UTF-8";
+        s1.setAttribute("crossorigin", "*");
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    </script>
+    <!--End of Tawk.to Script-->
