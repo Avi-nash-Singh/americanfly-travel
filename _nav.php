@@ -109,6 +109,13 @@
                 <ul class="flight-navbar__dropdown">
                   <li class="flight-navbar__dropdown-item">
                     <a
+                      href="destination-chicago.php"
+                      class="flight-navbar__dropdown-link"
+                      >Chicago</a
+                    >
+                  </li>
+                  <li class="flight-navbar__dropdown-item">
+                    <a
                       href="destination-las-vegas.php"
                       class="flight-navbar__dropdown-link"
                       >Las Vegas</a
@@ -142,10 +149,24 @@
                       >Orlando</a
                     >
                   </li>
+                  <li class="flight-navbar__dropdown-item">
+                    <a
+                      href="destination-san-francisco.php"
+                      class="flight-navbar__dropdown-link"
+                      >San Francisco</a
+                    >
+                  </li>
+                  <li class="flight-navbar__dropdown-item">
+                    <a
+                      href="destination-washington-dc.php"
+                      class="flight-navbar__dropdown-link"
+                      >Washington DC</a
+                    >
+                  </li>
                 </ul>
               </li>
               <li class="flight-navbar__menu-item">
-                <a href="#" class="flight-navbar__menu-link"
+                <a href="car-hire.php" class="flight-navbar__menu-link"
                   >Car Hire</a
                 >
               </li>

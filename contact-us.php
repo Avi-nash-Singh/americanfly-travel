@@ -52,7 +52,7 @@
       <div class="about-banner__content">
         <h1 class="about-banner__title">Contact Us</h1>
         <nav class="about-banner__breadcrumb">
-          <a href="index.html" class="about-banner__breadcrumb-link">Home</a>
+          <a href="index.php" class="about-banner__breadcrumb-link">Home</a>
           <span class="about-banner__breadcrumb-separator">&#8250;</span>
           <span class="about-banner__breadcrumb-current">Contact Us</span>
         </nav>
