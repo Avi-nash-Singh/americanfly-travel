@@ -369,9 +369,9 @@
                       <div class="flex-grow-1">
                         <div class="bs-field-label">Class</div>
                         <select class="bs-field-select" name="class">
-                          <option value="1">Economy</option>
+                          <option value="1" selected>Economy</option>
+                          <option value="2">Business</option>
                           <option value="4">Premium</option>
-                          <option value="2" selected>Business</option>
                           <option value="3">First Class</option>
                         </select>
                       </div>
@@ -425,7 +425,7 @@
                   class="flight-destination-card__image"
                 />
                 <div class="flight-destination-card__overlay">
-                  <span class="flight-destination-card__price">From £259</span>
+                  <span class="flight-destination-card__price">From £475</span>
                 </div>
               </div>
               <div class="flight-destination-card__content">
@@ -455,7 +455,7 @@
                   class="flight-destination-card__image"
                 />
                 <div class="flight-destination-card__overlay">
-                  <span class="flight-destination-card__price">From £299</span>
+                  <span class="flight-destination-card__price">From £483</span>
                 </div>
               </div>
               <div class="flight-destination-card__content">
@@ -485,7 +485,7 @@
                   class="flight-destination-card__image"
                 />
                 <div class="flight-destination-card__overlay">
-                  <span class="flight-destination-card__price">From £279</span>
+                  <span class="flight-destination-card__price">From £529</span>
                 </div>
               </div>
               <div class="flight-destination-card__content">
@@ -513,7 +513,7 @@
                   class="flight-destination-card__image"
                 />
                 <div class="flight-destination-card__overlay">
-                  <span class="flight-destination-card__price">From £249</span>
+                  <span class="flight-destination-card__price">From £535</span>
                 </div>
               </div>
               <div class="flight-destination-card__content">
@@ -543,7 +543,7 @@
                   class="flight-destination-card__image"
                 />
                 <div class="flight-destination-card__overlay">
-                  <span class="flight-destination-card__price">From £269</span>
+                  <span class="flight-destination-card__price">From £489</span>
                 </div>
               </div>
               <div class="flight-destination-card__content">
@@ -573,7 +573,7 @@
                   class="flight-destination-card__image"
                 />
                 <div class="flight-destination-card__overlay">
-                  <span class="flight-destination-card__price">From £289</span>
+                  <span class="flight-destination-card__price">From £499</span>
                 </div>
               </div>
               <div class="flight-destination-card__content">
@@ -603,7 +603,7 @@
                   class="flight-destination-card__image"
                 />
                 <div class="flight-destination-card__overlay">
-                  <span class="flight-destination-card__price">From £239</span>
+                  <span class="flight-destination-card__price">From £429</span>
                 </div>
               </div>
               <div class="flight-destination-card__content">
@@ -822,7 +822,7 @@
                 </p>
                 <div class="offer-card__price-row">
                   <span class="offer-card__price-label">Starting from</span>
-                  <span class="offer-card__price">£259</span>
+                  <span class="offer-card__price">£579</span>
                 </div>
                 <a href="tel:02031375177" class="offer-card__btn"
                   >Contact Us
@@ -861,7 +861,7 @@
                 </p>
                 <div class="offer-card__price-row">
                   <span class="offer-card__price-label">Starting from</span>
-                  <span class="offer-card__price">£289</span>
+                  <span class="offer-card__price">£599</span>
                 </div>
                 <a href="tel:02031375177" class="offer-card__btn"
                   >Contact Us
@@ -900,7 +900,7 @@
                 </p>
                 <div class="offer-card__price-row">
                   <span class="offer-card__price-label">Starting from</span>
-                  <span class="offer-card__price">£299</span>
+                  <span class="offer-card__price">£587</span>
                 </div>
                 <a href="tel:02031375177" class="offer-card__btn"
                   >Contact Us
@@ -939,7 +939,7 @@
                 </p>
                 <div class="offer-card__price-row">
                   <span class="offer-card__price-label">Starting from</span>
-                  <span class="offer-card__price">£269</span>
+                  <span class="offer-card__price">£629</span>
                 </div>
                 <a href="tel:02031375177" class="offer-card__btn"
                   >Contact Us
@@ -1285,8 +1285,8 @@
                 <div class="packages-card__footer">
                   <div class="packages-card__price-block">
                     <span class="packages-card__price-label">from</span>
-                    <span class="packages-card__price">£429</span>
-                    <span class="packages-card__price-old">£699</span>
+                    <span class="packages-card__price">£629</span>
+                    <span class="packages-card__price-old">£888</span>
                     <span class="packages-card__price-per">/Per person</span>
                   </div>
                   <div class="packages-card__rating">
@@ -1372,8 +1372,8 @@
                 <div class="packages-card__footer">
                   <div class="packages-card__price-block">
                     <span class="packages-card__price-label">from</span>
-                    <span class="packages-card__price">£579</span>
-                    <span class="packages-card__price-old">£899</span>
+                    <span class="packages-card__price">£650</span>
+                    <span class="packages-card__price-old">£884</span>
                     <span class="packages-card__price-per">/Per person</span>
                   </div>
                   <div class="packages-card__rating">
@@ -1459,8 +1459,8 @@
                 <div class="packages-card__footer">
                   <div class="packages-card__price-block">
                     <span class="packages-card__price-label">from</span>
-                    <span class="packages-card__price">£389</span>
-                    <span class="packages-card__price-old">£649</span>
+                    <span class="packages-card__price">£579</span>
+                    <span class="packages-card__price-old">£810</span>
                     <span class="packages-card__price-per">/Per person</span>
                   </div>
                   <div class="packages-card__rating">
@@ -1546,8 +1546,8 @@
                 <div class="packages-card__footer">
                   <div class="packages-card__price-block">
                     <span class="packages-card__price-label">from</span>
-                    <span class="packages-card__price">£499</span>
-                    <span class="packages-card__price-old">£799</span>
+                    <span class="packages-card__price">£675</span>
+                    <span class="packages-card__price-old">£931</span>
                     <span class="packages-card__price-per">/Per person</span>
                   </div>
                   <div class="packages-card__rating">
@@ -1633,8 +1633,8 @@
                 <div class="packages-card__footer">
                   <div class="packages-card__price-block">
                     <span class="packages-card__price-label">from</span>
-                    <span class="packages-card__price">£629</span>
-                    <span class="packages-card__price-old">£999</span>
+                    <span class="packages-card__price">£699</span>
+                    <span class="packages-card__price-old">£957</span>
                     <span class="packages-card__price-per">/Per person</span>
                   </div>
                   <div class="packages-card__rating">
@@ -1720,8 +1720,8 @@
                 <div class="packages-card__footer">
                   <div class="packages-card__price-block">
                     <span class="packages-card__price-label">from</span>
-                    <span class="packages-card__price">£359</span>
-                    <span class="packages-card__price-old">£599</span>
+                    <span class="packages-card__price">£613</span>
+                    <span class="packages-card__price-old">£858</span>
                     <span class="packages-card__price-per">/Per person</span>
                   </div>
                   <div class="packages-card__rating">
@@ -1807,8 +1807,8 @@
                 <div class="packages-card__footer">
                   <div class="packages-card__price-block">
                     <span class="packages-card__price-label">from</span>
-                    <span class="packages-card__price">£549</span>
-                    <span class="packages-card__price-old">£899</span>
+                    <span class="packages-card__price">£659</span>
+                    <span class="packages-card__price-old">£916</span>
                     <span class="packages-card__price-per">/Per person</span>
                   </div>
                   <div class="packages-card__rating">
@@ -1894,8 +1894,8 @@
                 <div class="packages-card__footer">
                   <div class="packages-card__price-block">
                     <span class="packages-card__price-label">from</span>
-                    <span class="packages-card__price">£419</span>
-                    <span class="packages-card__price-old">£699</span>
+                    <span class="packages-card__price">£635</span>
+                    <span class="packages-card__price-old">£889</span>
                     <span class="packages-card__price-per">/Per person</span>
                   </div>
                   <div class="packages-card__rating">

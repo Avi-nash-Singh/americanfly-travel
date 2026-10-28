@@ -216,6 +216,7 @@ img {
   font-weight: 700;
   letter-spacing: 0.5px;
   white-space: nowrap;
+  color: yellow;
 }
 
 .flight-header__contact-timing {

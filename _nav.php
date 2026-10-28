@@ -48,11 +48,11 @@
               />
               <div class="flight-header__contact-text">
                 <span class="flight-header__contact-title"
-                  >Talk to our Specialists Today for Lowest Price</span
+                  >Call Us for Exclusive Flight Deals</span
                 >
                 <span class="flight-header__contact-phone">0203 137 5177</span>
                 <span class="flight-header__contact-timing"
-                  >08:00 AM - 11:30 PM / 7 Days a Week</span
+                  >Available 7 Days a Week · 8:00 AM - 11:30 PM</span
                 >
               </div>
             </div>

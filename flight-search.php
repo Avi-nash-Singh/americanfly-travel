@@ -289,7 +289,6 @@ function getRouteText($flight)
             color: #fff;
             font-size: 34px;
             font-weight: 800;
-            /* margin-bottom: 10px; */
         }
 
         .results-hero-subtitle {
@@ -699,7 +698,7 @@ function getRouteText($flight)
             color: #9aa5b3;
             text-transform: uppercase;
             font-weight: 700;
-            margin-bottom: -8px
+            margin-bottom: -8px;
         }
 
         .price {
@@ -879,214 +878,6 @@ function getRouteText($flight)
         }
 
 
-        /* =====================================================
-           RESPONSIVE
-        ====================================================== */
-
-        @media (max-width: 1199px) {
-
-            .flight-row {
-                grid-template-columns:
-                    90px
-                    minmax(80px, 1fr)
-                    70px
-                    minmax(80px, 1fr)
-                    90px;
-                gap: 10px;
-            }
-
-            .airport-code {
-                font-size: 20px;
-            }
-
-        }
-
-
-        @media (max-width: 991px) {
-
-            .results-hero {
-                padding: 170px 0 70px;
-            }
-
-            .search-summary-card {
-                padding: 18px;
-            }
-
-            .summary-info {
-                border-left: none;
-                padding-left: 0;
-                margin-top: 15px;
-                padding-top: 15px;
-                border-top: 1px solid #edf1f5;
-            }
-
-            .filter-card {
-                margin-bottom: 20px;
-            }
-
-            .flight-row {
-                grid-template-columns:
-                    80px
-                    1fr
-                    60px
-                    1fr
-                    80px;
-            }
-
-        }
-
-
-        @media (max-width: 767px) {
-
-            .results-hero h1 {
-                font-size: 27px;
-            }
-
-            .search-summary {
-                margin-top: -35px;
-            }
-
-            .summary-route {
-                gap: 10px;
-            }
-
-            .summary-airport-code {
-                font-size: 21px;
-            }
-
-            .summary-info {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: 15px;
-            }
-
-            .summary-action {
-                margin-top: 15px;
-            }
-
-            .summary-action button {
-                width: 100%;
-            }
-
-            .results-topbar {
-                align-items: flex-start;
-                flex-direction: column;
-            }
-
-            .flight-card-header {
-                padding: 14px;
-            }
-
-            .flight-card-body {
-                padding: 18px 14px;
-            }
-
-            .flight-row {
-                grid-template-columns:
-                    65px
-                    minmax(50px, 1fr)
-                    45px
-                    minmax(50px, 1fr)
-                    65px;
-                gap: 5px;
-            }
-
-            .airport-code {
-                font-size: 17px;
-            }
-
-            .airport-name {
-                font-size: 9px;
-            }
-
-            .route-text {
-                font-size: 9px;
-            }
-
-            .stops-text {
-                font-size: 9px;
-            }
-
-            .flight-card-footer {
-                padding: 14px;
-                flex-wrap: wrap;
-            }
-
-            .price-area {
-                width: 100%;
-                margin-bottom: 5px;
-            }
-
-            .btn-enquire,
-            .btn-call {
-                flex: 1;
-            }
-
-        }
-
-
-        @media (max-width: 480px) {
-
-            .results-hero {
-                padding: 30px 0 55px;
-                padding-top: 13rem;
-            }
-
-            .results-hero h1 {
-                font-size: 23px;
-            }
-
-            .summary-route {
-                display: grid;
-                grid-template-columns: 1fr 35px 1fr;
-            }
-
-            .summary-airport:last-child {
-                text-align: right;
-            }
-
-            .flight-card-header {
-                align-items: flex-start;
-            }
-
-            .flight-badge {
-                font-size: 9px;
-            }
-
-            .airline-logo {
-                width: 42px;
-                height: 42px;
-            }
-
-            .airline-name {
-                font-size: 12px;
-            }
-
-            .flight-row {
-                grid-template-columns:
-                    55px
-                    1fr
-                    35px
-                    1fr
-                    55px;
-            }
-
-            .airport-code {
-                font-size: 15px;
-            }
-
-            .route-plane {
-                width: 24px;
-                height: 24px;
-                font-size: 10px;
-            }
-
-            .price {
-                font-size: 21px;
-            }
-
-        }
-
         /* =========================================================
         FLIGHT SEARCH LOADER - MODAL
         ========================================================= */
@@ -1102,10 +893,10 @@ function getRouteText($flight)
 
             padding: 20px;
 
-            background: rgba(3, 18, 32, 0.62);
+            background: rgba(3, 18, 32, 0.72);
 
-            backdrop-filter: blur(7px);
-            -webkit-backdrop-filter: blur(7px);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
 
             opacity: 1;
             visibility: visible;
@@ -1130,9 +921,9 @@ function getRouteText($flight)
             position: relative;
 
             width: 100%;
-            max-width: 520px;
+            max-width: 530px;
 
-            padding: 38px 40px 35px;
+            padding: 34px 38px 28px;
 
             border-radius: 24px;
 
@@ -1162,68 +953,40 @@ function getRouteText($flight)
             animation: loaderCardIn .45s cubic-bezier(.22,1,.36,1);
         }
 
-
-        /* Decorative circles */
-
         .flight-loader-card::before {
             content: "";
-
             position: absolute;
-
             width: 260px;
             height: 260px;
-
             border-radius: 50%;
-
             right: -130px;
             top: -150px;
-
             background: rgba(6,182,212,.07);
         }
 
-
         .flight-loader-card::after {
             content: "";
-
             position: absolute;
-
             width: 200px;
             height: 200px;
-
             border-radius: 50%;
-
             left: -110px;
             bottom: -120px;
-
             background: rgba(2,132,199,.08);
         }
-
-
-        /* =========================================================
-        CONTENT
-        ========================================================= */
 
         .flight-loader-content {
             position: relative;
             z-index: 2;
-
             text-align: center;
         }
 
-
-        /* =========================================================
-        LOGO
-        ========================================================= */
-
         .flight-loader-logo {
-            width: 145px;
-            max-width: 55%;
+            width: 140px;
+            max-width: 50%;
             height: auto;
-
-            margin-bottom: 30px;
-
-            animation:
-                loaderLogoPulse 2s ease-in-out infinite;
+            margin-bottom: 24px;
+            animation: loaderLogoPulse 2s ease-in-out infinite;
         }
 
 
@@ -1234,83 +997,50 @@ function getRouteText($flight)
         .loader-route {
             display: flex;
             align-items: center;
-
             width: 100%;
-
-            margin-bottom: 28px;
+            margin-bottom: 24px;
         }
-
 
         .loader-airport {
             width: 70px;
             flex-shrink: 0;
         }
 
-
         .loader-airport-code {
             display: block;
-
             color: #fff;
-
             font-size: 24px;
             line-height: 1;
-
             font-weight: 800;
-
             letter-spacing: .04em;
         }
 
-
         .loader-airport-label {
             display: block;
-
             color: rgba(255,255,255,.52);
-
             font-size: 9px;
-
             margin-top: 7px;
-
             text-transform: uppercase;
-
             letter-spacing: .08em;
-
             white-space: nowrap;
-
             overflow: hidden;
-
             text-overflow: ellipsis;
         }
 
-
-        /* =========================================================
-        FLIGHT PATH
-        ========================================================= */
-
         .loader-flight-path {
             position: relative;
-
             height: 45px;
-
             flex: 1;
-
             margin: 0 10px;
         }
 
-
-        /* Dashed route */
-
         .loader-flight-path::before {
             content: "";
-
             position: absolute;
-
             left: 0;
             right: 0;
-
             top: 50%;
-
             height: 1px;
-
             background:
                 repeating-linear-gradient(
                     to right,
@@ -1321,69 +1051,43 @@ function getRouteText($flight)
                 );
         }
 
-
-        /* =========================================================
-        ANIMATED PLANE
-        ========================================================= */
-
         .loader-plane {
             position: absolute;
-
             top: 50%;
             left: 0;
-
             width: 38px;
             height: 38px;
-
             margin-top: -19px;
-
             border-radius: 50%;
-
             display: flex;
             align-items: center;
             justify-content: center;
-
             background:
                 linear-gradient(
                     135deg,
                     #0284c7,
                     #06b6d4
                 );
-
             color: #fff;
-
             box-shadow:
                 0 0 0 6px rgba(6,182,212,.10),
                 0 8px 25px rgba(0,0,0,.25);
-
-            animation:
-                flyAcross 2.4s cubic-bezier(.45,.05,.55,.95) infinite;
+            animation: flyAcross 2.4s cubic-bezier(.45,.05,.55,.95) infinite;
         }
-
 
         .loader-plane i {
             font-size: 13px;
         }
 
-
-        /* Plane glow */
-
         .loader-plane::after {
             content: "";
-
             position: absolute;
-
             width: 70px;
             height: 70px;
-
             border-radius: 50%;
-
             background: rgba(6,182,212,.10);
-
             z-index: -1;
-
-            animation:
-                planeGlow 1.5s ease-in-out infinite;
+            animation: planeGlow 1.5s ease-in-out infinite;
         }
 
 
@@ -1393,24 +1097,16 @@ function getRouteText($flight)
 
         .flight-loader-title {
             color: #fff;
-
-            font-size: 20px;
-
+            font-size: 19px;
             font-weight: 700;
-
-            margin: 0 0 8px;
+            margin: 0 0 6px;
         }
 
-
         .flight-loader-subtitle {
-            color: rgba(255,255,255,.60);
-
+            color: rgba(255,255,255,.68);
             font-size: 12px;
-
-            margin: 0 0 23px;
-
+            margin: 0 0 18px;
             min-height: 18px;
-
             transition: opacity .25s ease;
         }
 
@@ -1421,26 +1117,17 @@ function getRouteText($flight)
 
         .loader-progress {
             width: 100%;
-
             height: 5px;
-
             background: rgba(255,255,255,.10);
-
             border-radius: 20px;
-
             overflow: hidden;
-
-            margin-bottom: 11px;
+            margin-bottom: 10px;
         }
-
 
         .loader-progress-bar {
             width: 0;
-
             height: 100%;
-
             border-radius: inherit;
-
             background:
                 linear-gradient(
                     90deg,
@@ -1448,21 +1135,80 @@ function getRouteText($flight)
                     #06b6d4,
                     #67e8f9
                 );
+            box-shadow: 0 0 15px rgba(6,182,212,.45);
+            /* 6s animation to match 6-second search duration */
+            animation: loaderProgress 6s linear forwards;
+        }
 
-            box-shadow:
-                0 0 15px rgba(6,182,212,.45);
-
-            animation:
-                loaderProgress 3s linear forwards;
+        .loader-status {
+            color: rgba(255,255,255,.45);
+            font-size: 10px;
+            letter-spacing: .02em;
         }
 
 
-        .loader-status {
-            color: rgba(255,255,255,.40);
+        /* =========================================================
+        NO CARD FEE GUARANTEE BADGE
+        ========================================================= */
 
+        .loader-fee-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+            margin-top: 15px;
+            padding: 6px 14px;
+            background: rgba(6, 182, 212, 0.12);
+            border: 1px solid rgba(6, 182, 212, 0.35);
+            border-radius: 30px;
+            color: #67e8f9;
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: .04em;
+            text-transform: uppercase;
+        }
+
+        .loader-fee-badge i {
+            font-size: 12px;
+        }
+
+
+        /* =========================================================
+        TRUST BADGES (ATOL & TTA)
+        ========================================================= */
+
+        .loader-trust-badges {
+            margin-top: 18px;
+            padding-top: 15px;
+            border-top: 1px solid rgba(255, 255, 255, 0.10);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+        }
+
+        .loader-trust-label {
             font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .06em;
+            color: rgba(255, 255, 255, 0.55);
+        }
 
-            letter-spacing: .02em;
+        .loader-badge-imgs {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .loader-badge-logo {
+            height: 3.5rem;
+            /* max-width: 90px; */
+            /* object-fit: contain; */
+            /* background: #ffffff; */
+            /* padding: 3px 7px; */
+            /* border-radius: 6px; */
+            /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); */
         }
 
 
@@ -1471,89 +1217,56 @@ function getRouteText($flight)
         ========================================================= */
 
         @keyframes loaderCardIn {
-
             from {
                 opacity: 0;
                 transform: translateY(15px) scale(.96);
             }
-
             to {
                 opacity: 1;
                 transform: translateY(0) scale(1);
             }
         }
 
-
         @keyframes flyAcross {
-
             0% {
                 left: 0;
                 transform: translateX(0);
             }
-
             50% {
                 left: 50%;
                 transform: translateX(-50%);
             }
-
             100% {
                 left: 100%;
                 transform: translateX(-100%);
             }
         }
 
-
         @keyframes planeGlow {
-
-            0%,
-            100% {
+            0%, 100% {
                 transform: scale(.75);
                 opacity: .4;
             }
-
             50% {
                 transform: scale(1.15);
                 opacity: .9;
             }
         }
 
-
         @keyframes loaderProgress {
-
-            0% {
-                width: 0%;
-            }
-
-            20% {
-                width: 18%;
-            }
-
-            45% {
-                width: 42%;
-            }
-
-            70% {
-                width: 68%;
-            }
-
-            88% {
-                width: 87%;
-            }
-
-            100% {
-                width: 100%;
-            }
+            0%   { width: 0%; }
+            15%  { width: 18%; }
+            35%  { width: 42%; }
+            60%  { width: 68%; }
+            85%  { width: 88%; }
+            100% { width: 100%; }
         }
 
-
         @keyframes loaderLogoPulse {
-
-            0%,
-            100% {
+            0%, 100% {
                 opacity: .85;
                 transform: scale(1);
             }
-
             50% {
                 opacity: 1;
                 transform: scale(1.035);
@@ -1562,103 +1275,223 @@ function getRouteText($flight)
 
 
         /* =========================================================
-        TABLET
+        RESPONSIVE BREAKPOINTS
         ========================================================= */
 
+        @media (max-width: 1199px) {
+            .flight-row {
+                grid-template-columns:
+                    90px minmax(80px, 1fr) 70px minmax(80px, 1fr) 90px;
+                gap: 10px;
+            }
+            .airport-code {
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .results-hero {
+                padding: 170px 0 70px;
+            }
+            .search-summary-card {
+                padding: 18px;
+            }
+            .summary-info {
+                border-left: none;
+                padding-left: 0;
+                margin-top: 15px;
+                padding-top: 15px;
+                border-top: 1px solid #edf1f5;
+            }
+            .filter-card {
+                margin-bottom: 20px;
+            }
+            .flight-row {
+                grid-template-columns: 80px 1fr 60px 1fr 80px;
+            }
+        }
+
         @media (max-width: 767px) {
+            .results-hero h1 {
+                font-size: 27px;
+            }
+            .search-summary {
+                margin-top: -35px;
+            }
+            .summary-route {
+                gap: 10px;
+            }
+            .summary-airport-code {
+                font-size: 21px;
+            }
+            .summary-info {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 15px;
+            }
+            .summary-action {
+                margin-top: 15px;
+            }
+            .summary-action button {
+                width: 100%;
+            }
+            .results-topbar {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+            .flight-card-header {
+                padding: 14px;
+            }
+            .flight-card-body {
+                padding: 18px 14px;
+            }
+            .flight-row {
+                grid-template-columns: 65px minmax(50px, 1fr) 45px minmax(50px, 1fr) 65px;
+                gap: 5px;
+            }
+            .airport-code {
+                font-size: 17px;
+            }
+            .airport-name,
+            .route-text,
+            .stops-text {
+                font-size: 9px;
+            }
+            .flight-card-footer {
+                padding: 14px;
+                flex-wrap: wrap;
+            }
+            .price-area {
+                width: 100%;
+                margin-bottom: 5px;
+            }
+            .btn-enquire,
+            .btn-call {
+                flex: 1;
+            }
 
             .flight-loader-card {
                 max-width: 460px;
-
-                padding: 32px 28px 30px;
-
+                padding: 28px 24px 22px;
                 border-radius: 21px;
             }
-
             .flight-loader-logo {
                 width: 130px;
-
-                margin-bottom: 26px;
+                margin-bottom: 20px;
             }
-
             .loader-airport {
                 width: 60px;
             }
-
             .loader-airport-code {
                 font-size: 21px;
             }
-
             .loader-flight-path {
                 margin: 0 7px;
             }
-
+            .loader-fee-badge {
+                font-size: 10px;
+                padding: 5px 11px;
+            }
+            .loader-badge-logo {
+                /* height: 28px; */
+            }
         }
 
-
-        /* =========================================================
-        MOBILE
-        ========================================================= */
-
         @media (max-width: 480px) {
+            .results-hero {
+                padding: 30px 0 55px;
+                padding-top: 13rem;
+            }
+            .results-hero h1 {
+                font-size: 23px;
+            }
+            .summary-route {
+                display: grid;
+                grid-template-columns: 1fr 35px 1fr;
+            }
+            .summary-airport:last-child {
+                text-align: right;
+            }
+            .flight-card-header {
+                align-items: flex-start;
+            }
+            .flight-badge {
+                font-size: 9px;
+            }
+            .airline-logo {
+                width: 42px;
+                height: 42px;
+            }
+            .airline-name {
+                font-size: 12px;
+            }
+            .flight-row {
+                grid-template-columns: 55px 1fr 35px 1fr 55px;
+            }
+            .airport-code {
+                font-size: 15px;
+            }
+            .route-plane {
+                width: 24px;
+                height: 24px;
+                font-size: 10px;
+            }
+            .price {
+                font-size: 21px;
+            }
 
             .flight-loader {
                 padding: 15px;
             }
-
             .flight-loader-card {
-                width: 100%;
-
-                padding: 30px 20px 27px;
-
+                padding: 26px 18px 20px;
                 border-radius: 20px;
             }
-
             .flight-loader-logo {
-                width: 120px;
-
-                margin-bottom: 25px;
+                width: 115px;
+                margin-bottom: 18px;
             }
-
             .loader-airport {
                 width: 52px;
             }
-
             .loader-airport-code {
                 font-size: 19px;
             }
-
             .loader-airport-label {
                 font-size: 8px;
             }
-
             .loader-flight-path {
                 margin: 0 5px;
             }
-
             .loader-plane {
                 width: 34px;
                 height: 34px;
-
                 margin-top: -17px;
             }
-
             .loader-plane i {
                 font-size: 11px;
             }
-
             .flight-loader-title {
-                font-size: 17px;
+                font-size: 16px;
             }
-
             .flight-loader-subtitle {
                 font-size: 11px;
             }
-
             .loader-status {
                 font-size: 9px;
             }
-
+            .loader-fee-badge {
+                font-size: 9px;
+                letter-spacing: .02em;
+                padding: 4px 10px;
+            }
+            .loader-trust-badges {
+                flex-direction: column;
+                gap: 8px;
+            }
+            .loader-badge-logo {
+                /* height: 25px; */
+            }
         }
 
     </style>
@@ -1667,74 +1500,57 @@ function getRouteText($flight)
 
 
 <body>
+
 <!-- =========================================================
-     FLIGHT SEARCH LOADER MODAL
+     FLIGHT SEARCH LOADER MODAL (6-SECOND DURATION)
 ========================================================== -->
 
-<div class="flight-loader" id="flightSearchLoader" aria-label="Searching for flights" >
+<div class="flight-loader" id="flightSearchLoader" aria-label="Searching for flights">
 
     <div class="flight-loader-card">
 
         <div class="flight-loader-content">
 
             <!-- LOGO -->
-
             <img
                 src="assets/logo.png"
                 alt="American Fly"
                 class="flight-loader-logo"
             >
 
-
             <!-- ROUTE -->
-
             <div class="loader-route">
 
                 <div class="loader-airport">
-
                     <span class="loader-airport-code">
                         <?php echo htmlspecialchars($source); ?>
                     </span>
-
                     <span class="loader-airport-label">
                         <?php echo htmlspecialchars($airport_from['City'] ?? ''); ?>
                     </span>
-
                 </div>
-
 
                 <div class="loader-flight-path">
-
                     <div class="loader-plane">
-
                         <i class="fa-solid fa-plane"></i>
-
                     </div>
-
                 </div>
 
-
                 <div class="loader-airport">
-
                     <span class="loader-airport-code">
                         <?php echo htmlspecialchars($destination); ?>
                     </span>
-
                     <span class="loader-airport-label">
                         <?php echo htmlspecialchars($airport_to['City'] ?? ''); ?>
                     </span>
-
                 </div>
 
             </div>
 
-
-            <!-- MESSAGE -->
-
+            <!-- SEARCH STATUS MESSAGE -->
             <h2 class="flight-loader-title">
                 Searching for the best flights
             </h2>
-
 
             <p
                 class="flight-loader-subtitle"
@@ -1743,20 +1559,41 @@ function getRouteText($flight)
                 Checking available fares for your journey...
             </p>
 
-
-            <!-- PROGRESS -->
-
+            <!-- 6s PROGRESS BAR -->
             <div class="loader-progress">
-
                 <div class="loader-progress-bar"></div>
-
             </div>
 
-
             <div class="loader-status">
-
                 Please wait while we find the best available options
+            </div>
 
+            <!-- NO CARD FEE NOTICE -->
+            <div>
+                <span class="loader-fee-badge">
+                    <i class="fa-solid fa-credit-card"></i>
+                    NO FEE ON CREDIT/DEBIT CARD TRANSACTIONS.
+                </span>
+            </div>
+
+            <!-- ATOL & TTA TRUST BADGES -->
+            <div class="loader-trust-badges">
+                <span class="loader-trust-label">
+                    <i class="fa-solid fa-shield-halved me-1 text-info"></i>
+                    100% Financial Protection
+                </span>
+                <div class="loader-badge-imgs">
+                    <img
+                        src="assets/cert/tta.png"
+                        alt="Travel Trust Association (TTA)"
+                        class="loader-badge-logo"
+                    >
+                    <img
+                        src="assets/cert/atol_logo_white.png"
+                        alt="ATOL Protected"
+                        class="loader-badge-logo"
+                    >
+                </div>
             </div>
 
         </div>
@@ -1780,9 +1617,7 @@ function getRouteText($flight)
         <h1>Flight Search Results</h1>
 
         <div class="results-hero-subtitle">
-
             Find the best available fares for your journey.
-
         </div>
 
     </div>
@@ -1808,115 +1643,63 @@ function getRouteText($flight)
                     <div class="summary-route">
 
                         <div class="summary-airport">
-
                             <div class="summary-airport-code">
                                 <?php echo htmlspecialchars($source); ?>
                             </div>
-
                             <div class="summary-city">
-                                <?php
-                                echo htmlspecialchars(
-                                    $airport_from['City'] ?? ''
-                                );
-                                ?>
+                                <?php echo htmlspecialchars($airport_from['City'] ?? ''); ?>
                             </div>
-
                         </div>
-
 
                         <div class="summary-arrow">
-
                             <i class="fa-solid fa-plane"></i>
-
                         </div>
 
-
                         <div class="summary-airport">
-
                             <div class="summary-airport-code">
                                 <?php echo htmlspecialchars($destination); ?>
                             </div>
-
                             <div class="summary-city">
-                                <?php
-                                echo htmlspecialchars(
-                                    $airport_to['City'] ?? ''
-                                );
-                                ?>
+                                <?php echo htmlspecialchars($airport_to['City'] ?? ''); ?>
                             </div>
-
                         </div>
 
                     </div>
 
                 </div>
-
 
                 <div class="col-lg-5">
 
                     <div class="row summary-info">
 
                         <div class="col-6">
-
-                            <span class="summary-label">
-                                Departure
-                            </span>
-
-                            <span class="summary-value">
-                                <?php echo $display_start; ?>
-                            </span>
-
+                            <span class="summary-label">Departure</span>
+                            <span class="summary-value"><?php echo $display_start; ?></span>
                         </div>
-
 
                         <div class="col-6">
-
-                            <span class="summary-label">
-                                Return
-                            </span>
-
-                            <span class="summary-value">
-                                <?php echo $display_end; ?>
-                            </span>
-
+                            <span class="summary-label">Return</span>
+                            <span class="summary-value"><?php echo $display_end; ?></span>
                         </div>
 
-
                         <div class="col-6 mt-3">
-
-                            <span class="summary-label">
-                                Travellers
-                            </span>
-
+                            <span class="summary-label">Travellers</span>
                             <span class="summary-value">
-                                <?php echo $adult; ?>
-                                Adult<?php echo $adult > 1 ? 's' : ''; ?>
-
+                                <?php echo $adult; ?> Adult<?php echo $adult > 1 ? 's' : ''; ?>
                                 <?php if ($child > 0): ?>
-                                    , <?php echo $child; ?>
-                                    Child<?php echo $child > 1 ? 'ren' : ''; ?>
+                                    , <?php echo $child; ?> Child<?php echo $child > 1 ? 'ren' : ''; ?>
                                 <?php endif; ?>
                             </span>
-
                         </div>
 
-
                         <div class="col-6 mt-3">
-
-                            <span class="summary-label">
-                                Cabin
-                            </span>
-
-                            <span class="summary-value">
-                                <?php echo $printclass; ?>
-                            </span>
-
+                            <span class="summary-label">Cabin</span>
+                            <span class="summary-value"><?php echo $printclass; ?></span>
                         </div>
 
                     </div>
 
                 </div>
-
 
                 <div class="col-lg-2 summary-action text-lg-end">
 
@@ -1926,11 +1709,8 @@ function getRouteText($flight)
                         data-bs-toggle="modal"
                         data-bs-target="#modifySearchModal"
                     >
-
                         <i class="fa-solid fa-sliders me-1"></i>
-
                         Modify Search
-
                     </button>
 
                 </div>
@@ -1955,7 +1735,6 @@ function getRouteText($flight)
 
         <div class="row g-4">
 
-
             <!-- =================================================
                  FILTERS
             ================================================== -->
@@ -1965,104 +1744,49 @@ function getRouteText($flight)
                 <div class="filter-card">
 
                     <div class="filter-header">
-
                         <i class="fa-solid fa-filter me-2"></i>
-
                         Filter Flights
-
                     </div>
-
 
                     <div class="filter-body">
 
-
                         <!-- STOPS -->
-
-                        <div class="filter-title">
-                            Stops
-                        </div>
-
+                        <div class="filter-title">Stops</div>
 
                         <label class="filter-option">
-
                             <span class="filter-option-left">
-
-                                <input
-                                    type="checkbox"
-                                    class="stop-filter"
-                                    value="0"
-                                >
-
+                                <input type="checkbox" class="stop-filter" value="0">
                                 Non-Stop
-
                             </span>
-
                         </label>
 
-
                         <label class="filter-option">
-
                             <span class="filter-option-left">
-
-                                <input
-                                    type="checkbox"
-                                    class="stop-filter"
-                                    value="1"
-                                >
-
+                                <input type="checkbox" class="stop-filter" value="1">
                                 1 Stop
-
                             </span>
-
                         </label>
 
-
                         <label class="filter-option">
-
                             <span class="filter-option-left">
-
-                                <input
-                                    type="checkbox"
-                                    class="stop-filter"
-                                    value="2"
-                                >
-
+                                <input type="checkbox" class="stop-filter" value="2">
                                 2 Stops
-
                             </span>
-
                         </label>
-
 
                         <label class="filter-option">
-
                             <span class="filter-option-left">
-
-                                <input
-                                    type="checkbox"
-                                    class="stop-filter"
-                                    value="3"
-                                >
-
+                                <input type="checkbox" class="stop-filter" value="3">
                                 3 Stops
-
                             </span>
-
                         </label>
-
 
                         <hr class="filter-divider">
 
-
                         <!-- AIRLINES -->
-
-                        <div class="filter-title">
-                            Airlines
-                        </div>
-
+                        <div class="filter-title">Airlines</div>
 
                         <?php
-
                         $airlines_filter = [];
 
                         if ($flights_result && $flights_result->num_rows > 0) {
@@ -2080,50 +1804,34 @@ function getRouteText($flight)
                                         mysqli_real_escape_string(
                                             $conn,
                                             $airline_code
-                                        ) .
-                                        "' LIMIT 1"
+                                        ) . "' LIMIT 1"
                                     );
 
-                                    $airline_info = mysqli_fetch_assoc(
-                                        $airline_query
-                                    );
+                                    $airline_info = mysqli_fetch_assoc($airline_query);
 
                                     $airlines_filter[$airline_code] =
-                                        $airline_info['Airline_Name']
-                                        ?? $airline_code;
+                                        $airline_info['Airline_Name'] ?? $airline_code;
                                 }
-
                             }
 
-                            /*
-                             * Reset pointer for card loop.
-                             */
                             mysqli_data_seek($flights_result, 0);
                         }
 
-
                         foreach ($airlines_filter as $code => $name):
-
                         ?>
 
                             <label class="filter-option">
-
                                 <span class="filter-option-left">
-
                                     <input
                                         type="checkbox"
                                         class="airline-filter"
                                         value="<?php echo htmlspecialchars($code); ?>"
                                     >
-
                                     <?php echo htmlspecialchars($name); ?>
-
                                 </span>
-
                             </label>
 
                         <?php endforeach; ?>
-
 
                     </div>
 
@@ -2139,53 +1847,29 @@ function getRouteText($flight)
 
             <div class="col-lg-9">
 
-
                 <!-- TOP BAR -->
-
                 <div class="results-topbar">
 
                     <div class="results-count">
-
                         Showing
                         <strong id="visibleFlightCount">
-                            <?php
-                            echo $flights_result
-                                ? $flights_result->num_rows
-                                : 0;
-                            ?>
+                            <?php echo $flights_result ? $flights_result->num_rows : 0; ?>
                         </strong>
-
                         flight option(s)
-
                     </div>
 
-
-                    <select
-                        id="sortFlights"
-                        class="sort-select"
-                    >
-
-                        <option value="low">
-                            Price: Low to High
-                        </option>
-
-                        <option value="high">
-                            Price: High to Low
-                        </option>
-
+                    <select id="sortFlights" class="sort-select">
+                        <option value="low">Price: Low to High</option>
+                        <option value="high">Price: High to Low</option>
                     </select>
 
                 </div>
 
 
-
                 <!-- FLIGHT CARDS -->
-
                 <div id="flightResults">
 
-
                 <?php
-
                 if ($flights_result && $flights_result->num_rows > 0):
 
                     while ($flight = $flights_result->fetch_assoc()):
@@ -2196,37 +1880,22 @@ function getRouteText($flight)
                             $conn,
                             "SELECT * FROM airlines
                              WHERE Airline_Code = '" .
-                            mysqli_real_escape_string(
-                                $conn,
-                                $airline_code
-                            ) .
+                            mysqli_real_escape_string($conn, $airline_code) .
                             "' LIMIT 1"
                         );
 
-                        $airline_data = mysqli_fetch_assoc(
-                            $airline_query
-                        );
+                        $airline_data = mysqli_fetch_assoc($airline_query);
 
+                        $airline_name = $airline_data['Airline_Name'] ?? $airline_code;
 
-                        $airline_name =
-                            $airline_data['Airline_Name']
-                            ?? $airline_code;
-
-
-                        $logo =
-                            !empty($flight['logo'])
+                        $logo = !empty($flight['logo'])
                             ? 'backend/uploads/' . $flight['logo']
                             : 'assets/logo.png';
 
-
                         $stops = getStops($flight);
-
                         $stop_count = getStopCount($flight);
-
                         $route_text = getRouteText($flight);
-
                 ?>
-
 
                     <div
                         class="flight-card"
@@ -2235,398 +1904,206 @@ function getRouteText($flight)
                         data-airline="<?php echo htmlspecialchars($airline_code); ?>"
                     >
 
-
                         <!-- CARD HEADER -->
-
                         <div class="flight-card-header">
 
-
                             <div class="airline-info">
-
                                 <img
                                     src="<?php echo htmlspecialchars($logo); ?>"
                                     alt="<?php echo htmlspecialchars($airline_name); ?>"
                                     class="airline-logo"
                                 >
-
-
                                 <div>
-
                                     <div class="airline-name">
-
-                                        <?php
-                                        echo htmlspecialchars(
-                                            $airline_name
-                                        );
-                                        ?>
-
+                                        <?php echo htmlspecialchars($airline_name); ?>
                                     </div>
-
-
                                     <div class="airline-class">
-
-                                        <?php echo $printclass; ?>
-                                        &nbsp; • &nbsp;
-                                        Return Fare
-
+                                        <?php echo $printclass; ?>   •   Return Fare
                                     </div>
-
                                 </div>
-
                             </div>
 
-
                             <div class="flight-badge">
-
                                 <i class="fa-solid fa-check me-1"></i>
-
                                 Available
-
                             </div>
 
                         </div>
-
 
 
                         <!-- CARD BODY -->
-
                         <div class="flight-card-body">
 
-
                             <!-- OUTBOUND -->
-
                             <div class="flight-row">
 
-
                                 <div class="flight-location">
-
                                     <div class="airport-code">
                                         <?php echo htmlspecialchars($source); ?>
                                     </div>
-
                                     <div class="airport-name">
-
-                                        <?php
-                                        echo htmlspecialchars(
-                                            $airport_from['City'] ?? ''
-                                        );
-                                        ?>
-
+                                        <?php echo htmlspecialchars($airport_from['City'] ?? ''); ?>
                                     </div>
-
                                 </div>
-
 
                                 <div class="route-middle">
-
                                     <div class="route-line">
-
                                         <span class="route-plane">
-
                                             <i class="fa-solid fa-plane"></i>
-
                                         </span>
-
                                     </div>
-
                                     <div class="route-text">
-
-                                        <?php
-                                        echo htmlspecialchars($route_text);
-                                        ?>
-
+                                        <?php echo htmlspecialchars($route_text); ?>
                                     </div>
-
                                 </div>
-
 
                                 <div class="stops-text">
-
                                     <?php echo htmlspecialchars($stops); ?>
-
                                 </div>
-
 
                                 <div class="route-middle">
-
                                     <div class="route-line">
-
                                         <span class="route-plane">
-
                                             <i class="fa-solid fa-plane"></i>
-
                                         </span>
-
                                     </div>
-
                                     <div class="route-text">
-
                                         <?php echo $display_start; ?>
-
                                     </div>
-
                                 </div>
 
-
                                 <div class="flight-location">
-
                                     <div class="airport-code">
                                         <?php echo htmlspecialchars($destination); ?>
                                     </div>
-
                                     <div class="airport-name">
-
-                                        <?php
-                                        echo htmlspecialchars(
-                                            $airport_to['City'] ?? ''
-                                        );
-                                        ?>
-
+                                        <?php echo htmlspecialchars($airport_to['City'] ?? ''); ?>
                                     </div>
-
                                 </div>
 
-
                             </div>
-
 
 
                             <!-- RETURN -->
-
                             <div class="flight-row">
 
-
                                 <div class="flight-location">
-
                                     <div class="airport-code">
                                         <?php echo htmlspecialchars($destination); ?>
                                     </div>
-
                                     <div class="airport-name">
-
-                                        <?php
-                                        echo htmlspecialchars(
-                                            $airport_to['City'] ?? ''
-                                        );
-                                        ?>
-
+                                        <?php echo htmlspecialchars($airport_to['City'] ?? ''); ?>
                                     </div>
-
                                 </div>
-
 
                                 <div class="route-middle">
-
                                     <div class="route-line">
-
                                         <span class="route-plane">
-
-                                            <i
-                                                class="fa-solid fa-plane"
-                                                style="transform:rotate(180deg)"
-                                            ></i>
-
+                                            <i class="fa-solid fa-plane" style="transform:rotate(180deg)"></i>
                                         </span>
-
                                     </div>
-
                                     <div class="route-text">
-
-                                        <?php
-                                        echo htmlspecialchars(
-                                            $route_text
-                                        );
-                                        ?>
-
+                                        <?php echo htmlspecialchars($route_text); ?>
                                     </div>
-
                                 </div>
-
 
                                 <div class="stops-text">
-
                                     <?php echo htmlspecialchars($stops); ?>
-
                                 </div>
-
 
                                 <div class="route-middle">
-
                                     <div class="route-line">
-
                                         <span class="route-plane">
-
-                                            <i
-                                                class="fa-solid fa-plane"
-                                                style="transform:rotate(180deg)"
-                                            ></i>
-
+                                            <i class="fa-solid fa-plane" style="transform:rotate(180deg)"></i>
                                         </span>
-
                                     </div>
-
                                     <div class="route-text">
-
                                         <?php echo $display_end; ?>
-
                                     </div>
-
                                 </div>
 
-
                                 <div class="flight-location">
-
                                     <div class="airport-code">
                                         <?php echo htmlspecialchars($source); ?>
                                     </div>
-
                                     <div class="airport-name">
-
-                                        <?php
-                                        echo htmlspecialchars(
-                                            $airport_from['City'] ?? ''
-                                        );
-                                        ?>
-
+                                        <?php echo htmlspecialchars($airport_from['City'] ?? ''); ?>
                                     </div>
-
                                 </div>
 
-
                             </div>
-
 
                         </div>
 
 
-
                         <!-- CARD FOOTER -->
-
                         <div class="flight-card-footer">
 
-
                             <div class="price-area">
-
-                                <span class="price-label">
-                                    From
-                                </span>
-
+                                <span class="price-label">From</span>
                                 <span class="price">
-
-                                    £<?php
-                                    echo number_format(
-                                        (float)$flight['adult_fare'],
-                                        2
-                                    );
-                                    ?>
-
+                                    £<?php echo number_format((float)$flight['adult_fare'], 2); ?>
                                 </span>
-
-                                <span class="price-per">
-                                    /pp
-                                </span>
-
-
+                                <span class="price-per">/pp</span>
                                 <div class="phone-offer">
-
                                     Phone only offer
-
                                 </div>
-
                             </div>
-
-
 
                             <a
                                 href="flight-enquiry.php?flight=<?php echo urlencode($flight['id']); ?>&up=<?php echo urlencode($start_date); ?>&down=<?php echo urlencode($end_date); ?>"
                                 class="btn-enquire"
                             >
-
                                 <i class="fa-regular fa-paper-plane me-1"></i>
-
                                 Enquire Now
-
                             </a>
-
 
                             <a
                                 href="tel:02031375177"
                                 class="btn-call"
                             >
-
                                 <i class="fa-solid fa-phone me-1"></i>
-
                                 Call Now
-
                             </a>
-
 
                         </div>
 
-
                     </div>
 
-
                 <?php
-
                     endwhile;
-
                 else:
-
                 ?>
 
                     <div class="no-results">
-
                         <i class="fa-solid fa-plane-circle-exclamation"></i>
-
-                        <h4>
-                            No flights found
-                        </h4>
-
+                        <h4>No flights found</h4>
                         <p class="text-muted mb-3">
-
                             We couldn't find flights matching your search.
-
                         </p>
-
                         <button
                             type="button"
                             class="modify-search-btn"
                             data-bs-toggle="modal"
                             data-bs-target="#modifySearchModal"
                         >
-
                             Modify Search
-
                         </button>
-
                     </div>
 
                 <?php endif; ?>
-
 
                 </div>
 
 
                 <div class="mt-3">
-
                     <p class="small text-muted mb-1">
-
-                        * The price was updated within the last 24 hours
-                        and is subject to availability.
-
+                        * The price was updated within the last 24 hours and is subject to availability.
                     </p>
-
                     <p class="small text-danger">
-
-                        <strong>Note:</strong>
-                        Due to constant changes in availability,
-                        fares may not be available on the selected dates.
-
+                        <strong>Note:</strong> Due to constant changes in availability, fares may not be available on the selected dates.
                     </p>
-
                 </div>
-
 
             </div>
 
@@ -2653,368 +2130,159 @@ function getRouteText($flight)
 
         <div class="modal-content">
 
-
             <div class="modal-header">
-
                 <div>
-
-                    <h5 class="modal-title">
-
-                        Modify Your Search
-
-                    </h5>
-
-                    <small style="opacity:.7">
-
-                        Update your flight details
-
-                    </small>
-
+                    <h5 class="modal-title">Modify Your Search</h5>
+                    <small style="opacity:.7">Update your flight details</small>
                 </div>
-
-
                 <button
                     type="button"
                     class="btn-close"
                     data-bs-dismiss="modal"
                 ></button>
-
             </div>
 
-
-
-            <form
-                action="flight-search.php"
-                method="get"
-            >
+            <form action="flight-search.php" method="get">
 
                 <div class="modal-body">
 
                     <div class="row g-3">
 
-
                         <!-- ORIGIN -->
-
                         <div class="col-md-6">
-
                             <div class="modify-field">
-
-                                <label>
-                                    From
-                                </label>
-
-                                <select
-                                    name="origin"
-                                    id="modifyOrigin"
-                                    required
-                                >
-
-                                    <option value="">
-                                        Select Origin
-                                    </option>
-
+                                <label>From</label>
+                                <select name="origin" id="modifyOrigin" required>
+                                    <option value="">Select Origin</option>
                                     <?php
-
                                     $result_airports->data_seek(0);
-
                                     while ($airport = $result_airports->fetch_assoc()):
-
                                     ?>
-
                                         <option
                                             value="<?php echo htmlspecialchars($airport['Airport_Code']); ?>"
-                                            <?php
-                                            echo $airport['Airport_Code'] === $source
-                                                ? 'selected'
-                                                : '';
-                                            ?>
+                                            <?php echo $airport['Airport_Code'] === $source ? 'selected' : ''; ?>
                                         >
-
-                                            <?php
-                                            echo htmlspecialchars(
-                                                $airport['Airport_Name']
-                                            );
-                                            ?>
-
-                                            (<?php
-                                            echo htmlspecialchars(
-                                                $airport['Airport_Code']
-                                            );
-                                            ?>)
-
+                                            <?php echo htmlspecialchars($airport['Airport_Name']); ?>
+                                            (<?php echo htmlspecialchars($airport['Airport_Code']); ?>)
                                         </option>
-
                                     <?php endwhile; ?>
-
                                 </select>
-
                             </div>
-
                         </div>
-
-
 
                         <!-- DESTINATION -->
-
                         <div class="col-md-6">
-
                             <div class="modify-field">
-
-                                <label>
-                                    To
-                                </label>
-
-                                <select
-                                    name="destination"
-                                    id="modifyDestination"
-                                    required
-                                >
-
-                                    <option value="">
-                                        Select Destination
-                                    </option>
-
+                                <label>To</label>
+                                <select name="destination" id="modifyDestination" required>
+                                    <option value="">Select Destination</option>
                                     <?php
-
                                     $result_airports->data_seek(0);
-
                                     while ($airport = $result_airports->fetch_assoc()):
-
                                     ?>
-
                                         <option
                                             value="<?php echo htmlspecialchars($airport['Airport_Code']); ?>"
-                                            <?php
-                                            echo $airport['Airport_Code'] === $destination
-                                                ? 'selected'
-                                                : '';
-                                            ?>
+                                            <?php echo $airport['Airport_Code'] === $destination ? 'selected' : ''; ?>
                                         >
-
-                                            <?php
-                                            echo htmlspecialchars(
-                                                $airport['Airport_Name']
-                                            );
-                                            ?>
-
-                                            (<?php
-                                            echo htmlspecialchars(
-                                                $airport['Airport_Code']
-                                            );
-                                            ?>)
-
+                                            <?php echo htmlspecialchars($airport['Airport_Name']); ?>
+                                            (<?php echo htmlspecialchars($airport['Airport_Code']); ?>)
                                         </option>
-
                                     <?php endwhile; ?>
-
                                 </select>
-
                             </div>
-
                         </div>
 
-
-
                         <!-- START DATE -->
-
                         <div class="col-md-6">
-
                             <div class="modify-field">
-
-                                <label>
-                                    Depart Date
-                                </label>
-
+                                <label>Depart Date</label>
                                 <input
                                     type="text"
                                     id="modifyStartDateDisplay"
                                     value="<?php echo $start_date; ?>"
                                     readonly
                                 >
-
                                 <input
                                     type="hidden"
                                     name="startDate"
                                     id="modifyStartDate"
                                     value="<?php echo $start_date; ?>"
                                 >
-
                             </div>
-
                         </div>
 
-
-
                         <!-- END DATE -->
-
                         <div class="col-md-6">
-
                             <div class="modify-field">
-
-                                <label>
-                                    Return Date
-                                </label>
-
+                                <label>Return Date</label>
                                 <input
                                     type="text"
                                     id="modifyEndDateDisplay"
                                     value="<?php echo $end_date; ?>"
                                     readonly
                                 >
-
                                 <input
                                     type="hidden"
                                     name="endDate"
                                     id="modifyEndDate"
                                     value="<?php echo $end_date; ?>"
                                 >
-
                             </div>
-
                         </div>
-
-
 
                         <!-- ADULT -->
-
                         <div class="col-md-4">
-
                             <div class="modify-field">
-
-                                <label>
-                                    Adults
-                                </label>
-
+                                <label>Adults</label>
                                 <select name="adult">
-
                                     <?php for ($i = 1; $i <= 10; $i++): ?>
-
                                         <option
                                             value="<?php echo $i; ?>"
-                                            <?php
-                                            echo $adult == $i
-                                                ? 'selected'
-                                                : '';
-                                            ?>
+                                            <?php echo $adult == $i ? 'selected' : ''; ?>
                                         >
-
-                                            <?php echo $i; ?>
-                                            Adult<?php echo $i > 1 ? 's' : ''; ?>
-
+                                            <?php echo $i; ?> Adult<?php echo $i > 1 ? 's' : ''; ?>
                                         </option>
-
                                     <?php endfor; ?>
-
                                 </select>
-
                             </div>
-
                         </div>
-
-
 
                         <!-- CHILD -->
-
                         <div class="col-md-4">
-
                             <div class="modify-field">
-
-                                <label>
-                                    Child
-                                </label>
-
+                                <label>Child</label>
                                 <select name="child">
-
                                     <?php for ($i = 0; $i <= 10; $i++): ?>
-
                                         <option
                                             value="<?php echo $i; ?>"
-                                            <?php
-                                            echo $child == $i
-                                                ? 'selected'
-                                                : '';
-                                            ?>
+                                            <?php echo $child == $i ? 'selected' : ''; ?>
                                         >
-
-                                            <?php echo $i; ?>
-
-                                            Child<?php echo $i != 1 ? 'ren' : ''; ?>
-
+                                            <?php echo $i; ?> Child<?php echo $i != 1 ? 'ren' : ''; ?>
                                         </option>
-
                                     <?php endfor; ?>
-
                                 </select>
-
                             </div>
-
                         </div>
-
-
 
                         <!-- CLASS -->
-
                         <div class="col-md-4">
-
                             <div class="modify-field">
-
-                                <label>
-                                    Class
-                                </label>
-
+                                <label>Class</label>
                                 <select name="class">
-
-                                    <option
-                                        value="1"
-                                        <?php echo $class == 1 ? 'selected' : ''; ?>
-                                    >
-                                        Economy
-                                    </option>
-
-                                    <option
-                                        value="4"
-                                        <?php echo $class == 4 ? 'selected' : ''; ?>
-                                    >
-                                        Premium Economy
-                                    </option>
-
-                                    <option
-                                        value="2"
-                                        <?php echo $class == 2 ? 'selected' : ''; ?>
-                                    >
-                                        Business
-                                    </option>
-
-                                    <option
-                                        value="3"
-                                        <?php echo $class == 3 ? 'selected' : ''; ?>
-                                    >
-                                        First Class
-                                    </option>
-
+                                    <option value="1" <?php echo $class == 1 ? 'selected' : ''; ?>>Economy</option>
+                                    <option value="4" <?php echo $class == 4 ? 'selected' : ''; ?>>Premium Economy</option>
+                                    <option value="2" <?php echo $class == 2 ? 'selected' : ''; ?>>Business</option>
+                                    <option value="3" <?php echo $class == 3 ? 'selected' : ''; ?>>First Class</option>
                                 </select>
-
                             </div>
-
                         </div>
-
-
 
                         <div class="col-12 mt-4">
-
-                            <button
-                                type="submit"
-                                class="modify-submit"
-                            >
-
+                            <button type="submit" class="modify-submit">
                                 <i class="fa-solid fa-magnifying-glass me-2"></i>
-
                                 Search Flights
-
                             </button>
-
                         </div>
-
 
                     </div>
 
@@ -3028,12 +2296,7 @@ function getRouteText($flight)
 
 </div>
 
-
-
-<!-- =========================================================
-     FOOTER
-========================================================== -->
-
+<!-- FOOTER -->
 <?php include('_footer.php'); ?>
 
 
@@ -3043,346 +2306,169 @@ function getRouteText($flight)
 ========================================================== -->
 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-
-<script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-></script>
-
-<script
-    src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"
-></script>
-
-<script
-    src="https://cdn.jsdelivr.net/npm/flatpickr"
-></script>
-
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
 <script>
 
-    // FLIGHT SEARCH LOADER
+    // FLIGHT SEARCH LOADER (6-SECOND TOTAL TIMEOUT)
     (function () {
 
-        const loader =
-            document.getElementById('flightSearchLoader');
-
-        const status =
-            document.getElementById('loaderStatus');
-
+        const loader = document.getElementById('flightSearchLoader');
+        const status = document.getElementById('loaderStatus');
 
         if (!loader) {
             return;
         }
 
-
         const messages = [
-
             'Checking available fares for your journey...',
-
             'Searching airlines and flight schedules...',
-
             'Comparing the best available prices...',
-
-            'Finding the most suitable options for you...',
-
+            'Verifying ATOL & financial protection...',
             'Almost there — preparing your flight results...'
-
         ];
-
 
         let messageIndex = 0;
 
-
-        /* -----------------------------------------------------
-        CHANGE STATUS MESSAGE
-        ----------------------------------------------------- */
-
+        /* Cycle status messages every 1.1s across the 6-second window */
         const messageInterval = setInterval(function () {
-
             messageIndex++;
-
             if (messageIndex >= messages.length) {
                 messageIndex = messages.length - 1;
             }
 
-
             if (status) {
-
                 status.style.opacity = '0';
-
-
                 setTimeout(function () {
-
-                    status.textContent =
-                        messages[messageIndex];
-
+                    status.textContent = messages[messageIndex];
                     status.style.opacity = '1';
-
                 }, 180);
-
             }
+        }, 1100);
 
-        }, 600);
-
-
-        /* -----------------------------------------------------
-        HIDE AFTER 3 SECONDS
-        ----------------------------------------------------- */
-
+        /* Dismiss loader exactly after 6000ms (6 seconds) */
         setTimeout(function () {
-
             clearInterval(messageInterval);
-
             loader.classList.add('is-hidden');
 
-
             setTimeout(function () {
-
                 loader.remove();
-
             }, 500);
-
-        }, 3000);
+        }, 6000);
 
     })();
 
     $(document).ready(function () {
 
-
         /* =====================================================
-        SELECT2
+           SELECT2
         ====================================================== */
-
         $('#modifyOrigin, #modifyDestination').select2({
-
             dropdownParent: $('#modifySearchModal'),
-
             width: '100%',
-
             placeholder: 'Select airport'
-
         });
 
-
-
         /* =====================================================
-        DATE PICKERS
+           DATE PICKERS
         ====================================================== */
-
         const startPicker = flatpickr(
             '#modifyStartDateDisplay',
             {
-
                 dateFormat: 'Y-m-d',
-
                 minDate: 'today',
-
-                defaultDate:
-                    '<?php echo $start_date; ?>',
-
-                onChange: function (
-                    selectedDates,
-                    dateStr
-                ) {
-
-                    $('#modifyStartDate').val(
-                        dateStr
-                    );
-
+                defaultDate: '<?php echo $start_date; ?>',
+                onChange: function (selectedDates, dateStr) {
+                    $('#modifyStartDate').val(dateStr);
                     endPicker.set(
                         'minDate',
-                        new Date(
-                            selectedDates[0].getTime()
-                            + 86400000
-                        )
+                        new Date(selectedDates[0].getTime() + 86400000)
                     );
-
                 }
-
             }
         );
-
 
         const endPicker = flatpickr(
             '#modifyEndDateDisplay',
             {
-
                 dateFormat: 'Y-m-d',
-
-                minDate:
-                    '<?php echo $end_date; ?>',
-
-                defaultDate:
-                    '<?php echo $end_date; ?>',
-
-                onChange: function (
-                    selectedDates,
-                    dateStr
-                ) {
-
-                    $('#modifyEndDate').val(
-                        dateStr
-                    );
-
+                minDate: '<?php echo $end_date; ?>',
+                defaultDate: '<?php echo $end_date; ?>',
+                onChange: function (selectedDates, dateStr) {
+                    $('#modifyEndDate').val(dateStr);
                 }
-
             }
         );
 
-
-
         /* =====================================================
-        SORT FLIGHTS
+           SORT FLIGHTS
         ====================================================== */
+        $('#sortFlights').on('change', function () {
+            const sortValue = $(this).val();
+            const cards = $('.flight-card').get();
 
-        $('#sortFlights').on(
-            'change',
-            function () {
+            cards.sort(function (a, b) {
+                const priceA = parseFloat($(a).data('price'));
+                const priceB = parseFloat($(b).data('price'));
 
-                const sortValue = $(this).val();
-
-                const cards =
-                    $('.flight-card').get();
-
-                cards.sort(function (a, b) {
-
-                    const priceA =
-                        parseFloat(
-                            $(a).data('price')
-                        );
-
-                    const priceB =
-                        parseFloat(
-                            $(b).data('price')
-                        );
-
-                    if (sortValue === 'high') {
-
-                        return priceB - priceA;
-
-                    }
-
-                    return priceA - priceB;
-
-                });
-
-
-                $.each(
-                    cards,
-                    function (_, card) {
-
-                        $('#flightResults')
-                            .append(card);
-
-                    }
-                );
-
-                applyFilters();
-
-            }
-        );
-
-
-
-        /* =====================================================
-        FILTERS
-        ====================================================== */
-
-        $('.stop-filter, .airline-filter')
-            .on(
-                'change',
-                function () {
-
-                    applyFilters();
-
+                if (sortValue === 'high') {
+                    return priceB - priceA;
                 }
-            );
+                return priceA - priceB;
+            });
 
+            $.each(cards, function (_, card) {
+                $('#flightResults').append(card);
+            });
 
+            applyFilters();
+        });
+
+        /* =====================================================
+           FILTERS
+        ====================================================== */
+        $('.stop-filter, .airline-filter').on('change', function () {
+            applyFilters();
+        });
 
         function applyFilters() {
+            const selectedStops = $('.stop-filter:checked')
+                .map(function () { return $(this).val(); })
+                .get();
 
-            const selectedStops =
-                $('.stop-filter:checked')
-                    .map(function () {
-
-                        return $(this).val();
-
-                    })
-                    .get();
-
-
-            const selectedAirlines =
-                $('.airline-filter:checked')
-                    .map(function () {
-
-                        return $(this).val();
-
-                    })
-                    .get();
-
+            const selectedAirlines = $('.airline-filter:checked')
+                .map(function () { return $(this).val(); })
+                .get();
 
             let visibleCount = 0;
 
+            $('.flight-card').each(function () {
+                const card = $(this);
+                const stops = String(card.data('stops'));
+                const airline = String(card.data('airline'));
 
-            $('.flight-card').each(
-                function () {
+                const stopMatch =
+                    selectedStops.length === 0 || selectedStops.includes(stops);
 
-                    const card =
-                        $(this);
+                const airlineMatch =
+                    selectedAirlines.length === 0 || selectedAirlines.includes(airline);
 
-
-                    const stops =
-                        String(
-                            card.data('stops')
-                        );
-
-
-                    const airline =
-                        String(
-                            card.data('airline')
-                        );
-
-
-                    const stopMatch =
-                        selectedStops.length === 0 ||
-                        selectedStops.includes(stops);
-
-
-                    const airlineMatch =
-                        selectedAirlines.length === 0 ||
-                        selectedAirlines.includes(airline);
-
-
-                    if (
-                        stopMatch &&
-                        airlineMatch
-                    ) {
-
-                        card.show();
-
-                        visibleCount++;
-
-                    } else {
-
-                        card.hide();
-
-                    }
-
+                if (stopMatch && airlineMatch) {
+                    card.show();
+                    visibleCount++;
+                } else {
+                    card.hide();
                 }
-            );
+            });
 
-
-            $('#visibleFlightCount')
-                .text(visibleCount);
-
+            $('#visibleFlightCount').text(visibleCount);
         }
-
 
     });
 
 </script>
-
 
 </body>
 
