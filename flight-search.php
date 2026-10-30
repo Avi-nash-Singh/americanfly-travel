@@ -258,12 +258,13 @@ function getRouteText($flight)
 
         .results-hero {
             position: relative;
-            background:
+            /* background:
                 linear-gradient(
                     135deg,
                     rgba(7, 28, 51, .96),
                     rgba(12, 65, 100, .90)
-                );
+                ); */
+            background: url('assets/banner/result.png');
             padding: 55px 0 85px;
             padding-top: 11rem;
             overflow: hidden;
@@ -573,12 +574,80 @@ function getRouteText($flight)
         }
 
         .flight-badge {
-            font-size: 11px;
-            padding: 6px 9px;
-            background: #edf9f3;
-            color: #1c8b57;
-            border-radius: 20px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 6px 12px 6px 15px;
+            background: #159447;
+            color: #fff;
+            border-radius: 0 0 0 12px;
+            font-size: 10px;
+            line-height: 1.2;
+            font-weight: 800;
+            white-space: nowrap;
+        }
+
+        .flight-card-header {
+            position: relative;
+            gap: 14px;
+            padding-right: 18px;
+        }
+
+        .flight-card-header-right {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 18px;
+            flex: 1;
+            min-width: 0;
+            padding-top: 9px;
+        }
+
+        .flight-perks {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 16px;
+            min-width: 0;
+            margin-right: 6rem;
+        }
+
+        .flight-perk {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            color: #25354b;
+            min-width: 0;
+        }
+
+        .flight-perk-icon {
+            width: 30px;
+            height: 30px;
+            flex: 0 0 30px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: #f0f6fc;
+            color: #23476d;
+            font-size: 12px;
+        }
+
+        .flight-perk-label {
+            display: block;
+            font-size: 10px;
+            line-height: 1.25;
             font-weight: 700;
+            white-space: nowrap;
+        }
+
+        .flight-perk-detail {
+            display: block;
+            margin-top: 2px;
+            color: #8a97a8;
+            font-size: 9px;
+            line-height: 1.2;
+            white-space: nowrap;
         }
 
 
@@ -739,9 +808,9 @@ function getRouteText($flight)
         }
 
         .btn-call {
-            background: #fff;
-            border: 1px solid #0284c7;
-            color: #0284c7;
+            background: #d83a2e;
+            border: 1px solid #d83a2e;
+            color: #fdfeff;
             border-radius: 9px;
             padding: 10px 17px;
             font-size: 12px;
@@ -750,7 +819,7 @@ function getRouteText($flight)
         }
 
         .btn-call:hover {
-            background: #0284c7;
+            background: #bb3229;
             color: #fff;
         }
 
@@ -1312,6 +1381,9 @@ function getRouteText($flight)
         }
 
         @media (max-width: 767px) {
+            .flight-perks{
+                display: none;
+            }
             .results-hero h1 {
                 font-size: 27px;
             }
@@ -1398,6 +1470,7 @@ function getRouteText($flight)
         }
 
         @media (max-width: 480px) {
+            
             .results-hero {
                 padding: 30px 0 55px;
                 padding-top: 13rem;
@@ -1513,7 +1586,7 @@ function getRouteText($flight)
 
             <!-- LOGO -->
             <img
-                src="assets/logo.png"
+                src="assets/logo-new.png"
                 alt="American Fly"
                 class="flight-loader-logo"
             >
@@ -1614,7 +1687,7 @@ function getRouteText($flight)
 
     <div class="container results-hero-content">
 
-        <h1>Flight Search Results</h1>
+        <h1>Flight <span style="color: #d83a2e;">Search Results</span></h1>
 
         <div class="results-hero-subtitle">
             Find the best available fares for your journey.
@@ -1890,7 +1963,7 @@ function getRouteText($flight)
 
                         $logo = !empty($flight['logo'])
                             ? 'backend/uploads/' . $flight['logo']
-                            : 'assets/logo.png';
+                            : 'assets/logo-new.png';
 
                         $stops = getStops($flight);
                         $stop_count = getStopCount($flight);
@@ -1923,9 +1996,43 @@ function getRouteText($flight)
                                 </div>
                             </div>
 
-                            <div class="flight-badge">
-                                <i class="fa-solid fa-check me-1"></i>
-                                Available
+                            <div class="flight-card-header-right">
+                                <div class="flight-perks">
+                                    <div class="flight-perk">
+                                        <span class="flight-perk-icon">
+                                            <i class="fa-solid fa-suitcase"></i>
+                                        </span>
+                                        <span>
+                                            <span class="flight-perk-label">Baggage allowance</span>
+                                            <span class="flight-perk-detail">As per selected fare</span>
+                                        </span>
+                                    </div>
+
+                                    <div class="flight-perk">
+                                        <span class="flight-perk-icon">
+                                            <i class="fa-solid fa-chair"></i>
+                                        </span>
+                                        <span>
+                                            <span class="flight-perk-label">Seat selection option</span>
+                                            <span class="flight-perk-detail">Airline charges may apply</span>
+                                        </span>
+                                    </div>
+
+                                    <div class="flight-perk">
+                                        <span class="flight-perk-icon">
+                                            <i class="fa-solid fa-utensils"></i>
+                                        </span>
+                                        <span>
+                                            <span class="flight-perk-label">Meals</span>
+                                            <span class="flight-perk-detail">As per airline and fare</span>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="flight-badge ">
+                                    <i class="fa-solid fa-check me-1"></i>
+                                    Best Price
+                                </div>
                             </div>
 
                         </div>

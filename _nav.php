@@ -9,7 +9,7 @@
               <div class="flight-header__logo">
                 <a href="#" class="flight-header__logo-link">
                   <img
-                    src="assets/logo.png"
+                    src="assets/logo-new.png"
                     alt="American Fly Logo"
                     class="flight-header__logo-img"
                   />
@@ -52,7 +52,7 @@
                 >
                 <span class="flight-header__contact-phone">0203 137 5177</span>
                 <span class="flight-header__contact-timing"
-                  >Available 7 Days a Week · 8:00 AM - 11:30 PM</span
+                  >7 Days a Week · 8:00 AM - 11:30 PM</span
                 >
               </div>
             </div>
@@ -68,7 +68,7 @@
           >
             <a href="#" class="flight-header__logo-link d-block d-md-none">
               <img
-                src="assets/logo.png"
+                src="assets/logo-new.png"
                 alt="American Fly Logo"
                 class="flight-header__logo-img"
               />

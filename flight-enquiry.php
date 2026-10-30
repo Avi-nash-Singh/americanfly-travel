@@ -18,7 +18,7 @@ $flight = null;
 $airport_from = null;
 $airport_to = null;
 $airline_name = '';
-$airline_logo = 'assets/logo.png';
+$airline_logo = 'assets/logo-new.png';
 $error = '';
 
 $class_names = [
@@ -102,53 +102,6 @@ $values = [
 $errors = [];
 $submitted = false;
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-
-    foreach ($values as $key => $default) {
-        $values[$key] = trim((string)($_POST[$key] ?? $default));
-    }
-
-    if (!$flight) {
-        $errors[] = 'Please select a valid flight from the results page.';
-    }
-
-    if ($values['first_name'] === '') {
-        $errors[] = 'Please enter your first name.';
-    }
-
-    if ($values['last_name'] === '') {
-        $errors[] = 'Please enter your last name.';
-    }
-
-    if (!filter_var($values['email'], FILTER_VALIDATE_EMAIL)) {
-        $errors[] = 'Please enter a valid email address.';
-    }
-
-    if ($values['phone'] === '') {
-        $errors[] = 'Please enter your phone number.';
-    }
-
-    if (!in_array($values['adults'], array_map('strval', range(1, 9)), true)) {
-        $errors[] = 'Please select a valid number of adults.';
-    }
-
-    if (!in_array($values['children'], array_map('strval', range(0, 9)), true)) {
-        $errors[] = 'Please select a valid number of children.';
-    }
-
-    if (!in_array($values['infants'], array_map('strval', range(0, 9)), true)) {
-        $errors[] = 'Please select a valid number of infants.';
-    }
-
-    if (!$errors) {
-        /*
-         * Email sending and database storage intentionally
-         * have not been connected. Add your own handler here.
-         */
-        $submitted = true;
-    }
-}
-
 function enquiryDate($date) {
     $parsed = DateTime::createFromFormat('!Y-m-d', $date);
 
@@ -223,6 +176,7 @@ if ($flight && ($flight['route'] ?? '') !== 'Direct') {
                 rgba(7, 28, 51, .98),
                 rgba(12, 65, 100, .94)
             );
+            background: url('assets/banner/enquiry.png')
         }
 
         .enquiry-hero::after {
@@ -504,6 +458,21 @@ if ($flight && ($flight['route'] ?? '') !== 'Direct') {
             font-weight: 800;
             transition: .2s ease;
         }
+        .submit-call{
+            width: 100%;
+            min-height: 49px;
+            border: 2px solid var(--af-blue);
+            border-radius: 9px;
+            color: var(--af-blue);
+            background: white;
+            font-size: 13px;
+            font-weight: 800;
+            transition: .2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
 
         .submit-enquiry:hover {
             color: #fff;
@@ -623,6 +592,19 @@ if ($flight && ($flight['route'] ?? '') !== 'Direct') {
             font-size: 13px;
             line-height: 1.7;
         }
+        
+        .sidebar-dark::after {
+            content: "\f072";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            right: 20px;
+            top: 28px;
+            color: rgba(255,255,255,.045);
+            font-size: 65px;
+            transform: rotate(-15deg);
+            pointer-events: none;
+        }
 
         @media (max-width: 991.98px) {
             .enquiry-hero {
@@ -714,6 +696,7 @@ if ($flight && ($flight['route'] ?? '') !== 'Direct') {
                 height: 40px;
             }
         }
+        
     </style>
 </head>
 
@@ -751,11 +734,7 @@ if ($flight && ($flight['route'] ?? '') !== 'Direct') {
             <h2>Thank you for your enquiry</h2>
 
             <p>
-                Your details passed validation. The email and enquiry
-                processing functions have not been connected yet, so
-                no email has been sent and these details have not been
-                saved. Connect your handler before using this form
-                in production.
+                Your enquiry has been submitted successfully. Our team will review your travel details and contact you shortly.
             </p>
 
             <a href="index.php" class="btn submit-enquiry d-inline-flex align-items-center justify-content-center" style="max-width:250px">
@@ -877,7 +856,10 @@ if ($flight && ($flight['route'] ?? '') !== 'Direct') {
                 <section class="enquiry-panel">
 
                     <div class="panel-heading">
-                        <h2>Tell us about your travel plans</h2>
+                        <h2>
+                            <i class="fa-solid fa-user-circle me-2" style="color:#0878d1;"></i>
+                            Tell us about your travel plans
+                        </h2>
                         <p>Fields marked with * are required.</p>
                     </div>
 
@@ -885,10 +867,27 @@ if ($flight && ($flight['route'] ?? '') !== 'Direct') {
 
                     <form
                         method="post"
-                        action="flight-enquiry.php?flight=<?= (int)($flight_id ?: 0) ?>&up=<?= urlencode($start_date) ?>&down=<?= urlencode($end_date) ?>"
+                        action="https://script.google.com/macros/s/AKfycbylLx1ziaTlcCnzoG6MkCYfnjh7cF12VbZf9h2OE2gZmoAm0xH6KK6dqyoeDE91fwM/exec"
+                        target="googleSheetResponseFrame"
                         id="flightEnquiryForm"
                         novalidate
                     >
+                        <input type="hidden" name="origin" value="<?= esc($flight['source'] ?? '') ?>">
+                        <input type="hidden" name="destination" value="<?= esc($flight['destination'] ?? '') ?>">
+                        <input type="hidden" name="start_date" value="<?= esc($start_date) ?>">
+                        <input type="hidden" name="end_date" value="<?= esc($end_date) ?>">
+                        <input type="hidden" name="formGoogleSheetName" value="AmericanFly Lead Sheet">
+                        <input type="hidden" name="formName" value="Flight Enquiry">
+                        <input type="hidden" name="page_url" id="page_url" value="">
+
+                        <!-- Honeypot: hidden from real visitors; bots often fill every field. -->
+                        <div aria-hidden="true" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;">
+                            <label for="website_url">Leave this field empty</label>
+                            <input type="text" id="website_url" name="honeypot" tabindex="-1" autocomplete="off">
+                        </div>
+
+                        <div id="flightEnquiryStatus" class="alert d-none" role="status" aria-live="polite"></div>
+                        <iframe name="googleSheetResponseFrame" id="googleSheetResponseFrame" title="Form submission response" style="display:none;width:0;height:0;border:0;"></iframe>
                         <div class="enquiry-section">
                             <h3 class="section-title">
                                 <!-- <span class="section-number">01</span> -->
@@ -989,10 +988,16 @@ if ($flight && ($flight['route'] ?? '') !== 'Direct') {
                         </div>
 
                         <div class="enquiry-section">
-                            <button type="submit" class="btn submit-enquiry">
-                                Submit Flight Enquiry
-                                <i class="fa-solid fa-arrow-right ms-2"></i>
-                            </button>
+                            <div class="enquiry-actions d-flex gap-2">
+                                <button type="submit" class="btn submit-enquiry">
+                                    <i class="fa-solid fa-paper-plane me-1"></i>
+                                    Submit Enquiry
+                                </button>
+                                <a href="tel:02031375177" class="submit-call">
+                                    <i class="fa-solid fa-paper-plane me-1"></i>
+                                    Call Now
+                                </a>
+                            </div>
 
                             <p class="form-note">
                                 <i class="fa-solid fa-lock me-1"></i>
@@ -1050,14 +1055,15 @@ if ($flight && ($flight['route'] ?? '') !== 'Direct') {
                 <section class="enquiry-panel sidebar-card">
                     <h3 class="information-title">
                         <i class="fa-solid fa-circle-info me-2" style="color:#0284c7"></i>
-                        Important information
+                        Important fare information
                     </h3>
 
-                    <ul class="information-list">
-                        <li>All fares are subject to availability and confirmation.</li>
-                        <li>The displayed fare may change before a booking is confirmed.</li>
-                        <li>Flight times, baggage allowance and stopovers should be confirmed with our team.</li>
-                        <li>Please ask about applicable booking fees, cancellation charges and date-change conditions before confirming a booking.</li>
+                    <ul class="information-list" style="list-style: disc; text-align:justify">
+                        <li>All fares displayed are indicative starting prices per person, based on the selected itinerary and search criteria.</li>
+                        <li>Fares are subject to availability and may change until the booking is confirmed and tickets are issued.</li>
+                        <li>Baggage allowance, seat selection, meals and other inclusions vary by airline and the selected fare conditions.</li>
+                        <li>If the advertised fare is no longer available, the next available fare will be offered.</li>
+                        <li>Please confirm any applicable booking fees, cancellation charges and date-change fees or conditions with our team before proceeding with your booking.</li>
                     </ul>
                 </section>
 
@@ -1069,22 +1075,85 @@ if ($flight && ($flight['route'] ?? '') !== 'Direct') {
 </main>
 
 <?php include('_footer.php'); ?>
-
+<script>
+    document.getElementById('page_url').value = window.location.href;
+</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('flightEnquiryForm');
+    const frame = document.getElementById('googleSheetResponseFrame');
+    const status = document.getElementById('flightEnquiryStatus');
+    const securityAnswer = document.getElementById('security_answer');
+    const honeypot = document.getElementById('website_url');
+    const submitButton = form ? form.querySelector('button[type="submit"]') : null;
+    let submissionStarted = false;
 
     if (!form) return;
 
     form.addEventListener('submit', function (event) {
-        if (!form.checkValidity()) {
+        // Native required/email validation plus the existing arithmetic check.
+        const itineraryFields = ['origin', 'destination', 'start_date', 'end_date'];
+        const itineraryMissing = itineraryFields.some(function (name) {
+            const field = form.elements.namedItem(name);
+            return !field || !String(field.value || '').trim();
+        });
+
+        const basicFieldsValid = form.checkValidity();
+
+        if (!basicFieldsValid || itineraryMissing || !securityAnswer || securityAnswer.value.trim() !== '7') {
             event.preventDefault();
             event.stopPropagation();
             form.classList.add('was-validated');
+
+            if (!basicFieldsValid) {
+                form.reportValidity();
+            } else if (itineraryMissing) {
+                status.classList.remove('d-none', 'alert-success');
+                status.classList.add('alert-danger');
+                status.textContent = 'The selected flight dates or route are missing. Please return to flight search and select a flight again.';
+            } else if (securityAnswer && securityAnswer.value.trim() !== '7') {
+                securityAnswer.setCustomValidity('Please enter the correct answer: 7.');
+                securityAnswer.reportValidity();
+            }
+            return;
+        }
+
+        if (securityAnswer) securityAnswer.setCustomValidity('');
+
+        // Silently stop likely bots that filled the honeypot.
+        if (honeypot && honeypot.value.trim() !== '') {
+            event.preventDefault();
+            return;
+        }
+
+        // Security question is frontend-only. Do not send it to Apps Script,
+        // because the universal endpoint must not require it for other forms.
+        if (securityAnswer) securityAnswer.disabled = true;
+
+        submissionStarted = true;
+        if (submitButton) {
+            submitButton.disabled = true;
+            submitButton.innerHTML = 'Submitting... <i class="fa-solid fa-spinner fa-spin ms-2"></i>';
         }
     });
+
+    if (securityAnswer) {
+        securityAnswer.addEventListener('input', function () {
+            securityAnswer.setCustomValidity('');
+        });
+    }
+
+    // Once the Google Apps Script response has loaded in the hidden iframe,
+    // send the visitor to the dedicated thank-you page.
+    if (frame) {
+        frame.addEventListener('load', function () {
+            if (!submissionStarted) return;
+            submissionStarted = false;
+            window.location.href = 'thank-you.php';
+        });
+    }
 });
 </script>
 

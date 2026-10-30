@@ -534,79 +534,10 @@
                   <p class="dest-inquiry-form-subtitle">Receive custom dates and prices within minutes</p>
                 </div>
 
-                <form action="process.php" method="POST">
-                  <!-- Hidden contextual fields -->
-                  <input type="hidden" name="destination_code" value="ORD" />
-                  <input type="hidden" name="form_type" value="destination_inquiry" />
-
-                  <!-- Full Name -->
-                  <div class="dest-form-field">
-                    <label class="dest-form-label" for="inqName">Full Name *</label>
-                    <div class="dest-form-input-wrap">
-                      <i class="fa-solid fa-user dest-form-icon"></i>
-                      <input
-                        type="text"
-                        id="inqName"
-                        name="name"
-                        class="dest-form-input"
-                        placeholder="e.g. John Smith"
-                        required
-                      />
-                    </div>
-                  </div>
-
-                  <!-- Contact Number -->
-                  <div class="dest-form-field">
-                    <label class="dest-form-label" for="inqPhone">Contact Number *</label>
-                    <div class="dest-form-input-wrap">
-                      <i class="fa-solid fa-phone dest-form-icon"></i>
-                      <input
-                        type="tel"
-                        id="inqPhone"
-                        name="phone"
-                        class="dest-form-input"
-                        placeholder="e.g. 07123 456789"
-                        required
-                      />
-                    </div>
-                  </div>
-
-                  <!-- Email Address -->
-                  <div class="dest-form-field">
-                    <label class="dest-form-label" for="inqEmail">Email Address *</label>
-                    <div class="dest-form-input-wrap">
-                      <i class="fa-solid fa-envelope dest-form-icon"></i>
-                      <input
-                        type="email"
-                        id="inqEmail"
-                        name="email"
-                        class="dest-form-input"
-                        placeholder="e.g. john@example.com"
-                        required
-                      />
-                    </div>
-                  </div>
-
-                  <!-- Mandatory Pre-Checked Checkbox -->
-                  <div class="dest-form-consent">
-                    <input
-                      type="checkbox"
-                      id="inqConsent"
-                      name="contact_consent"
-                      checked
-                      required
-                    />
-                    <label for="inqConsent">
-                      I agree to be contacted by an American Fly specialist via phone, email, or WhatsApp regarding this inquiry. *
-                    </label>
-                  </div>
-
-                  <!-- Submit Button -->
-                  <button type="submit" class="dest-form-btn">
-                    <i class="fa-solid fa-paper-plane"></i>
-                    <span>Get Free Quote</span>
-                  </button>
-                </form>
+                <?php
+                    $form_name = 'Destination Inquiry';
+                    include('_inquiry-form.php');
+                ?>
               </div>
             </div>
 
@@ -720,6 +651,9 @@
 
     <!-- FOOTER SECTION -->
     <?php include '_footer.php'; ?>
+    <script>
+        document.getElementById('page_url').value = window.location.href;
+    </script> 
 
     <!-- SCRIPTS -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>

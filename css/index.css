@@ -115,7 +115,7 @@ img {
   left: 0;
   width: 100%;
   z-index: 1000;
-  padding: var(--spacingMd) 0;
+  padding: var(--spacingXs) 0;
   margin: 0;
   border: none;
   outline: none;
@@ -167,7 +167,7 @@ img {
 }
 
 .flight-header__logo-img {
-  max-height: 50px;
+  max-height: 78px;
   width: auto;
   object-fit: contain;
 }
@@ -206,7 +206,7 @@ img {
 
 .flight-header__contact-title {
   font-size: var(--fontSizeXs);
-  font-weight: 400;
+  font-weight: 700;
   opacity: 0.85;
   white-space: nowrap;
 }
@@ -223,6 +223,7 @@ img {
   font-size: var(--fontSizeXs);
   opacity: 0.75;
   white-space: nowrap;
+  font-weight: 700;
 }
 /* Header Scrolled State - wrapper handles white bg */
 .flight-header--scrolled {
@@ -3735,650 +3736,195 @@ img {
   transform: translateX(3px);
 }
 
+
 /* ============================================
-   PAYMENT BANNER SECTION
+   AMERICAN FLY - PAYMENT CTA
    ============================================ */
 
 .paymentBanner {
-  padding: 40px 0;
-  background-color: var(--whiteColor);
+  padding: 28px 0;
+  background: #fff;
 }
 
 .paymentBanner__poster {
   position: relative;
-  height: 350px;
-  background: linear-gradient(135deg, var(--primaryColor), #1a9aa8);
-  border-radius: 16px;
-  overflow: visible;
-  display: flex;
-  align-items: stretch;
-}
-
-/* Wave SVGs */
-.paymentBanner__waves {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  pointer-events: none;
-  overflow: hidden;
-  border-radius: 16px;
-}
-
-.paymentBanner__wave {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-}
-
-.paymentBanner__wave--back {
-  opacity: 0.15;
-  z-index: 1;
-}
-
-.paymentBanner__wave--front {
-  opacity: 0.25;
-  z-index: 2;
-}
-
-/* Left Side - Caption & Button */
-.paymentBanner__left {
-  position: relative;
-  z-index: 3;
-  flex: 1;
   display: flex;
   align-items: center;
-  padding: 40px 30px 40px 50px;
+  justify-content: space-between;
+  overflow: hidden;
+  min-height: 210px;
+  padding: 30px 45px;
+  border-radius: 12px;
+  background: linear-gradient(110deg, #052747 0%, #073e66 100%);
+  border-left: 5px solid #e63946;
 }
 
+/* Content */
 .paymentBanner__content {
   position: relative;
-  z-index: 3;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 14px;
+  z-index: 2;
+  max-width: 800px;
 }
 
-/* Badges - Brush Paint Style */
-.paymentBanner__badges {
+/* Eyebrow */
+.paymentBanner__eyebrow {
   display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-
-.paymentBanner__badge {
-  display: inline-flex;
   align-items: center;
-  gap: 4px;
-  padding: 5px 14px;
-  font-size: 12px;
-  font-weight: 700;
-  color: var(--whiteColor);
-  border-radius: 4px 18px 4px 18px;
-  position: relative;
-  letter-spacing: 0.3px;
-  animation: badgePulse 3s ease-in-out infinite;
-}
-
-.paymentBanner__badge--secure {
-  background: linear-gradient(135deg, #e74c3c, #c0392b);
-  box-shadow: 0 4px 15px rgba(231, 76, 60, 0.4);
-  transform: rotate(-2deg);
-}
-
-.paymentBanner__badge--fast {
-  background: linear-gradient(135deg, #f39c12, #e67e22);
-  box-shadow: 0 4px 15px rgba(243, 156, 18, 0.4);
-  transform: rotate(1.5deg);
-}
-
-.paymentBanner__badge--trusted {
-  background: linear-gradient(135deg, #2ecc71, #27ae60);
-  box-shadow: 0 4px 15px rgba(46, 204, 113, 0.4);
-  transform: rotate(-1deg);
-}
-
-.paymentBanner__badge--global {
-  background: linear-gradient(135deg, #3498db, #2980b9);
-  box-shadow: 0 4px 15px rgba(52, 152, 219, 0.4);
-  transform: rotate(2deg);
-}
-
-.paymentBanner__badge--easy {
-  background: linear-gradient(135deg, #9b59b6, #8e44ad);
-  box-shadow: 0 4px 15px rgba(155, 89, 182, 0.4);
-  transform: rotate(-1.5deg);
-}
-
-/* Brush paint splatter effect */
-.paymentBanner__badge::before {
-  content: "";
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  background: inherit;
-  border-radius: 50%;
-  top: -3px;
-  right: 5px;
-  opacity: 0.6;
-}
-
-.paymentBanner__badge::after {
-  content: "";
-  position: absolute;
-  width: 5px;
-  height: 5px;
-  background: inherit;
-  border-radius: 50%;
-  bottom: -2px;
-  left: 8px;
-  opacity: 0.5;
-}
-
-@keyframes badgePulse {
-  0%,
-  100% {
-    transform: rotate(-2deg) scale(1);
-  }
-  50% {
-    transform: rotate(0deg) scale(1.05);
-  }
-}
-
-.paymentBanner__badge--fast {
-  animation: badgePulseFast 3s ease-in-out infinite;
-}
-
-@keyframes badgePulseFast {
-  0%,
-  100% {
-    transform: rotate(1.5deg) scale(1);
-  }
-  50% {
-    transform: rotate(-0.5deg) scale(1.05);
-  }
-}
-
-.paymentBanner__badge--trusted {
-  animation: badgePulseTrusted 3s ease-in-out infinite;
-}
-
-@keyframes badgePulseTrusted {
-  0%,
-  100% {
-    transform: rotate(-1deg) scale(1);
-  }
-  50% {
-    transform: rotate(0.5deg) scale(1.05);
-  }
-}
-
-.paymentBanner__badge--global {
-  animation: badgePulseGlobal 3s ease-in-out infinite;
-}
-
-@keyframes badgePulseGlobal {
-  0%,
-  100% {
-    transform: rotate(2deg) scale(1);
-  }
-  50% {
-    transform: rotate(0deg) scale(1.05);
-  }
-}
-
-.paymentBanner__badge--easy {
-  animation: badgePulseEasy 3s ease-in-out infinite;
-}
-
-@keyframes badgePulseEasy {
-  0%,
-  100% {
-    transform: rotate(-1.5deg) scale(1);
-  }
-  50% {
-    transform: rotate(0.5deg) scale(1.05);
-  }
-}
-
-/* Title */
-.paymentBanner__title {
-  font-size: 26px;
-  font-weight: 800;
-  color: var(--whiteColor);
-  margin: 0;
-  line-height: 1.2;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-}
-
-.paymentBanner__caption {
-  font-size: 15px;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.9);
-  line-height: 1.6;
-  max-width: 480px;
-  margin: 0;
-}
-
-/* Subtext */
-.paymentBanner__subtext {
-  font-size: 13px;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.7);
-  line-height: 1.5;
-  max-width: 440px;
-  margin: 0;
-}
-
-/* Stats */
-.paymentBanner__stats {
-  display: flex;
-  gap: 24px;
-  margin-top: 4px;
-}
-
-.paymentBanner__stat {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2px;
-}
-
-.paymentBanner__stat-number {
-  font-size: 20px;
-  font-weight: 800;
-  color: var(--whiteColor);
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.paymentBanner__stat-label {
+  gap: 9px;
+  margin-bottom: 10px;
+  color: #8de5ed;
   font-size: 11px;
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.65);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
 }
 
+.paymentBanner__flag {
+  font-size: 17px;
+  letter-spacing: 0;
+}
+
+/* Heading */
+.paymentBanner__title {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 750;
+  line-height: 1.25;
+  margin: 0 0 8px;
+}
+
+/* Description */
+.paymentBanner__caption {
+  max-width: 650px;
+  color: rgba(255,255,255,.78);
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Bottom Row */
+.paymentBanner__bottom {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-top: 19px;
+}
+
+/* Button */
 .paymentBanner__btn {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  background-color: var(--whiteColor);
-  color: var(--primaryColor);
-  padding: 10px 24px;
-  border-radius: 30px;
-  text-decoration: none;
+  justify-content: center;
+  gap: 14px;
+  padding: 11px 20px;
+  background: #e63946;
+  border: 1px solid #e63946;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 13px;
   font-weight: 700;
-  font-size: 14px;
-  transition: all 0.3s ease;
-  white-space: nowrap;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  transition: all .25s ease;
 }
 
 .paymentBanner__btn:hover {
-  background-color: #f0fafa;
-  color: var(--primaryDark);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  border-color: #fff;
+  color: #052747;
 }
 
-.paymentBanner__btn-arrow {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 24px;
-  height: 24px;
-  background-color: var(--primaryColor);
-  color: var(--whiteColor);
-  border-radius: 50%;
-  transition: all 0.3s ease;
+.paymentBanner__btn i {
+  font-size: 12px;
+  transition: transform .25s ease;
 }
 
-.paymentBanner__btn:hover .paymentBanner__btn-arrow {
-  background-color: var(--primaryDark);
-  transform: translateX(3px);
+.paymentBanner__btn:hover i {
+  transform: translateX(4px);
 }
 
-/* Glassmorphism Bubbles */
-.paymentBanner__bubbles {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  pointer-events: none;
-  overflow: hidden;
-  border-radius: 16px;
-}
-
-.paymentBanner__bubble {
-  position: absolute;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  box-shadow:
-    inset 0 0 20px rgba(255, 255, 255, 0.05),
-    0 8px 32px rgba(0, 0, 0, 0.05);
-  animation: bubbleFloat 8s ease-in-out infinite;
-}
-
-.paymentBanner__bubble--1 {
-  width: 50px;
-  height: 50px;
-  left: 5%;
-  bottom: -50px;
-  animation-delay: 0s;
-  animation-duration: 7s;
-}
-
-.paymentBanner__bubble--2 {
-  width: 30px;
-  height: 30px;
-  left: 15%;
-  bottom: -30px;
-  animation-delay: 1s;
-  animation-duration: 9s;
-}
-
-.paymentBanner__bubble--3 {
-  width: 40px;
-  height: 40px;
-  left: 30%;
-  bottom: -40px;
-  animation-delay: 2s;
-  animation-duration: 6s;
-}
-
-.paymentBanner__bubble--4 {
-  width: 25px;
-  height: 25px;
-  left: 45%;
-  bottom: -25px;
-  animation-delay: 0.5s;
-  animation-duration: 10s;
-}
-
-.paymentBanner__bubble--5 {
-  width: 55px;
-  height: 55px;
-  left: 58%;
-  bottom: -55px;
-  animation-delay: 3s;
-  animation-duration: 8s;
-}
-
-.paymentBanner__bubble--6 {
-  width: 20px;
-  height: 20px;
-  left: 72%;
-  bottom: -20px;
-  animation-delay: 1.5s;
-  animation-duration: 7.5s;
-}
-
-.paymentBanner__bubble--7 {
-  width: 35px;
-  height: 35px;
-  left: 85%;
-  bottom: -35px;
-  animation-delay: 2.5s;
-  animation-duration: 9.5s;
-}
-
-.paymentBanner__bubble--8 {
-  width: 28px;
-  height: 28px;
-  left: 93%;
-  bottom: -28px;
-  animation-delay: 4s;
-  animation-duration: 6.5s;
-}
-
-@keyframes bubbleFloat {
-  0% {
-    transform: translateY(0) translateX(0) scale(1);
-    opacity: 0;
-  }
-  10% {
-    opacity: 1;
-  }
-  50% {
-    transform: translateY(-80px) translateX(15px) scale(1.1);
-    opacity: 0.7;
-  }
-  90% {
-    opacity: 0.3;
-  }
-  100% {
-    transform: translateY(-160px) translateX(-10px) scale(0.8);
-    opacity: 0;
-  }
-}
-
-/* Right Side - Demo Image (overflows parent) */
-.paymentBanner__right {
-  position: relative;
-  z-index: 4;
-  flex-shrink: 0;
+/* Security Note */
+.paymentBanner__note {
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  width: 380px;
-  overflow: visible;
-  transform: rotate(14deg);
+  align-items: center;
+  gap: 7px;
+  color: rgba(255,255,255,.8);
+  font-size: 12px;
 }
 
-.paymentBanner__demo-img {
-  height: 420px;
-  width: auto;
-  max-width: none;
-  object-fit: contain;
-  filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.25));
-  margin-bottom: -40px;
-  margin-right: -30px;
+.paymentBanner__note i {
+  color: #65d6df;
+  font-size: 14px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-button.btn.btn-lg.w-100.py-3.rounded-pill {
-    padding: 10px !important;
-    color: #fff;
+/* Subtle Plane Accent */
+.paymentBanner__accent {
+  position: absolute;
+  right: 55px;
+  top: 50%;
+  transform: translateY(-50%) rotate(-12deg);
+  color: rgba(255,255,255,.09);
+  font-size: 135px;
+  pointer-events: none;
 }
-
-.camper-card-modern__content a.btn.w-100.mt-3 {
-  color: #fff;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ============================================
-   PAYMENT BANNER RESPONSIVE
+   RESPONSIVE
    ============================================ */
 
-@media (max-width: 1199.98px) {
-  .paymentBanner__right {
-    width: 320px;
+@media (max-width: 767.98px) {
+
+  .paymentBanner {
+    padding: 20px 0;
   }
 
-  .paymentBanner__demo-img {
-    height: 380px;
+  .paymentBanner__poster {
+    min-height: auto;
+    padding: 25px 22px;
+  }
+
+  .paymentBanner__title {
+    font-size: 23px;
+  }
+
+  .paymentBanner__caption {
+    font-size: 12px;
+  }
+
+  .paymentBanner__bottom {
+    flex-wrap: wrap;
+    gap: 13px;
+    margin-top: 15px;
+  }
+
+  .paymentBanner__accent {
+    right: 15px;
+    font-size: 90px;
   }
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 480px) {
+
   .paymentBanner__poster {
-    height: auto;
+    padding: 23px 17px;
+  }
+
+  .paymentBanner__title {
+    font-size: 21px;
+  }
+
+  .paymentBanner__bottom {
+    align-items: flex-start;
     flex-direction: column;
   }
 
-  .paymentBanner__left {
-    padding: 30px 24px 20px 30px;
+  .paymentBanner__accent {
+    right: 10px;
+    top: 20px;
+    transform: rotate(-12deg);
+    font-size: 65px;
   }
 
-  .paymentBanner__right {
-    width: 100%;
-    height: 200px;
-    justify-content: center;
-    align-items: center;
-    transform: rotate(0deg);
-  }
-
-  .paymentBanner__demo-img {
-    height: 220px;
-    margin-bottom: -20px;
-    margin-right: 0;
-  }
-
-  .paymentBanner__title {
-    font-size: 22px;
-  }
-
-  .paymentBanner__caption {
-    font-size: 14px;
-    max-width: 100%;
-  }
-
-  .paymentBanner__subtext {
-    font-size: 12px;
-    max-width: 100%;
-  }
-
-  .paymentBanner__stats {
-    gap: 16px;
-  }
-
-  .paymentBanner__stat-number {
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .paymentBanner__poster {
-    border-radius: 12px;
-  }
-
-  .paymentBanner__left {
-    padding: 24px 18px 16px 22px;
-  }
-
-  .paymentBanner__badges {
-    gap: 6px;
-  }
-
-  .paymentBanner__badge {
-    padding: 4px 10px;
+  .paymentBanner__note {
     font-size: 11px;
-  }
-
-  .paymentBanner__title {
-    font-size: 20px;
-  }
-
-  .paymentBanner__right {
-    height: 160px;
-  }
-
-  .paymentBanner__demo-img {
-    height: 180px;
-  }
-
-  .paymentBanner__btn {
-    padding: 8px 18px;
-    font-size: 13px;
-  }
-}
-
-@media (max-width: 575.98px) {
-  .paymentBanner {
-    padding: 24px 0;
-  }
-
-  .paymentBanner__left {
-    padding: 20px 14px 12px 16px;
-  }
-
-  .paymentBanner__title {
-    font-size: 18px;
-  }
-
-  .paymentBanner__caption {
-    font-size: 13px;
-  }
-
-  .paymentBanner__subtext {
-    font-size: 11px;
-  }
-
-  .paymentBanner__stats {
-    gap: 12px;
-  }
-
-  .paymentBanner__stat-number {
-    font-size: 16px;
-  }
-
-  .paymentBanner__stat-label {
-    font-size: 10px;
-  }
-
-  .paymentBanner__right {
-    height: 130px;
-  }
-
-  .paymentBanner__demo-img {
-    height: 150px;
-  }
-
-  .paymentBanner__badge {
-    padding: 3px 8px;
-    font-size: 10px;
   }
 }
 
@@ -5311,249 +4857,176 @@ button.btn.btn-lg.w-100.py-3.rounded-pill {
   }
 }
 
+
 /* ============================================
-   COUNTER AREA SECTION
+   TRAVEL BENEFITS STRIP
    ============================================ */
-.counter-area {
+
+.travel-benefits {
   position: relative;
-  background-color: var(--primaryColor);
-  padding: 0px 0 0px;
+  width: 100%;
+  background: #05294b;
+  padding: 25px 0;
   overflow: hidden;
   z-index: 1;
-  max-width: 1430px;
-  /* margin: 0 auto; */
-  border-radius: 0 80px 0 0;
 }
 
-.counter-area::after {
+.travel-benefits__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.travel-benefits__item {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 15px;
+  position: relative;
+}
+
+/* Vertical separators */
+.travel-benefits__item:not(:last-child)::after {
   content: "";
   position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 200%;
+  right: 0;
+  top: 5px;
   height: 100%;
-  background-image: url("assets/wave1.webp");
-  background-repeat: repeat-x;
-  background-position: bottom left;
-  background-size: 50% 100%;
-  animation: waveMove 12s linear infinite;
-
-  opacity: 0.3;
-  z-index: -1;
+  width: 1px;
+  background: rgba(36, 189, 199, 0.35);
 }
 
-@keyframes waveMove {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-.counter-area__inner {
-  display: flex;
-  justify-content: start;
-  align-items: stretch;
-  gap: 0px;
-  flex-wrap: wrap;
-}
-
-.counter-area__card {
-  display: flex;
-  flex-direction: row !important;
-  align-items: center;
-  justify-content: start;
-  gap: 15px;
-  padding: 30px 20px;
-  flex: 1 1 180px;
-  max-width: 100%;
-  text-align: start;
-  cursor: pointer;
-}
-
-.counter-area__icon {
-  width: 72px;
-  height: 72px;
+/* Circular Icon */
+.travel-benefits__icon {
+  width: 64px;
+  height: 64px;
   border-radius: 50%;
+  background: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
-  position: relative;
+  margin-bottom: 12px;
+  transition: all 0.3s ease;
 }
 
-.counter-area__icon::before {
-  content: "";
-  position: absolute;
-  top: -3px;
-  left: -3px;
-  right: -3px;
-  bottom: -3px;
-  border-radius: 50%;
-  border: 3px solid transparent;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+.travel-benefits__icon i {
+  font-size: 27px;
+  color: #00b9d0;
+  transition: transform 0.3s ease;
 }
 
-.counter-area__card:hover .counter-area__icon::before {
-  opacity: 1;
-  animation: borderDraw 0.5s linear forwards;
+/* Hover Effect */
+.travel-benefits__item:hover .travel-benefits__icon {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-@keyframes borderDraw {
-  0% {
-    border-top-color: var(--primaryColor);
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-    clip-path: polygon(50% 0%, 50% 0%, 50% 0%);
-  }
-  25% {
-    border-top-color: var(--primaryColor);
-    border-right-color: var(--primaryColor);
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-    clip-path: polygon(50% 0%, 100% 0%, 100% 50%);
-  }
-  50% {
-    border-top-color: var(--primaryColor);
-    border-right-color: var(--primaryColor);
-    border-bottom-color: #ff6b35;
-    border-left-color: transparent;
-    clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%);
-  }
-  75% {
-    border-top-color: var(--primaryColor);
-    border-right-color: var(--primaryColor);
-    border-bottom-color: #ff6b35;
-    border-left-color: #ff6b35;
-    clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 50%);
-  }
-  100% {
-    border-top-color: var(--primaryColor);
-    border-right-color: var(--primaryColor);
-    border-bottom-color: #ff6b35;
-    border-left-color: #ff6b35;
-    clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 0%, 50% 0%);
-  }
+.travel-benefits__item:hover .travel-benefits__icon i {
+  transform: scale(1.1);
 }
 
-.counter-area__card:hover .counter-area__icon {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
-}
-
-.counter-area__icon svg {
-  width: 40px;
-  height: 40px;
-}
-
-.counter-area__number {
-  /* font-size: var(--fontSize3xl);
-    font-weight: 800; */
-  color: var(--whiteColor);
-  line-height: 1.1;
-  font-size: 24px;
-  font-weight: 700;
-}
-
-.counter-area__number::after {
-  content: "+";
-  margin-left: 2px;
-}
-
-.counter-area__label {
-  font-size: var(--fontSizeBase);
+/* Heading */
+.travel-benefits__content h4 {
+  color: #ffffff;
+  font-size: 16px;
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.9);
-  text-transform: capitalize;
-  letter-spacing: 0.5px;
+  margin: 0 0 5px;
+  line-height: 1.3;
 }
 
-/* Counter Area Responsive */
+/* Description */
+.travel-benefits__content p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 13px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.4;
+}
+
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+/* Tablets */
 @media (max-width: 991.98px) {
-  .counter-area__inner {
-    gap: 24px;
+
+  .travel-benefits {
+    padding: 25px 0;
   }
 
-  .counter-area__card {
-    flex: 1 1 160px;
-    max-width: 200px;
-    padding: 24px 16px;
+  .travel-benefits__inner {
+    flex-wrap: wrap;
+    row-gap: 30px;
   }
 
-  .counter-area__number {
-    font-size: var(--fontSize2xl);
+  .travel-benefits__item {
+    flex: 0 0 33.333%;
   }
 
-  .counter-area__icon {
-    width: 64px;
-    height: 64px;
+  .travel-benefits__item:nth-child(3)::after {
+    display: none;
   }
 
-  .counter-area__icon svg {
-    width: 28px;
-    height: 28px;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .counter-area {
-    padding: 60px 0 100px;
-    border-radius: 0 40px 0 0;
+  .travel-benefits__icon {
+    width: 58px;
+    height: 58px;
   }
 
-  .counter-area__inner {
-    gap: 20px;
+  .travel-benefits__icon i {
+    font-size: 24px;
   }
 
-  .counter-area__card {
-    flex: 1 1 140px;
-    max-width: 180px;
-    padding: 20px 12px;
-  }
-
-  .counter-area__number {
-    font-size: var(--fontSizeXl);
-  }
-
-  .counter-area__label {
-    font-size: var(--fontSizeSm);
+  .travel-benefits__content h4 {
+    font-size: 15px;
   }
 }
 
+/* Mobile */
 @media (max-width: 575.98px) {
-  .counter-area {
-    padding: 50px 0 90px;
-    border-radius: 0 20px 0 0;
+
+  .travel-benefits {
+    padding: 25px 0;
   }
 
-  .counter-area__inner {
-    gap: 16px;
+  .travel-benefits__inner {
+    row-gap: 25px;
   }
 
-  .counter-area__card {
-    flex: 1 1 45%;
-    max-width: 48%;
-    padding: 18px 10px;
+  .travel-benefits__item {
+    flex: 0 0 50%;
+    padding: 0 8px;
   }
 
-  .counter-area__icon {
-    width: 56px;
-    height: 56px;
+  .travel-benefits__item:nth-child(3)::after {
+    display: block;
   }
 
-  .counter-area__icon svg {
-    width: 24px;
-    height: 24px;
+  .travel-benefits__item:nth-child(even)::after {
+    display: none;
   }
 
-  .counter-area__number {
-    font-size: var(--fontSizeLg);
+  .travel-benefits__icon {
+    width: 52px;
+    height: 52px;
+    margin-bottom: 10px;
+  }
+
+  .travel-benefits__icon i {
+    font-size: 22px;
+  }
+
+  .travel-benefits__content h4 {
+    font-size: 14px;
+  }
+
+  .travel-benefits__content p {
+    font-size: 12px;
   }
 }
 
@@ -6659,6 +6132,18 @@ button.btn.btn-lg.w-100.py-3.rounded-pill {
   border-radius: 0px 93px 3px 127px !important;
 }
 
+
+
+button.btn.btn-lg.w-100.py-3.rounded-pill {
+    padding: 10px !important;
+    color: #fff;
+}
+
+.camper-card-modern__content a.btn.w-100.mt-3 {
+  color: #fff;
+}
+
+
 .business-cards-container .card .badge {
   background-color: var(--badgeBgColor);
 }
@@ -7585,7 +7070,7 @@ form#camperForm .btn-submit:hover {
   }
 
   .flight-header__logo-img {
-    max-height: 37px;
+    max-height: 47px;
     width: auto;
     object-fit: contain;
   }
@@ -7724,6 +7209,7 @@ form#camperForm .btn-submit:hover {
   .flight-navbar__container {
     position: relative;
     z-index: 0;
+    padding: 5px 0;
   }
 
   /* .flight-navbar__container .flight-navbar__menu-list--open {
@@ -8944,3 +8430,64 @@ ul.navbar-nav {
   }
 }
 
+
+
+
+/* WhatsAPP HOVER  */
+.nz-wa-float {
+      position: fixed;
+      bottom: 130px;
+      right: 22px;
+      width: 62px;
+      height: 62px;
+      background: linear-gradient(135deg, #25D366, #128C7E);
+      color: #fff;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 36px;
+      line-height: 62px;
+      z-index: 9999;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+      transition: all 0.3s ease;
+    }
+
+    .nz-wa-float:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 15px rgba(37, 211, 102, 0.7);
+    }
+
+    /* Optional pulse animation */
+    .nz-wa-float::after {
+      content: '';
+      position: absolute;
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      background: rgba(37, 211, 102, 0.4);
+      animation: nz-wa-pulse 1.5s infinite;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    @keyframes nz-wa-pulse {
+      0% { transform: scale(1); opacity: 0.7; }
+      70% { transform: scale(1.5); opacity: 0; }
+      100% { transform: scale(1.5); opacity: 0; }
+    }
+    
+/*     
+    
+    
+    
+    .blink-beat{
+    animation: blink 2s linear infinite;
+    color: blue;
+    background:#c31a1a;
+
+    }
+    @keyframes blink{
+    50%{  background:#cbbd18}
+    } */
+
+     
