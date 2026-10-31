@@ -95,11 +95,7 @@
                   >Home</a
                 >
               </li>
-              <li class="flight-navbar__menu-item">
-                <a href="about-us.php" class="flight-navbar__menu-link"
-                  >About Us</a
-                >
-              </li>
+              
               <li
                 class="flight-navbar__menu-item flight-navbar__menu-item--has-dropdown"
               >
@@ -170,16 +166,21 @@
                   >Car Hire</a
                 >
               </li>
-              <!-- <li class="flight-navbar__menu-item">
-                <a
-                  href="terms-and-conditions.php"
-                  class="flight-navbar__menu-link"
-                  >Terms & Condition</a
+              <li class="flight-navbar__menu-item">
+                <a href="about-us.php" class="flight-navbar__menu-link"
+                  >About Us</a
                 >
-              </li> -->
+              </li>
               <li class="flight-navbar__menu-item">
                 <a href="contact-us.php" class="flight-navbar__menu-link"
-                  >Contact Us</a
+                >Contact Us</a
+                >
+              </li>
+              <li class="flight-navbar__menu-item blink-beat">
+                <a
+                  href="beat-my-fare.php"
+                  class="flight-navbar__menu-link"
+                  >Beat My Fare</a
                 >
               </li>
             </ul>

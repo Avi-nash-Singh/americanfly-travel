@@ -8475,9 +8475,7 @@ ul.navbar-nav {
       70% { transform: scale(1.5); opacity: 0; }
       100% { transform: scale(1.5); opacity: 0; }
     }
-    
-/*     
-    
+       
     
     
     .blink-beat{
@@ -8488,6 +8486,6 @@ ul.navbar-nav {
     }
     @keyframes blink{
     50%{  background:#cbbd18}
-    } */
+    }
 
      
