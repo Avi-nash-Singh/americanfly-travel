@@ -1,0 +1,784 @@
+/* Dubai Package Section Styles */
+:root {
+    --dubai-primary: #24bdc7;
+    --dubai-primary-dark: #1a9aa2;
+    --dubai-primary-darker: #157880;
+    --dubai-primary-light: #5cd4db;
+    --dubai-primary-lighter: #a8e8ec;
+    --dubai-gradient: linear-gradient(135deg, #24bdc7 0%, #1a9aa2 50%, #157880 100%);
+    --dubai-gradient-light: linear-gradient(135deg, #a8e8ec 0%, #5cd4db 100%);
+    --dubai-gradient-card: linear-gradient(135deg, #24bdc7 0%, #1a9aa2 100%);
+    --dubai-gradient-btn: linear-gradient(135deg, #24bdc7 0%, #157880 100%);
+    --dubai-gradient-accent: linear-gradient(135deg, #5cd4db 0%, #24bdc7 100%);
+    --dubai-text-dark: #0d4f54;
+    --dubai-text-body: #455a64;
+}
+
+.dubai-package-section {
+       background-color: rgba(37, 189, 199, 0.08);
+    padding: 60px 0;
+}
+
+.dubai-header {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid var(--dubai-primary);
+}
+
+.dubai-title {
+    color: var(--dubai-text-dark);
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.dubai-caption {
+    color: #455a64;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Modern Carousel Styles */
+.dubai-carousel {
+    background: transparent;
+    padding: 0;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+}
+
+.dubai-carousel::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.dubai-slider {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.dubai-slider .slick-list {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    margin: 0;
+    height: 500px;
+}
+
+.dubai-slider .slick-track {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.dubai-slider .slick-slide {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.dubai-slider .slick-slide > div {
+    height: 100%;
+}
+
+.dubai-slider .slick-slide img {
+    width: 100%;
+    /* height: 500px; */
+    object-fit: cover;
+    border-radius: 15px;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.dubai-slider .slick-slide:hover img {
+    transform: scale(1.05);
+}
+
+/* Modern Slick Dots */
+.dubai-slider .slick-dots {
+    bottom: 25px;
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0 30px;
+    background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
+    border-radius: 0 0 15px 15px;
+    padding: 15px 0;
+    display: none;
+}
+
+.dubai-slider .slick-dots li {
+    margin: 0 8px;
+}
+
+.dubai-slider .slick-dots li button:before {
+    color: white;
+    opacity: 0.5;
+    font-size: 10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--dubai-gradient-card);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.dubai-slider .slick-dots li.slick-active button:before {
+    opacity: 1;
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgba(36, 189, 199, 0.5);
+}
+
+/* Modern Slick Arrows */
+.dubai-slider .slick-prev,
+.dubai-slider .slick-next {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.7) 100%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+}
+
+.dubai-slider .slick-prev:hover,
+.dubai-slider .slick-next:hover {
+    transform: scale(1.1);
+    background: white;
+    border-color: var(--dubai-primary);
+    box-shadow: 0 8px 20px rgba(36, 189, 199, 0.3);
+}
+
+.dubai-slider .slick-prev {
+    left: 25px;
+}
+
+.dubai-slider .slick-next {
+    right: 25px;
+}
+
+.dubai-slider .slick-prev:before,
+.dubai-slider .slick-next:before {
+    color: var(--dubai-primary);
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.dubai-slider .slick-prev:hover:before,
+.dubai-slider .slick-next:hover:before {
+    color: var(--dubai-primary-darker);
+}
+
+/* Modern Image Overlay */
+.dubai-slider .slick-slide {
+    position: relative;
+}
+
+/* .dubai-slider .slick-slide::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 50%);
+    border-radius: 15px;
+    z-index: 1;
+    pointer-events: none;
+} */
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .dubai-slider .slick-slide img {
+        height: 450px;
+    }
+    
+    .dubai-slider .slick-prev,
+    .dubai-slider .slick-next {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 768px) {
+    .dubai-carousel {
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .dubai-slider .slick-slide img {
+        height: 350px;
+    }
+    
+    .dubai-slider .slick-prev,
+    .dubai-slider .slick-next {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .dubai-slider .slick-prev:before,
+    .dubai-slider .slick-next:before {
+        font-size: 16px;
+    }
+    
+    .dubai-slider .slick-dots {
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .dubai-slider .slick-slide img {
+        height: 250px;
+    }
+    
+    .dubai-slider .slick-prev,
+    .dubai-slider .slick-next {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .dubai-slider .slick-prev:before,
+    .dubai-slider .slick-next:before {
+        font-size: 14px;
+    }
+}
+
+/* Attractions Section */
+.dubai-attractions {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.dubai-subtitle {
+    color: var(--dubai-text-dark);
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.dubai-text {
+    color: #455a64;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.dubai-attraction-card {
+    background: var(--dubai-gradient-card);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dubai-attraction-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(36, 189, 199, 0.4);
+}
+
+.dubai-attraction-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.dubai-attraction-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.note-text {
+    background: linear-gradient(135deg, #f0fafa 0%, #d4f0f2 100%);
+    padding: 15px;
+    border-radius: 8px;
+    color: var(--dubai-primary-darker);
+    font-style: italic;
+    border-left: 4px solid var(--dubai-primary);
+}
+
+/* Resorts Section */
+.dubai-resorts {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-item {
+    border: 2px solid #e0e0e0;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.accordion-button {
+    background: var(--dubai-gradient-card);
+    color: white;
+    font-weight: 600;
+    padding: 20px;
+}
+
+.accordion-button:not(.collapsed) {
+    background: var(--dubai-gradient-btn);
+    color: white;
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(36, 189, 199, 0.25);
+}
+
+.accordion-body {
+    padding: 20px;
+    background: #fafafa;
+}
+
+.price-info {
+    color: var(--dubai-text-dark);
+    font-size: 1.1rem;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 2px solid var(--dubai-primary-lighter);
+}
+
+/* Contact Info Section */
+.dubai-contact-info {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    /* position: sticky; */
+    /* top: 170px; */
+}
+
+.contact-card {
+    text-align: center;
+}
+
+.contact-title {
+    color: #1a237e;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.contact-text {
+    color: #455a64;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 8px;
+}
+
+.contact-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.contact-link {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.contact-link:hover {
+    color: #764ba2;
+    text-decoration: underline;
+}
+
+/* Contact Form Section */
+.dubai-contact-form {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-top: 25px;
+}
+
+.form-card {
+    text-align: left;
+}
+
+.form-title {
+    color: #1a237e;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.form-label {
+    color: #455a64;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.form-control {
+    border: 2px solid #e0e0e0;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.25rem rgba(102, 126, 234, 0.25);
+}
+
+.btn-submit {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+    color: white;
+}
+
+/* Additional Info Section */
+.additional-info {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+}
+
+.info-item {
+    padding: 15px;
+    margin-bottom: 15px;
+    background: #f5f5f5;
+    border-radius: 8px;
+    border-left: 4px solid #667eea;
+}
+
+.info-item strong {
+    color: #1a237e;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.booking-notes {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+}
+
+.booking-notes h4 {
+    color: #1a237e;
+    margin-bottom: 20px;
+}
+
+.booking-notes ul {
+    list-style: none;
+    padding: 0;
+}
+
+.booking-notes li {
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+    color: #455a64;
+}
+
+.booking-notes li:last-child {
+    border-bottom: none;
+}
+
+.why-choose-us {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+}
+
+.why-choose-us h4 {
+    color: #1a237e;
+    margin-bottom: 20px;
+}
+
+.why-choose-us ul {
+    list-style: none;
+    padding: 0;
+}
+
+.why-choose-us li {
+    padding: 12px;
+    margin-bottom: 10px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 8px;
+    color: #455a64;
+    font-weight: 500;
+}
+
+/* Things to Do Section */
+.things-to-do {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+}
+
+.things-to-do .accordion-body ul {
+    list-style: none;
+    padding: 0;
+}
+
+.things-to-do .accordion-body li {
+    padding: 12px;
+    margin-bottom: 10px;
+    background: #f5f5f5;
+    border-radius: 8px;
+    color: #455a64;
+    line-height: 1.6;
+}
+
+/* FAQ Section */
+.faq-section {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0px !important;
+}
+
+
+
+.dubai-slider .slick-dots{
+    display: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+    .dubai-contact {
+        position: static;
+        margin-top: 30px;
+    }
+
+    .dubai-title {
+        font-size: 2rem;
+    }
+
+    .dubai-subtitle {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .dubai-package-section {
+        padding: 30px 0;
+    }
+
+    .dubai-header,
+    .dubai-attractions,
+    .dubai-resorts,
+    .dubai-contact {
+        padding: 20px;
+    }
+
+    .dubai-slider img {
+        height: 250px;
+    }
+
+    .dubai-title {
+        font-size: 1.75rem;
+    }
+
+    .dubai-subtitle {
+        font-size: 1.25rem;
+    }
+}
+
+
+
+@media screen and (max-width:480px) {
+    /* Dubai Css Start  */
+
+.dubai-slider .slick-slide{
+  height:fit-content !important; 
+}
+
+.dubai-carousel{
+  height: fit-content !important;
+  box-shadow: none !important;
+}
+
+.dubai-slider .slick-slide > div {
+    height: fit-content !important;
+}
+
+.dubai-slider .slick-list{
+  height: fit-content !important;
+}
+
+    .flight-header__contact-info {
+        flex-direction: row;
+        align-items: center;
+        gap: var(--spacingXs);
+    }
+
+    .flight-header__call-icon {
+    width: 15px;
+    height: 14px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+    .dubai-title {
+        font-size: 20px;
+    }
+
+    .dubai-caption {
+  
+    font-size: 16px;
+  
+}
+
+.dubai-text {
+
+    font-size: 16px;
+ 
+}
+
+.dubai-attraction-card h4 {
+    font-size: 16px;
+
+}
+
+.dubai-attraction-card p {
+    font-size: 14px;
+   
+}
+
+.dubai-subtitle {
+        font-size: 18px;
+    }
+
+    .dubai-resorts  .accordion .accordion-item .accordion-body p{
+        font-size: 14px;
+    }
+
+    .accordion .accordion-item .accordion-body{
+        font-size: 14px;
+    }
+
+
+ .dubai-resorts .accordion-button {
+    background: var(--dubai-gradient-card);
+    color: white;
+    font-weight: 600;
+    padding: 15px 20px;
+}
+
+.dubai-additional-info .info-list{
+    padding:0px;
+}
+
+
+.dubai-additional-info .info-list li{
+  font-size: 14px;
+}
+
+
+.why-us-list{
+      padding:0px;
+      font-size: 14px;
+}
+
+.contact-info{
+    font-size: 14px;
+}
+
+.accordion-item:first-of-type .accordion-button{
+    font-size: 15px;
+}
+
+.dubai-contact-info {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: unset;
+    top: 170px;
+}
+
+
+
+
+
+}
+
+ 

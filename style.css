@@ -1,0 +1,339 @@
+/* Color Variable Ecosystem Definition */
+:root {
+    --primary-color: #24bdc7;
+    --primary-hover: #1ca2ab;
+    --dark-surface: #191f24;
+    --soft-grey: #f8fafb;
+    --text-main: #3a454d;
+    --modern-gradient: linear-gradient(135deg, #24bdc7 0%, #178389 100%);
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #fdfefe;
+    color: var(--text-main);
+}
+
+/* Animations engine */
+@keyframes slideUpIn {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: slideUpIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.25)), 
+                url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+    height: 440px;
+    margin-bottom: 2rem;
+}
+
+.fw-extrabold { font-weight: 800; }
+.max-w-700 { max-width: 700px; }
+
+.badge-tag {
+    background-color: var(--primary-color);
+    width: max-content;
+    padding: 6px 14px;
+    font-weight: 700;
+    font-size: 11px;
+    text-uppercase: uppercase;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    margin-bottom: 1rem;
+}
+
+/* Vector Curve Splitter Bottom Divider */
+.svg-wave {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.svg-wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 50px;
+}
+
+.svg-wave .shape-fill {
+    fill: #fdfefe;
+}
+
+/* Text & Layout Blocks */
+.text-gradient-title {
+    background: linear-gradient(90deg, #191f24, var(--primary-hover));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.secondary-custom {
+    color: #55626c;
+}
+
+/* Slick Slideshow UI corrections */
+.slick-carousel-wrapper img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+.slick-prev:before, .slick-next:before {
+    color: var(--primary-color) !important;
+    font-size: 26px;
+}
+
+/* Attractions List Elements Grid */
+.attraction-card {
+    background-color: #fff;
+    border: 1px solid rgba(36, 189, 199, 0.12);
+    border-radius: 16px;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    gap: 16px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.attraction-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(36, 189, 199, 0.08);
+    border-color: var(--primary-color);
+}
+
+.icon-shape {
+    background-color: rgba(36, 189, 199, 0.1);
+    color: var(--primary-color);
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.attraction-card h6 {
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: var(--dark-surface);
+}
+
+.attraction-card p {
+    font-size: 13px;
+    color: #6c7a84;
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+.note-box {
+    background-color: #e9fafb;
+    border-left: 4px solid var(--primary-color);
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #1a787f;
+}
+
+/* Modern Dynamic Accordion Setup */
+.modern-accordion .accordion-item,
+.modern-accordion-styled .accordion-item {
+    border: none;
+    margin-bottom: 14px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+    border-radius: 14px !important;
+    overflow: hidden;
+    border: 1px solid #f0f3f5;
+}
+
+.modern-accordion .accordion-button,
+.modern-accordion-styled .accordion-button {
+    font-weight: 700;
+    padding: 20px;
+    color: var(--dark-surface);
+    background-color: #fff;
+    box-shadow: none !important;
+}
+
+.modern-accordion .accordion-button:not(.collapsed),
+.modern-accordion-styled .accordion-button:not(.collapsed) {
+    background-color: rgba(36, 189, 199, 0.04);
+    color: var(--primary-color);
+}
+
+.price-tier-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.price-badge-item {
+    background-color: #f0fcfd;
+    border: 1px solid rgba(36, 189, 199, 0.25);
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 13.5px;
+    color: #178087;
+}
+
+.price-badge-item.business {
+    background-color: #fffaf0;
+    border: 1px solid #f5dfb8;
+    color: #aa7411;
+}
+
+.space-y-2 > li {
+    margin-bottom: 10px;
+}
+
+/* Split Information Modules styling */
+.info-details-card {
+    padding: 26px;
+    border-radius: 16px;
+}
+
+.info-details-card.dark-variant {
+    background-color: var(--dark-surface);
+    color: #cbd5e1;
+}
+
+.info-details-card.dark-variant h5 {
+    color: white;
+    font-weight: 700;
+}
+
+.info-details-card.light-variant {
+    background-color: var(--soft-grey);
+    border-left: 5px solid var(--primary-color);
+}
+
+.info-details-card.light-variant h5 {
+    color: var(--dark-surface);
+    font-weight: 700;
+}
+
+.why-choose-banner {
+    background: var(--modern-gradient);
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(36, 189, 199, 0.2);
+}
+
+/* Right Side Static/Sticky Sidebar components */
+.sticky-sidebar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 24px;
+}
+
+.sidebar-help-card {
+    background-color: #fff;
+    border: 2px dashed rgba(36, 189, 199, 0.25);
+    padding: 30px 20px;
+    border-radius: 20px;
+}
+
+.headset-bubble {
+    background: var(--modern-gradient);
+    color: white;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin: 0 auto 12px;
+    box-shadow: 0 6px 15px rgba(36, 189, 199, 0.25);
+}
+
+.btn-tel-action {
+    background-color: var(--dark-surface);
+    color: white;
+    display: block;
+    width: max-content;
+    margin: 12px auto 0;
+    padding: 10px 24px;
+    font-weight: 700;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.btn-tel-action:hover {
+    background-color: #0b0e10;
+    color: white;
+}
+
+.email-link {
+    color: var(--primary-color);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Form Container elements styling */
+.sidebar-enquiry-card {
+    background-color: white;
+    padding: 30px 24px;
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+    border: 1px solid #f0f3f5;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(36, 189, 199, 0.12);
+}
+
+.unique-small-text {
+    font-size: 12.5px;
+}
+
+.btn-submit-enquiry {
+    background: var(--modern-gradient);
+    color: white;
+    width: 100%;
+    border: none;
+    padding: 14px;
+    border-radius: 12px;
+    font-weight: 700;
+    text-uppercase: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.btn-submit-enquiry:hover {
+    background: var(--primary-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(36, 189, 199, 0.25);
+}
+
+/* Media breakpoints fixes */
+@media (max-width: 991px) {
+    .sticky-sidebar {
+        position: static;
+        margin-top: 2rem;
+    }
+    .hero-section {
+        height: auto;
+        padding: 60px 0 100px;
+    }
+}
